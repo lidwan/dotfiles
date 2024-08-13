@@ -7,5 +7,5 @@
 ## install packeges from installedpkg.txt file if needed
 ## install rofi theme from here: https://github.com/adi1090x/rofi or from loacl copy (rofithemeloaclcp)
 ## setup sleep with hypridle // install it and cp configs
-## now download the latest gparted ios if not already on ventoy usb in gparted unlock luks partions and resise accordinly leave empty space no need to make partion win11 can take care of that now install windows 11 on empty parion and when done install veracrypt and encrypt whole windows partion
+## now download the latest gparted ios if not already on ventoy usb, in gparted unlock luks partions and resise accordinly, leave empty space no need to make partion win11 can take care of that, now install windows 11 on empty parion and when done install veracrypt and encrypt whole windows partion
 ## DONE ;) .
