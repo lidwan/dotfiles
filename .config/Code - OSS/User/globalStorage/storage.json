@@ -30,7 +30,7 @@
             "backupPath": "/home/lidwan/.config/Code - OSS/Backups/4237490ed7ec1464510d27192703ef10",
             "uiState": {
                 "mode": 1,
-                "x": 2,
+                "x": 966,
                 "y": 48,
                 "width": 952,
                 "height": 1030,
@@ -542,8 +542,7 @@
                                 },
                                 {
                                     "id": "workbench.action.toggleSidebarVisibility",
-                                    "label": "&&Primary Side Bar",
-                                    "checked": true
+                                    "label": "&&Primary Side Bar"
                                 },
                                 {
                                     "id": "workbench.action.toggleAuxiliaryBar",
@@ -871,7 +870,8 @@
                 "items": [
                     {
                         "id": "workbench.action.navigateBack",
-                        "label": "&&Back"
+                        "label": "&&Back",
+                        "enabled": false
                     },
                     {
                         "id": "workbench.action.navigateForward",
@@ -1786,7 +1786,7 @@
             "editorPartMinWidth": 220,
             "titleBarHeight": 0,
             "activityBarWidth": 48,
-            "sideBarWidth": 170,
+            "sideBarWidth": 0,
             "statusBarHeight": 22,
             "windowBorder": false
         }
