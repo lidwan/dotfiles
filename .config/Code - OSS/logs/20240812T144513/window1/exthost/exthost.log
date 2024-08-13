@@ -1,0 +1,10 @@
+2024-08-12 14:45:15.871 [info] Extension host with pid 6637 started
+2024-08-12 14:45:15.871 [info] Skipping acquiring lock for /home/lidwan/.config/Code - OSS/User/workspaceStorage/11791e6b04d39b23bca633b51e331d37.
+2024-08-12 14:45:16.132 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2024-08-12 14:45:16.352 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2024-08-12 14:45:16.410 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2024-08-12 14:45:16.480 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2024-08-12 14:45:16.566 [info] Eager extensions activated
+2024-08-12 14:45:16.655 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2024-08-12 14:45:16.658 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2024-08-12 14:45:16.669 [info] ExtensionService#_doActivateExtension ritwickdey.LiveServer, startup: false, activationEvent: 'onStartupFinished'

@@ -1,0 +1,11 @@
+2024-08-12 12:22:46.198 [info] Extension host with pid 18280 started
+2024-08-12 12:22:46.198 [info] Skipping acquiring lock for /home/lidwan/.config/Code - OSS/User/workspaceStorage/11791e6b04d39b23bca633b51e331d37.
+2024-08-12 12:22:46.387 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2024-08-12 12:22:46.508 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2024-08-12 12:22:46.516 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2024-08-12 12:22:46.555 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2024-08-12 12:22:46.603 [info] Eager extensions activated
+2024-08-12 12:22:46.640 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2024-08-12 12:22:46.643 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2024-08-12 12:23:23.112 [info] Extension host terminating: renderer closed the MessagePort
+2024-08-12 12:23:23.120 [info] Extension host with pid 18280 exiting with code 0

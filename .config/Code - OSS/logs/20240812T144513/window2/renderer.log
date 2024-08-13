@@ -1,0 +1,20 @@
+2024-08-12 15:00:56.283 [info] Started local extension host with pid 8021.
+2024-08-12 15:00:59.397 [info] [perf] Render performance baseline is 52ms
+2024-08-12 15:01:03.833 [error] Unknown (FileSystemError): Failed to move 'idle-sleep.timer' to the trash (Failed to move item to trash)
+    at S.create (/usr/lib/code/out/vs/code/electron-main/main.js:60:3705)
+    at y (/usr/lib/code/out/vs/code/electron-main/main.js:60:3823)
+    at u.y (/usr/lib/code/out/vs/code/electron-main/main.js:65:42485)
+2024-08-12 15:01:03.844 [error] Failed to move 'idle-sleep.timer' to the trash (Failed to move item to trash): Unknown (FileSystemError): Failed to move 'idle-sleep.timer' to the trash (Failed to move item to trash)
+    at S.create (/usr/lib/code/out/vs/code/electron-main/main.js:60:3705)
+    at y (/usr/lib/code/out/vs/code/electron-main/main.js:60:3823)
+    at u.y (/usr/lib/code/out/vs/code/electron-main/main.js:65:42485)
+2024-08-12 15:01:05.772 [error] NoPermissions (FileSystemError): Error: EACCES: permission denied, unlink '/etc/systemd/system/idle-sleep.timer'
+    at S.create (/usr/lib/code/out/vs/code/electron-main/main.js:60:3705)
+    at y (/usr/lib/code/out/vs/code/electron-main/main.js:60:3823)
+    at E.hb (/usr/lib/code/out/vs/code/electron-main/main.js:65:38433)
+    at E.delete (/usr/lib/code/out/vs/code/electron-main/main.js:65:35985)
+2024-08-12 15:01:05.785 [error] Error: EACCES: permission denied, unlink '/etc/systemd/system/idle-sleep.timer': NoPermissions (FileSystemError): Error: EACCES: permission denied, unlink '/etc/systemd/system/idle-sleep.timer'
+    at S.create (/usr/lib/code/out/vs/code/electron-main/main.js:60:3705)
+    at y (/usr/lib/code/out/vs/code/electron-main/main.js:60:3823)
+    at E.hb (/usr/lib/code/out/vs/code/electron-main/main.js:65:38433)
+    at E.delete (/usr/lib/code/out/vs/code/electron-main/main.js:65:35985)
