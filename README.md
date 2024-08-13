@@ -11,4 +11,5 @@
 ## install this for audio: https://sourceforge.net/projects/equalizerapo/ or from local (win11 folder)
 ## win11 folder also has a couple of important programs install em. For a vpn, install hotspotshield or windscribe or 1.1.1.1 wrap just to circumvent local censorship then install <insert your current vpn provider, mullvad> 
 ## install the driver in win11 folder for fingerprint, if still using magicbook 14 2020.
-## DONE ;) .
+## DONE!
+# I USE ARCH BTW ;)
