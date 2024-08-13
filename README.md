@@ -10,7 +10,7 @@
 ## setup sleep with hypridle // install it and cp configs // setup mullvad from au // ufw firewall?
 ## don't forget that some packeges may misbehave after a linux kernal update and not rebooting so make sure to reboot (this took me 2 hours+ to remmember, i installed mullvad after updating the kernal and not rebooting... it didn't work obv).
 ## now download the latest gparted ios if not already on ventoy usb, in gparted unlock luks partions and resise accordinly, leave empty space no need to make partion win11 can take care of that, now install windows 11 on empty parion and when done install veracrypt and encrypt whole windows partion
-## make sure to reboot req because windows loves to fail when doing too many updates and not rebooting
+## make sure to reboot freq because windows loves to fail when doing too many updates and not rebooting
 ## install this for audio: https://sourceforge.net/projects/equalizerapo/ or from local (win11 folder)
 ## win11 folder also has a couple of important programs install em. For a vpn, install hotspotshield or windscribe or 1.1.1.1 wrap just to circumvent local censorship then install <insert your current vpn provider, mullvad> 
 ## install the driver in win11 folder for fingerprint, if still using magicbook 14 2020.
