@@ -2,11 +2,12 @@
     "userDataProfilesMigration": true,
     "profileAssociations": {
         "workspaces": {
-            "file:///home/lidwan/.config/waybar": "__default__profile__",
             "file:///home/lidwan": "__default__profile__",
             "file:///etc/systemd/system": "__default__profile__",
             "file:///home/lidwan/.config/rofi/launchers/type-7": "__default__profile__",
             "file:///home/lidwan/.config/rofi": "__default__profile__",
+            "file:///home/lidwan/.config/waybar": "__default__profile__",
+            "file:///home/lidwan/.config/ml4w/settings": "__default__profile__",
             "file:///home/lidwan/.config/hypr": "__default__profile__"
         },
         "emptyWindows": {}
@@ -19,20 +20,26 @@
         "workspaces": [],
         "folders": [
             {
+                "folderUri": "file:///home/lidwan/.config/waybar"
+            },
+            {
                 "folderUri": "file:///home/lidwan/.config/hypr"
+            },
+            {
+                "folderUri": "file:///home/lidwan/.config/ml4w/settings"
             }
         ],
         "emptyWindows": []
     },
     "windowsState": {
         "lastActiveWindow": {
-            "folder": "file:///home/lidwan/.config/hypr",
-            "backupPath": "/home/lidwan/.config/Code - OSS/Backups/4237490ed7ec1464510d27192703ef10",
+            "folder": "file:///home/lidwan/.config/waybar",
+            "backupPath": "/home/lidwan/.config/Code - OSS/Backups/9ed747ba545ff6e0a0598c7326a6c91e",
             "uiState": {
                 "mode": 1,
-                "x": 966,
+                "x": 2,
                 "y": 48,
-                "width": 952,
+                "width": 1916,
                 "height": 1030,
                 "zoomLevel": 2
             }
@@ -110,6 +117,28 @@
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
+                                        "external": "file:///home/lidwan/.config/ml4w/settings",
+                                        "path": "/home/lidwan/.config/ml4w/settings",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/.config/ml4w/settings"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/lidwan/.config/waybar",
+                                        "path": "/home/lidwan/.config/waybar",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/.config/waybar"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
                                         "external": "file:///home/lidwan/.config/rofi",
                                         "path": "/home/lidwan/.config/rofi",
                                         "scheme": "file"
@@ -149,17 +178,6 @@
                                     },
                                     "enabled": true,
                                     "label": "/home/lidwan"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/lidwan/.config/waybar",
-                                        "path": "/home/lidwan/.config/waybar",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/.config/waybar"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -542,7 +560,8 @@
                                 },
                                 {
                                     "id": "workbench.action.toggleSidebarVisibility",
-                                    "label": "&&Primary Side Bar"
+                                    "label": "&&Primary Side Bar",
+                                    "checked": true
                                 },
                                 {
                                     "id": "workbench.action.toggleAuxiliaryBar",
@@ -870,8 +889,7 @@
                 "items": [
                     {
                         "id": "workbench.action.navigateBack",
-                        "label": "&&Back",
-                        "enabled": false
+                        "label": "&&Back"
                     },
                     {
                         "id": "workbench.action.navigateForward",
@@ -1786,7 +1804,7 @@
             "editorPartMinWidth": 220,
             "titleBarHeight": 0,
             "activityBarWidth": 48,
-            "sideBarWidth": 0,
+            "sideBarWidth": 170,
             "statusBarHeight": 22,
             "windowBorder": false
         }

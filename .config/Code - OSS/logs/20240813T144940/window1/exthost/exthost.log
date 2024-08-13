@@ -8,3 +8,5 @@
 2024-08-13 14:49:43.248 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
 2024-08-13 14:49:43.251 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
 2024-08-13 14:49:43.261 [info] ExtensionService#_doActivateExtension ritwickdey.LiveServer, startup: false, activationEvent: 'onStartupFinished'
+2024-08-13 15:08:56.123 [info] Extension host terminating: renderer closed the MessagePort
+2024-08-13 15:08:56.137 [info] Extension host with pid 4334 exiting with code 0
