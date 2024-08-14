@@ -1,0 +1,121 @@
+{
+    "schemeVersion": 2,
+    "enabled": true,
+    "fetchNews": true,
+    "theme": {
+        "mode": 1,
+        "brightness": 100,
+        "contrast": 100,
+        "grayscale": 0,
+        "sepia": 0,
+        "useFont": false,
+        "fontFamily": "Segoe UI",
+        "textStroke": 0,
+        "engine": "dynamicTheme",
+        "stylesheet": "",
+        "darkSchemeBackgroundColor": "#181a1b",
+        "darkSchemeTextColor": "#e8e6e3",
+        "lightSchemeBackgroundColor": "#dcdad7",
+        "lightSchemeTextColor": "#181a1b",
+        "scrollbarColor": "auto",
+        "selectionColor": "auto",
+        "styleSystemControls": false,
+        "lightColorScheme": "Default",
+        "darkColorScheme": "Default",
+        "immediateModify": false
+    },
+    "presets": [],
+    "customThemes": [
+        {
+            "url": [
+                "tplinkwifi.net"
+            ],
+            "theme": {
+                "mode": 1,
+                "brightness": 120,
+                "contrast": 90,
+                "grayscale": 0,
+                "sepia": 0,
+                "useFont": false,
+                "fontFamily": "Segoe UI",
+                "textStroke": 0,
+                "engine": "dynamicTheme",
+                "stylesheet": "",
+                "darkSchemeBackgroundColor": "#181a1b",
+                "darkSchemeTextColor": "#e8e6e3",
+                "lightSchemeBackgroundColor": "#dcdad7",
+                "lightSchemeTextColor": "#181a1b",
+                "scrollbarColor": "auto",
+                "selectionColor": "auto",
+                "styleSystemControls": false,
+                "lightColorScheme": "Default",
+                "darkColorScheme": "Default",
+                "immediateModify": false
+            }
+        },
+        {
+            "url": [
+                "fast.com"
+            ],
+            "theme": {
+                "mode": 1,
+                "brightness": 100,
+                "contrast": 85,
+                "grayscale": 0,
+                "sepia": 0,
+                "useFont": false,
+                "fontFamily": "Segoe UI",
+                "textStroke": 0,
+                "engine": "dynamicTheme",
+                "stylesheet": "",
+                "darkSchemeBackgroundColor": "#181a1b",
+                "darkSchemeTextColor": "#e8e6e3",
+                "lightSchemeBackgroundColor": "#dcdad7",
+                "lightSchemeTextColor": "#181a1b",
+                "scrollbarColor": "auto",
+                "selectionColor": "auto",
+                "styleSystemControls": false,
+                "lightColorScheme": "Default",
+                "darkColorScheme": "Default",
+                "immediateModify": false
+            }
+        }
+    ],
+    "enabledByDefault": true,
+    "enabledFor": [],
+    "disabledFor": [
+        "www.instagram.com",
+        "www.facebook.com",
+        "www.reddit.com",
+        "x.com",
+        "www.youtube.com",
+        "www.google.com",
+        "github.com",
+        "mullvad.net",
+        "www.quora.com"
+    ],
+    "changeBrowserTheme": false,
+    "syncSettings": true,
+    "syncSitesFixes": false,
+    "automation": {
+        "enabled": false,
+        "mode": "",
+        "behavior": "OnOff"
+    },
+    "time": {
+        "activation": "18:00",
+        "deactivation": "9:00"
+    },
+    "location": {
+        "latitude": null,
+        "longitude": null
+    },
+    "previewNewDesign": false,
+    "enableForPDF": true,
+    "enableForProtectedPages": false,
+    "enableContextMenus": false,
+    "detectDarkTheme": false,
+    "displayedNews": [
+        "thanks-2023"
+    ]
+}
