@@ -7,7 +7,7 @@
 ## then (carefully) copy cofig files from this repo to ur .config folder
 ## install packeges from installedpkg.txt file if needed
 ## install rofi theme from here: https://github.com/adi1090x/rofi or from loacl copy (rofithemeloaclcp)
-## setup sleep with hypridle // install it and cp configs // setup mullvad from au // ufw firewall?
+## setup sleep with hypridle // install it and cp configs // setup mullvad from aur // ufw firewall?
 ## install qt6-wayland for obs to work, install grim & slurp for screenshot to work 
 ## don't forget that some packeges may misbehave after a linux kernal update and not rebooting so make sure to reboot (this took me 2 hours+ to remmember, i installed mullvad after updating the kernal and not rebooting... it didn't work obv).
 ## now download the latest gparted ios if not already on ventoy usb, in gparted unlock luks partions and resise accordinly, leave empty space no need to make partion win11 can take care of that, now install windows 11 on empty parion and when done install veracrypt and encrypt whole windows partion
