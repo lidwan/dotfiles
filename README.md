@@ -15,5 +15,8 @@
 ## install this for audio: https://sourceforge.net/projects/equalizerapo/ or from local (win11 folder)
 ## win11 folder also has a couple of important programs install em. For a vpn, install hotspotshield or windscribe or 1.1.1.1 wrap just to circumvent local censorship then install <insert your current vpn provider, mullvad> 
 ## install the driver in win11 folder for fingerprint, if still using magicbook 14 2020.
+## Now that windows is up and running lets fix Grub so we can boot back into arch, also let's install a grub theme.
+## boot from a live arch iso, run "sudo cryptsetup luksOpen <ROOT PARTION> cryptroot" to unlock the root partion then mount it with "sudo mount /dev/mapper/cryptroot /mnt", do the same with the boot partion (change "cryptroot" to cryptroot2 or whatever), chroot onto ur arch system with "sudo chroot /mnt", run this "grub-install <NnvmeDriveName>" then run "grub-mkconfig -o /boot/grub/grub.cfg" exit unmount and reboot.
+## when you turn on your laptop it should go into grub but it won't have win11 as an option so you have to edit the config to turn on os-prober, install it "yay -S os-prober" then edit the config file at "/etc/default/grub" and uncomment the os-prober thingy then update grub with "grub-mkconfig -o /boot/grub/grub.cfg"  and boom grub should work just fine. Note that if you want to change the name an option install grub-customizer in gnome env and edit it there.
 ## DONE!
 # I USE ARCH BTW ;)
