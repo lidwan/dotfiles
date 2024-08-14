@@ -1,0 +1,61 @@
+Script started at Wed Aug 14 06:54:51 PM +03 2024
+Mounted '/dev/dm-1 (nvme0n1p3)' at '/run/timeshift/4599/backup'
+------------------------------------------------------------------------------
+Creating new snapshot...(RSYNC)
+Saving to device: /dev/dm-1, mounted at path: /run/timeshift/4599/backup
+Linking from snapshot: 2024-08-14_18-20-16
+Syncing files with rsync...
+  3.08% complete (00:00:32 remaining)  8.21% complete (00:00:11 remaining) 12.92% complete (00:00:13 remaining) 19.85% complete (00:00:12 remaining) 28.02% complete (00:00:10 remaining) 33.52% complete (00:00:10 remaining) 35.92% complete (00:00:10 remaining) 36.39% complete (00:00:12 remaining) 38.05% complete (00:00:13 remaining) 39.98% complete (00:00:13 remaining) 42.70% complete (00:00:13 remaining) 45.58% complete (00:00:13 remaining) 50.89% complete (00:00:11 remaining) 58.61% complete (00:00:09 remaining) 68.46% complete (00:00:06 remaining) 75.08% complete (00:00:04 remaining) 81.75% complete (00:00:03 remaining) 90.72% complete (00:00:01 remaining) 93.67% complete (00:00:01 remaining)109.34% complete (00:00:00 remaining)116.72% complete (00:00:00 remaining)119.10% complete (00:00:00 remaining)                                                                                Created control file: /run/timeshift/4599/backup/timeshift/snapshots/2024-08-14_18-55-03/info.json
+RSYNC Snapshot saved successfully (22s)
+Tagged snapshot '2024-08-14_18-55-03': ondemand
+------------------------------------------------------------------------------
+
+real	0m27.714s
+user	0m0.061s
+sys	0m0.034s
+:: Synchronizing package databases...
+ core downloading...
+ extra downloading...
+:: [1mSearching AUR for updates...[0m
+:: [1mChecking development packages...[0m
+:: [1mSearching databases for updates...[0m
+ there is nothing to do
+
+real	0m2.543s
+user	0m1.323s
+sys	0m0.167s
+Script completed at Wed Aug 14 06:55:28 PM +03 2024
+Script started at Wed Aug 14 07:11:13 PM +03 2024
+Mounted '/dev/dm-1 (nvme0n1p3)' at '/run/timeshift/5331/backup'
+------------------------------------------------------------------------------
+Creating new snapshot...(RSYNC)
+Saving to device: /dev/dm-1, mounted at path: /run/timeshift/5331/backup
+Linking from snapshot: 2024-08-14_18-55-03
+Syncing files with rsync...
+ 10.03% complete (00:00:09 remaining) 19.95% complete (00:00:04 remaining) 31.66% complete (00:00:04 remaining) 44.59% complete (00:00:03 remaining) 54.81% complete (00:00:03 remaining) 70.32% complete (00:00:02 remaining) 89.13% complete (00:00:00 remaining)103.24% complete (00:00:00 remaining)117.21% complete (00:00:00 remaining)119.10% complete (00:00:00 remaining)                                                                                Created control file: /run/timeshift/5331/backup/timeshift/snapshots/2024-08-14_19-11-29/info.json
+RSYNC Snapshot saved successfully (10s)
+Tagged snapshot '2024-08-14_19-11-29': ondemand
+------------------------------------------------------------------------------
+
+real	0m15.251s
+user	0m0.079s
+sys	0m0.029s
+Script completed at Wed Aug 14 07:11:39 PM +03 2024
+Script started at Wed Aug 14 07:17:48 PM +03 2024
+Script completed at Wed Aug 14 07:17:54 PM +03 2024
+Script started at Wed Aug 14 07:22:47 PM +03 2024
+Script started at Wed Aug 14 07:22:52 PM +03 2024
+Script started at Wed Aug 14 07:24:10 PM +03 2024
+Script started at Wed Aug 14 07:24:30 PM +03 2024
+Script started at Wed Aug 14 07:25:43 PM +03 2024
+Script started at Wed Aug 14 07:25:48 PM +03 2024
+Script started at Wed Aug 14 07:26:10 PM +03 2024
+Script started at Wed Aug 14 07:27:48 PM +03 2024
+Script started at Wed Aug 14 07:29:25 PM +03 2024
+Script started at Wed Aug 14 07:29:53 PM +03 2024
+Script started at Wed Aug 14 07:30:32 PM +03 2024
+Script started at Wed Aug 14 07:30:45 PM +03 2024
+Script started at Wed Aug 14 07:37:04 PM +03 2024
+Script started at Wed Aug 14 07:52:22 PM +03 2024
+Script started at Wed Aug 14 07:52:36 PM +03 2024
+Script completed at Wed Aug 14 07:52:40 PM +03 2024

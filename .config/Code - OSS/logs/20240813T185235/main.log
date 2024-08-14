@@ -3,3 +3,5 @@
 2024-08-13 19:38:53.161 [info] Extension host with pid 24645 exited with code: 0, signal: unknown.
 2024-08-13 19:40:40.716 [info] Extension host with pid 25792 exited with code: 0, signal: unknown.
 2024-08-13 20:48:08.623 [info] Extension host with pid 29173 exited with code: 0, signal: unknown.
+2024-08-13 21:04:32.715 [info] Extension host with pid 21283 exited with code: 0, signal: unknown.
+2024-08-13 21:04:32.778 [error] [UtilityProcessWorker]: terminated unexpectedly with code 18446744072277852000, signal: unknown

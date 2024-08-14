@@ -6,9 +6,9 @@
             "file:///etc/systemd/system": "__default__profile__",
             "file:///home/lidwan/.config/rofi/launchers/type-7": "__default__profile__",
             "file:///home/lidwan/.config/rofi": "__default__profile__",
-            "file:///home/lidwan/.config/waybar": "__default__profile__",
             "file:///home/lidwan/.config/ml4w/settings": "__default__profile__",
-            "file:///home/lidwan/.config/hypr": "__default__profile__"
+            "file:///home/lidwan/.config/hypr": "__default__profile__",
+            "file:///home/lidwan/.config/waybar": "__default__profile__"
         },
         "emptyWindows": {}
     },
@@ -20,13 +20,10 @@
         "workspaces": [],
         "folders": [
             {
-                "folderUri": "file:///home/lidwan/.config/waybar"
-            },
-            {
                 "folderUri": "file:///home/lidwan/.config/hypr"
             },
             {
-                "folderUri": "file:///home/lidwan/.config/ml4w/settings"
+                "folderUri": "file:///home/lidwan/.config/waybar"
             }
         ],
         "emptyWindows": []
@@ -39,9 +36,9 @@
                 "mode": 1,
                 "x": 2,
                 "y": 48,
-                "width": 1916,
+                "width": 952,
                 "height": 1030,
-                "zoomLevel": 2
+                "zoomLevel": 1
             }
         },
         "openedWindows": []
@@ -106,6 +103,17 @@
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
+                                        "external": "file:///home/lidwan/.config/waybar",
+                                        "path": "/home/lidwan/.config/waybar",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/.config/waybar"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
                                         "external": "file:///home/lidwan/.config/hypr",
                                         "path": "/home/lidwan/.config/hypr",
                                         "scheme": "file"
@@ -123,17 +131,6 @@
                                     },
                                     "enabled": true,
                                     "label": "~/.config/ml4w/settings"
-                                },
-                                {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///home/lidwan/.config/waybar",
-                                        "path": "/home/lidwan/.config/waybar",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "~/.config/waybar"
                                 },
                                 {
                                     "id": "openRecentFolder",
@@ -560,8 +557,7 @@
                                 },
                                 {
                                     "id": "workbench.action.toggleSidebarVisibility",
-                                    "label": "&&Primary Side Bar",
-                                    "checked": true
+                                    "label": "&&Primary Side Bar"
                                 },
                                 {
                                     "id": "workbench.action.toggleAuxiliaryBar",
@@ -889,7 +885,8 @@
                 "items": [
                     {
                         "id": "workbench.action.navigateBack",
-                        "label": "&&Back"
+                        "label": "&&Back",
+                        "enabled": false
                     },
                     {
                         "id": "workbench.action.navigateForward",
@@ -898,7 +895,8 @@
                     },
                     {
                         "id": "workbench.action.navigateToLastEditLocation",
-                        "label": "&&Last Edit Location"
+                        "label": "&&Last Edit Location",
+                        "enabled": false
                     },
                     {
                         "id": "vscode.menubar.separator"
@@ -1804,7 +1802,7 @@
             "editorPartMinWidth": 220,
             "titleBarHeight": 0,
             "activityBarWidth": 48,
-            "sideBarWidth": 170,
+            "sideBarWidth": 0,
             "statusBarHeight": 22,
             "windowBorder": false
         }
