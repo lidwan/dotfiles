@@ -8,7 +8,8 @@
             "file:///home/lidwan/.config/rofi": "__default__profile__",
             "file:///home/lidwan/.config/ml4w/settings": "__default__profile__",
             "file:///home/lidwan/.config/hypr": "__default__profile__",
-            "file:///home/lidwan/.config/waybar": "__default__profile__"
+            "file:///home/lidwan/.config/waybar": "__default__profile__",
+            "file:///home/lidwan/.config/alacritty": "__default__profile__"
         },
         "emptyWindows": {}
     },
@@ -20,24 +21,21 @@
         "workspaces": [],
         "folders": [
             {
-                "folderUri": "file:///home/lidwan/.config/hypr"
-            },
-            {
-                "folderUri": "file:///home/lidwan/.config/waybar"
+                "folderUri": "file:///home/lidwan/.config/alacritty"
             }
         ],
         "emptyWindows": []
     },
     "windowsState": {
         "lastActiveWindow": {
-            "folder": "file:///home/lidwan/.config/waybar",
-            "backupPath": "/home/lidwan/.config/Code - OSS/Backups/9ed747ba545ff6e0a0598c7326a6c91e",
+            "folder": "file:///home/lidwan/.config/alacritty",
+            "backupPath": "/home/lidwan/.config/Code - OSS/Backups/0ae2209a3e57007f3a2f4ec0fe4dce55",
             "uiState": {
                 "mode": 1,
-                "x": 2,
+                "x": 966,
                 "y": 48,
                 "width": 952,
-                "height": 1030,
+                "height": 509,
                 "zoomLevel": 1
             }
         },
@@ -98,6 +96,17 @@
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/lidwan/.config/alacritty",
+                                        "path": "/home/lidwan/.config/alacritty",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/.config/alacritty"
                                 },
                                 {
                                     "id": "openRecentFolder",
@@ -557,7 +566,8 @@
                                 },
                                 {
                                     "id": "workbench.action.toggleSidebarVisibility",
-                                    "label": "&&Primary Side Bar"
+                                    "label": "&&Primary Side Bar",
+                                    "checked": true
                                 },
                                 {
                                     "id": "workbench.action.toggleAuxiliaryBar",
@@ -1802,7 +1812,7 @@
             "editorPartMinWidth": 220,
             "titleBarHeight": 0,
             "activityBarWidth": 48,
-            "sideBarWidth": 0,
+            "sideBarWidth": 170,
             "statusBarHeight": 22,
             "windowBorder": false
         }
