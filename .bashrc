@@ -35,4 +35,6 @@ alias l="ls"
 #git
 alias gs="git status"
 alias ga.="git add ."
-
+alias gcm="git commit -m"
+alias gc="git commit"
+alias gp="git push"
