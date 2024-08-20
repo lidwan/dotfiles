@@ -278,3 +278,729 @@ real	0m32.115s
 user	0m1.325s
 sys	0m0.124s
 Script completed at Thu Aug 15 09:40:47 PM +03 2024
+Script started at Thu Aug 15 10:19:22 PM +03 2024
+Script started at Thu Aug 15 10:19:32 PM +03 2024
+Script started at Fri Aug 16 01:11:31 PM +03 2024
+Mounted '/dev/dm-1 (nvme0n1p3)' at '/run/timeshift/27805/backup'
+------------------------------------------------------------------------------
+Creating new snapshot...(RSYNC)
+Saving to device: /dev/dm-1, mounted at path: /run/timeshift/27805/backup
+Linking from snapshot: 2024-08-15_21-39-55
+Syncing files with rsync...
+  4.51% complete (00:00:22 remaining)  9.52% complete (00:00:10 remaining) 12.30% complete (00:00:14 remaining) 12.32% complete (00:00:21 remaining) 16.75% complete (00:00:20 remaining) 25.58% complete (00:00:14 remaining) 33.41% complete (00:00:12 remaining) 41.90% complete (00:00:09 remaining) 48.41% complete (00:00:08 remaining) 54.41% complete (00:00:07 remaining) 60.67% complete (00:00:06 remaining) 62.66% complete (00:00:06 remaining) 71.33% complete (00:00:04 remaining) 78.99% complete (00:00:03 remaining) 87.20% complete (00:00:02 remaining) 95.57% complete (00:00:00 remaining) 96.92% complete (00:00:00 remaining)112.98% complete (00:00:00 remaining)120.35% complete (00:00:00 remaining)122.41% complete (00:00:00 remaining)                                                                                Created control file: /run/timeshift/27805/backup/timeshift/snapshots/2024-08-16_13-11-37/info.json
+RSYNC Snapshot saved successfully (20s)
+Tagged snapshot '2024-08-16_13-11-37': ondemand
+------------------------------------------------------------------------------
+
+real	0m25.094s
+user	0m0.058s
+sys	0m0.026s
+:: Synchronizing package databases...
+ core downloading...
+ extra downloading...
+:: [1mSearching AUR for updates...[0m
+:: [1mChecking development packages...[0m
+:: [1mSearching databases for updates...[0m
+:: 4 packages to upgrade/install.
+4  core/linux            6.10.4.arch2-1 -> 6.10.5.arch1-1
+3  extra/fastfetch       2.21.2-1       -> 2.21.3-1
+2  extra/webkit2gtk-4.1  2.44.3-2       -> 2.44.3-3
+1  extra/webkitgtk-6.0   2.44.3-2       -> 2.44.3-3
+==> Packages to exclude: (eg: "1 2 3", "1-3", "^4" or repo name)
+ -> Excluding packages may cause partial upgrades and break systems
+==> Sync Dependency (2): webkit2gtk-4.1-2.44.3-3, webkitgtk-6.0-2.44.3-3
+Sync Explicit (2): fastfetch-2.21.3-1, linux-6.10.5.arch1-1
+:: Synchronizing package databases...
+ core downloading...
+ extra downloading...
+:: Starting full system upgrade...
+resolving dependencies...
+looking for conflicting packages...
+
+Packages (4) fastfetch-2.21.3-1  linux-6.10.5.arch1-1  webkit2gtk-4.1-2.44.3-3  webkitgtk-6.0-2.44.3-3
+
+Total Download Size:   201.87 MiB
+Total Installed Size:  371.24 MiB
+Net Upgrade Size:       -0.03 MiB
+
+:: Proceed with installation? [Y/n] :: Retrieving packages...
+ linux-6.10.5.arch1-1-x86_64 downloading...
+ webkit2gtk-4.1-2.44.3-3-x86_64 downloading...
+ webkitgtk-6.0-2.44.3-3-x86_64 downloading...
+ fastfetch-2.21.3-1-x86_64 downloading...
+checking keyring...
+checking package integrity...
+loading package files...
+checking for file conflicts...
+checking available disk space...
+:: Running pre-transaction hooks...
+(1/1) Removing linux initcpios...
+:: Processing package changes...
+upgrading fastfetch...
+upgrading linux...
+upgrading webkit2gtk-4.1...
+upgrading webkitgtk-6.0...
+:: Running post-transaction hooks...
+(1/3) Arming ConditionNeedsUpdate...
+(2/3) Updating module dependencies...
+(3/3) Updating linux initcpios...
+==> Building image from preset: /etc/mkinitcpio.d/linux.preset: 'default'
+==> Using default configuration file: '/etc/mkinitcpio.conf'
+  -> -k /boot/vmlinuz-linux -g /boot/initramfs-linux.img
+==> Starting build: '6.10.5-arch1-1'
+  -> Running build hook: [base]
+  -> Running build hook: [udev]
+  -> Running build hook: [autodetect]
+  -> Running build hook: [microcode]
+  -> Running build hook: [modconf]
+  -> Running build hook: [kms]
+  -> Running build hook: [keyboard]
+==> WARNING: Possibly missing firmware for module: 'xhci_pci'
+  -> Running build hook: [keymap]
+  -> Running build hook: [consolefont]
+==> WARNING: consolefont: no font found in configuration
+  -> Running build hook: [block]
+  -> Running build hook: [encrypt]
+==> WARNING: Possibly missing firmware for module: 'qat_420xx'
+  -> Running build hook: [filesystems]
+  -> Running build hook: [fsck]
+==> Generating module dependencies
+==> Creating zstd-compressed initcpio image: '/boot/initramfs-linux.img'
+  -> Early uncompressed CPIO image generation successful
+==> Initcpio image generation successful
+==> Building image from preset: /etc/mkinitcpio.d/linux.preset: 'fallback'
+==> Using default configuration file: '/etc/mkinitcpio.conf'
+  -> -k /boot/vmlinuz-linux -g /boot/initramfs-linux-fallback.img -S autodetect
+==> Starting build: '6.10.5-arch1-1'
+  -> Running build hook: [base]
+  -> Running build hook: [udev]
+  -> Running build hook: [microcode]
+  -> Running build hook: [modconf]
+  -> Running build hook: [kms]
+==> WARNING: Possibly missing firmware for module: 'ast'
+  -> Running build hook: [keyboard]
+==> WARNING: Possibly missing firmware for module: 'xhci_pci'
+  -> Running build hook: [keymap]
+  -> Running build hook: [consolefont]
+==> WARNING: consolefont: no font found in configuration
+  -> Running build hook: [block]
+==> WARNING: Possibly missing firmware for module: 'qla2xxx'
+==> WARNING: Possibly missing firmware for module: 'qed'
+==> WARNING: Possibly missing firmware for module: 'aic94xx'
+==> WARNING: Possibly missing firmware for module: 'wd719x'
+==> WARNING: Possibly missing firmware for module: 'qla1280'
+==> WARNING: Possibly missing firmware for module: 'bfa'
+  -> Running build hook: [encrypt]
+==> WARNING: Possibly missing firmware for module: 'qat_420xx'
+  -> Running build hook: [filesystems]
+  -> Running build hook: [fsck]
+==> Generating module dependencies
+==> Creating zstd-compressed initcpio image: '/boot/initramfs-linux-fallback.img'
+  -> Early uncompressed CPIO image generation successful
+==> Initcpio image generation successful
+
+real	1m39.684s
+user	0m1.513s
+sys	0m0.151s
+Script completed at Fri Aug 16 01:13:37 PM +03 2024
+Script started at Fri Aug 16 06:37:48 PM +03 2024
+Mounted '/dev/dm-1 (nvme0n1p3)' at '/run/timeshift/21689/backup'
+------------------------------------------------------------------------------
+Creating new snapshot...(RSYNC)
+Saving to device: /dev/dm-1, mounted at path: /run/timeshift/21689/backup
+Linking from snapshot: 2024-08-16_13-11-37
+Syncing files with rsync...
+  1.01% complete (00:01:46 remaining)  5.02% complete (00:00:20 remaining)  8.96% complete (00:00:21 remaining) 10.96% complete (00:00:25 remaining) 11.35% complete (00:00:31 remaining) 11.67% complete (00:00:38 remaining) 11.97% complete (00:00:44 remaining) 12.39% complete (00:00:50 remaining) 12.68% complete (00:00:55 remaining) 12.68% complete (00:01:02 remaining) 13.01% complete (00:01:07 remaining) 13.11% complete (00:01:13 remaining) 14.75% complete (00:01:09 remaining) 15.18% complete (00:01:13 remaining) 18.97% complete (00:01:00 remaining) 23.57% complete (00:00:48 remaining) 29.15% complete (00:00:39 remaining) 35.86% complete (00:00:30 remaining) 37.74% complete (00:00:29 remaining) 40.83% complete (00:00:27 remaining) 45.88% complete (00:00:23 remaining) 50.26% complete (00:00:20 remaining) 52.83% complete (00:00:19 remaining) 54.64% complete (00:00:19 remaining) 59.78% complete (00:00:16 remaining) 66.05% complete (00:00:12 remaining) 72.12% complete (00:00:10 remaining) 77.70% complete (00:00:07 remaining) 83.51% complete (00:00:05 remaining) 90.08% complete (00:00:03 remaining) 98.37% complete (00:00:00 remaining) 99.37% complete (00:00:00 remaining)111.23% complete (00:00:00 remaining)117.09% complete (00:00:00 remaining)122.95% complete (00:00:00 remaining)Stream has outstanding operationStream has outstanding operation124.87% complete (00:00:00 remaining)                                                                                Created control file: /run/timeshift/21689/backup/timeshift/snapshots/2024-08-16_18-38-13/info.json
+RSYNC Snapshot saved successfully (36s)
+Tagged snapshot '2024-08-16_18-38-13': ondemand
+------------------------------------------------------------------------------
+
+real	0m48.701s
+user	0m0.091s
+sys	0m0.028s
+:: Synchronizing package databases...
+ core downloading...
+ extra downloading...
+:: [1mSearching AUR for updates...[0m
+:: [1mChecking development packages...[0m
+:: [1mSearching databases for updates...[0m
+:: 1 package to upgrade/install.
+1  core/gnutls  3.8.6-1 -> 3.8.7-1
+==> Packages to exclude: (eg: "1 2 3", "1-3", "^4" or repo name)
+ -> Excluding packages may cause partial upgrades and break systems
+==> Sync Dependency (1): gnutls-3.8.7-1
+:: Synchronizing package databases...
+ core downloading...
+ extra downloading...
+:: Starting full system upgrade...
+resolving dependencies...
+looking for conflicting packages...
+
+Packages (1) gnutls-3.8.7-1
+
+Total Download Size:   2.74 MiB
+Total Installed Size:  5.54 MiB
+Net Upgrade Size:      0.03 MiB
+
+:: Proceed with installation? [Y/n] :: Retrieving packages...
+ gnutls-3.8.7-1-x86_64 downloading...
+checking keyring...
+checking package integrity...
+loading package files...
+checking for file conflicts...
+checking available disk space...
+:: Processing package changes...
+upgrading gnutls...
+:: Running post-transaction hooks...
+(1/2) Arming ConditionNeedsUpdate...
+(2/2) Updating the info directory file...
+
+real	0m26.297s
+user	0m1.888s
+sys	0m0.191s
+Script completed at Fri Aug 16 06:39:16 PM +03 2024
+Script started at Sat Aug 17 10:12:12 AM +03 2024
+Mounted '/dev/dm-1 (nvme0n1p3)' at '/run/timeshift/1996/backup'
+------------------------------------------------------------------------------
+Creating new snapshot...(RSYNC)
+Saving to device: /dev/dm-1, mounted at path: /run/timeshift/1996/backup
+Linking from snapshot: 2024-08-16_18-38-13
+Syncing files with rsync...
+  5.31% complete (00:00:18 remaining) 11.48% complete (00:00:08 remaining) 16.09% complete (00:00:10 remaining) 22.81% complete (00:00:10 remaining) 31.98% complete (00:00:08 remaining) 41.37% complete (00:00:07 remaining) 48.49% complete (00:00:06 remaining) 54.83% complete (00:00:05 remaining) 62.98% complete (00:00:04 remaining) 71.35% complete (00:00:03 remaining) 79.88% complete (00:00:02 remaining) 89.33% complete (00:00:01 remaining) 98.39% complete (00:00:00 remaining)110.10% complete (00:00:00 remaining)117.91% complete (00:00:00 remaining)124.86% complete (00:00:00 remaining)124.89% complete (00:00:00 remaining)                                                                                Created control file: /run/timeshift/1996/backup/timeshift/snapshots/2024-08-17_10-12-17/info.json
+RSYNC Snapshot saved successfully (17s)
+Tagged snapshot '2024-08-17_10-12-17': ondemand
+------------------------------------------------------------------------------
+
+real	0m21.423s
+user	0m0.066s
+sys	0m0.023s
+:: Synchronizing package databases...
+ core downloading...
+ extra downloading...
+:: [1mSearching AUR for updates...[0m
+:: [1mChecking development packages...[0m
+:: [1mSearching databases for updates...[0m
+:: 6 packages to upgrade/install.
+6  extra/gtk-update-icon-cache      1:4.14.4-2 -> 1:4.14.5-1
+5  extra/gtk4                       1:4.14.4-2 -> 1:4.14.5-1
+4  extra/hyprpaper                  0.7.0-2    -> 0.7.1-1
+3  extra/librsvg                    2:2.58.2-1 -> 2:2.58.3-1
+2  extra/libssh                     0.11.0-1   -> 0.11.0-2
+1  extra/python-validate-pyproject  0.18-1     -> 0.19-1
+==> Packages to exclude: (eg: "1 2 3", "1-3", "^4" or repo name)
+ -> Excluding packages may cause partial upgrades and break systems
+==> Sync Dependency (5): gtk-update-icon-cache-1:4.14.5-1, gtk4-1:4.14.5-1, librsvg-2:2.58.3-1, libssh-0.11.0-2, python-validate-pyproject-0.19-1
+Sync Explicit (1): hyprpaper-0.7.1-1
+:: Synchronizing package databases...
+ core downloading...
+ extra downloading...
+:: Starting full system upgrade...
+resolving dependencies...
+looking for conflicting packages...
+
+Packages (6) gtk-update-icon-cache-1:4.14.5-1  gtk4-1:4.14.5-1  hyprpaper-0.7.1-1  librsvg-2:2.58.3-1  libssh-0.11.0-2  python-validate-pyproject-0.19-1
+
+Total Download Size:   11.99 MiB
+Total Installed Size:  61.45 MiB
+Net Upgrade Size:       0.20 MiB
+
+:: Proceed with installation? [Y/n] :: Retrieving packages...
+ gtk4-1:4.14.5-1-x86_64 downloading...
+ librsvg-2:2.58.3-1-x86_64 downloading...
+ libssh-0.11.0-2-x86_64 downloading...
+ python-validate-pyproject-0.19-1-any downloading...
+ hyprpaper-0.7.1-1-x86_64 downloading...
+ gtk-update-icon-cache-1:4.14.5-1-x86_64 downloading...
+checking keyring...
+checking package integrity...
+loading package files...
+checking for file conflicts...
+checking available disk space...
+:: Processing package changes...
+upgrading librsvg...
+upgrading gtk-update-icon-cache...
+upgrading gtk4...
+upgrading hyprpaper...
+upgrading libssh...
+upgrading python-validate-pyproject...
+:: Running post-transaction hooks...
+(1/4) Arming ConditionNeedsUpdate...
+(2/4) Probing GDK-Pixbuf loader modules...
+(3/4) Compiling GSettings XML schema files...
+(4/4) Updating GTK4 module cache...
+
+real	0m36.002s
+user	0m1.341s
+sys	0m0.107s
+Script completed at Sat Aug 17 10:13:11 AM +03 2024
+Script started at Sat Aug 17 09:00:29 PM +03 2024
+Mounted '/dev/dm-1 (nvme0n1p3)' at '/run/timeshift/9163/backup'
+------------------------------------------------------------------------------
+Creating new snapshot...(RSYNC)
+Saving to device: /dev/dm-1, mounted at path: /run/timeshift/9163/backup
+Linking from snapshot: 2024-08-17_10-12-17
+Syncing files with rsync...
+  4.01% complete (00:00:25 remaining)  8.01% complete (00:00:12 remaining) 12.70% complete (00:00:14 remaining) 12.70% complete (00:00:21 remaining) 13.06% complete (00:00:27 remaining) 14.94% complete (00:00:28 remaining) 18.52% complete (00:00:26 remaining) 24.31% complete (00:00:22 remaining) 30.45% complete (00:00:18 remaining) 36.35% complete (00:00:15 remaining) 43.53% complete (00:00:13 remaining) 48.99% complete (00:00:11 remaining) 54.12% complete (00:00:10 remaining) 59.44% complete (00:00:08 remaining) 63.92% complete (00:00:07 remaining) 67.34% complete (00:00:07 remaining) 73.12% complete (00:00:05 remaining) 79.44% complete (00:00:04 remaining) 86.21% complete (00:00:02 remaining) 93.29% complete (00:00:01 remaining) 98.99% complete (00:00:00 remaining)104.95% complete (00:00:00 remaining)113.45% complete (00:00:00 remaining)118.59% complete (00:00:00 remaining)124.86% complete (00:00:00 remaining)125.58% complete (00:00:00 remaining)                                                                                Created control file: /run/timeshift/9163/backup/timeshift/snapshots/2024-08-17_21-00-34/info.json
+RSYNC Snapshot saved successfully (26s)
+Tagged snapshot '2024-08-17_21-00-34': ondemand
+------------------------------------------------------------------------------
+
+real	0m30.499s
+user	0m0.056s
+sys	0m0.054s
+:: Synchronizing package databases...
+ core downloading...
+ extra downloading...
+:: [1mSearching AUR for updates...[0m
+:: [1mChecking development packages...[0m
+:: [1mSearching databases for updates...[0m
+:: 1 package to upgrade/install.
+1  extra/python-markdown  3.6-3 -> 3.7-1
+==> Packages to exclude: (eg: "1 2 3", "1-3", "^4" or repo name)
+ -> Excluding packages may cause partial upgrades and break systems
+==> Sync Dependency (1): python-markdown-3.7-1
+:: Synchronizing package databases...
+ core downloading...
+ extra downloading...
+:: Starting full system upgrade...
+resolving dependencies...
+looking for conflicting packages...
+
+Packages (1) python-markdown-3.7-1
+
+Total Download Size:   0.17 MiB
+Total Installed Size:  0.99 MiB
+Net Upgrade Size:      0.01 MiB
+
+:: Proceed with installation? [Y/n] :: Retrieving packages...
+ python-markdown-3.7-1-any downloading...
+checking keyring...
+checking package integrity...
+loading package files...
+checking for file conflicts...
+checking available disk space...
+:: Processing package changes...
+upgrading python-markdown...
+:: Running post-transaction hooks...
+(1/1) Arming ConditionNeedsUpdate...
+
+real	0m44.673s
+user	0m1.934s
+sys	0m0.360s
+Script completed at Sat Aug 17 09:01:45 PM +03 2024
+Script started at Sun Aug 18 11:51:36 AM +03 2024
+Mounted '/dev/dm-1 (nvme0n1p3)' at '/run/timeshift/13856/backup'
+------------------------------------------------------------------------------
+Creating new snapshot...(RSYNC)
+Saving to device: /dev/dm-1, mounted at path: /run/timeshift/13856/backup
+Linking from snapshot: 2024-08-17_21-00-34
+Syncing files with rsync...
+  5.51% complete (00:00:18 remaining) 11.73% complete (00:00:07 remaining) 15.11% complete (00:00:11 remaining) 16.11% complete (00:00:15 remaining) 22.97% complete (00:00:13 remaining) 31.57% complete (00:00:10 remaining) 40.47% complete (00:00:08 remaining) 47.97% complete (00:00:07 remaining) 56.01% complete (00:00:06 remaining) 64.77% complete (00:00:04 remaining) 74.42% complete (00:00:03 remaining) 83.31% complete (00:00:02 remaining) 91.87% complete (00:00:01 remaining)100.62% complete (00:00:00 remaining)112.52% complete (00:00:00 remaining)120.93% complete (00:00:00 remaining)127.91% complete (00:00:00 remaining)127.94% complete (00:00:00 remaining)                                                                                Created control file: /run/timeshift/13856/backup/timeshift/snapshots/2024-08-18_11-51-47/info.json
+RSYNC Snapshot saved successfully (18s)
+Tagged snapshot '2024-08-18_11-51-47': ondemand
+------------------------------------------------------------------------------
+
+real	0m24.096s
+user	0m0.062s
+sys	0m0.026s
+:: Synchronizing package databases...
+ core downloading...
+ extra downloading...
+:: [1mSearching AUR for updates...[0m
+:: [1mChecking development packages...[0m
+:: [1mSearching databases for updates...[0m
+ there is nothing to do
+
+real	0m7.185s
+user	0m1.347s
+sys	0m0.065s
+Script completed at Sun Aug 18 11:52:13 AM +03 2024
+Script started at Sun Aug 18 06:10:33 PM +03 2024
+Mounted '/dev/dm-1 (nvme0n1p3)' at '/run/timeshift/42017/backup'
+------------------------------------------------------------------------------
+Creating new snapshot...(RSYNC)
+Saving to device: /dev/dm-1, mounted at path: /run/timeshift/42017/backup
+Linking from snapshot: 2024-08-18_11-51-47
+Syncing files with rsync...
+  5.33% complete (00:00:19 remaining) 10.62% complete (00:00:09 remaining) 15.58% complete (00:00:11 remaining) 19.96% complete (00:00:12 remaining) 28.43% complete (00:00:10 remaining) 36.99% complete (00:00:08 remaining) 45.63% complete (00:00:07 remaining) 52.12% complete (00:00:06 remaining) 58.19% complete (00:00:05 remaining) 67.42% complete (00:00:04 remaining) 75.99% complete (00:00:03 remaining) 84.87% complete (00:00:01 remaining) 94.18% complete (00:00:00 remaining)100.86% complete (00:00:00 remaining)113.82% complete (00:00:00 remaining)121.06% complete (00:00:00 remaining)128.03% complete (00:00:00 remaining)128.07% complete (00:00:00 remaining)                                                                                Created control file: /run/timeshift/42017/backup/timeshift/snapshots/2024-08-18_18-10-45/info.json
+RSYNC Snapshot saved successfully (18s)
+Tagged snapshot '2024-08-18_18-10-45': ondemand
+------------------------------------------------------------------------------
+
+real	0m25.171s
+user	0m0.056s
+sys	0m0.045s
+:: Synchronizing package databases...
+ core downloading...
+ extra downloading...
+:: [1mSearching AUR for updates...[0m
+:: [1mChecking development packages...[0m
+:: [1mSearching databases for updates...[0m
+ there is nothing to do
+
+real	0m6.238s
+user	0m1.360s
+sys	0m0.098s
+Script completed at Sun Aug 18 06:11:09 PM +03 2024
+Script started at Sun Aug 18 10:40:20 PM +03 2024
+Mounted '/dev/dm-1 (nvme0n1p3)' at '/run/timeshift/1750/backup'
+------------------------------------------------------------------------------
+Creating new snapshot...(RSYNC)
+Saving to device: /dev/dm-1, mounted at path: /run/timeshift/1750/backup
+Linking from snapshot: 2024-08-18_18-10-45
+Syncing files with rsync...
+  4.12% complete (00:00:24 remaining)  8.25% complete (00:00:11 remaining) 13.24% complete (00:00:13 remaining) 17.19% complete (00:00:14 remaining) 22.01% complete (00:00:14 remaining) 27.31% complete (00:00:13 remaining) 35.38% complete (00:00:11 remaining) 41.54% complete (00:00:09 remaining) 47.09% complete (00:00:09 remaining) 52.12% complete (00:00:08 remaining) 56.78% complete (00:00:07 remaining) 62.52% complete (00:00:06 remaining) 70.11% complete (00:00:05 remaining) 75.88% complete (00:00:04 remaining) 82.58% complete (00:00:02 remaining) 89.49% complete (00:00:01 remaining) 96.65% complete (00:00:00 remaining)100.86% complete (00:00:00 remaining)111.43% complete (00:00:00 remaining)117.80% complete (00:00:00 remaining)123.54% complete (00:00:00 remaining)128.04% complete (00:00:00 remaining)128.07% complete (00:00:00 remaining)                                                                                Created control file: /run/timeshift/1750/backup/timeshift/snapshots/2024-08-18_22-40-36/info.json
+RSYNC Snapshot saved successfully (23s)
+Tagged snapshot '2024-08-18_22-40-36': ondemand
+------------------------------------------------------------------------------
+
+real	0m28.182s
+user	0m0.068s
+sys	0m0.044s
+:: Synchronizing package databases...
+ core downloading...
+ extra downloading...
+:: [1mSearching AUR for updates...[0m
+:: [1mChecking development packages...[0m
+:: [1mSearching databases for updates...[0m
+:: 1 package to upgrade/install.
+1  extra/electron30  30.3.1-1 -> 30.4.0-1
+==> Packages to exclude: (eg: "1 2 3", "1-3", "^4" or repo name)
+ -> Excluding packages may cause partial upgrades and break systems
+==> Sync Dependency (1): electron30-30.4.0-1
+:: Synchronizing package databases...
+ core downloading...
+ extra downloading...
+:: Starting full system upgrade...
+resolving dependencies...
+looking for conflicting packages...
+
+Packages (1) electron30-30.4.0-1
+
+Total Download Size:    66.78 MiB
+Total Installed Size:  228.25 MiB
+Net Upgrade Size:        0.02 MiB
+
+:: Proceed with installation? [Y/n] :: Retrieving packages...
+ electron30-30.4.0-1-x86_64 downloading...
+checking keyring...
+checking package integrity...
+loading package files...
+checking for file conflicts...
+checking available disk space...
+:: Processing package changes...
+upgrading electron30...
+:: Running post-transaction hooks...
+(1/2) Arming ConditionNeedsUpdate...
+(2/2) Updating the desktop file MIME type cache...
+
+real	0m26.643s
+user	0m1.853s
+sys	0m0.139s
+Script completed at Sun Aug 18 10:41:26 PM +03 2024
+Script started at Mon Aug 19 11:44:38 AM +03 2024
+Mounted '/dev/dm-1 (nvme0n1p3)' at '/run/timeshift/21955/backup'
+------------------------------------------------------------------------------
+Creating new snapshot...(RSYNC)
+Saving to device: /dev/dm-1, mounted at path: /run/timeshift/21955/backup
+Linking from snapshot: 2024-08-18_22-40-36
+Syncing files with rsync...
+  8.02% complete (00:00:12 remaining) 15.17% complete (00:00:05 remaining) 22.61% complete (00:00:07 remaining) 33.94% complete (00:00:05 remaining) 40.85% complete (00:00:05 remaining) 49.60% complete (00:00:05 remaining) 60.39% complete (00:00:03 remaining) 73.27% complete (00:00:02 remaining) 85.11% complete (00:00:01 remaining) 99.49% complete (00:00:00 remaining)114.32% complete (00:00:00 remaining)126.28% complete (00:00:00 remaining)128.23% complete (00:00:00 remaining)                                                                                Created control file: /run/timeshift/21955/backup/timeshift/snapshots/2024-08-19_11-44-43/info.json
+RSYNC Snapshot saved successfully (13s)
+Tagged snapshot '2024-08-19_11-44-43': ondemand
+------------------------------------------------------------------------------
+
+real	0m17.352s
+user	0m0.085s
+sys	0m0.018s
+:: Synchronizing package databases...
+ core downloading...
+ extra downloading...
+:: [1mSearching AUR for updates...[0m
+:: [1mChecking development packages...[0m
+:: [1mSearching databases for updates...[0m
+:: 6 packages to upgrade/install.
+6  core/fakeroot            1.35.1-1 -> 1.36-1
+5  core/systemd             256.4-1  -> 256.5-1
+4  core/systemd-libs        256.4-1  -> 256.5-1
+3  core/systemd-sysvcompat  256.4-1  -> 256.5-1
+2  extra/aquamarine         0.3.1-1  -> 0.3.2-1
+1  extra/libinput           1.26.1-1 -> 1.26.2-1
+==> Packages to exclude: (eg: "1 2 3", "1-3", "^4" or repo name)
+ -> Excluding packages may cause partial upgrades and break systems
+==> Script started at Mon Aug 19 06:48:46 PM +03 2024
+Mounted '/dev/dm-1 (nvme0n1p3)' at '/run/timeshift/2231/backup'
+------------------------------------------------------------------------------
+Creating new snapshot...(RSYNC)
+Saving to device: /dev/dm-1, mounted at path: /run/timeshift/2231/backup
+Linking from snapshot: 2024-08-19_11-44-43
+Syncing files with rsync...
+  5.66% complete (00:00:17 remaining) 12.85% complete (00:00:07 remaining) 17.51% complete (00:00:09 remaining) 24.59% complete (00:00:09 remaining) 34.41% complete (00:00:07 remaining) 43.44% complete (00:00:06 remaining) 51.03% complete (00:00:05 remaining) 57.61% complete (00:00:05 remaining) 67.60% complete (00:00:03 remaining) 75.88% complete (00:00:02 remaining) 85.34% complete (00:00:01 remaining) 95.65% complete (00:00:00 remaining)100.93% complete (00:00:00 remaining)115.02% complete (00:00:00 remaining)123.60% complete (00:00:00 remaining)128.20% complete (00:00:00 remaining)128.23% complete (00:00:00 remaining)                                                                                Created control file: /run/timeshift/2231/backup/timeshift/snapshots/2024-08-19_18-48-53/info.json
+RSYNC Snapshot saved successfully (17s)
+Tagged snapshot '2024-08-19_18-48-53': ondemand
+------------------------------------------------------------------------------
+
+real	0m22.611s
+user	0m0.068s
+sys	0m0.027s
+:: Synchronizing package databases...
+ core downloading...
+ extra downloading...
+:: [1mSearching AUR for updates...[0m
+:: [1mChecking development packages...[0m
+:: [1mSearching databases for updates...[0m
+:: 6 packages to upgrade/install.
+6  core/fakeroot            1.35.1-1 -> 1.36-1
+5  core/systemd             256.4-1  -> 256.5-1
+4  core/systemd-libs        256.4-1  -> 256.5-1
+3  core/systemd-sysvcompat  256.4-1  -> 256.5-1
+2  extra/aquamarine         0.3.1-1  -> 0.3.2-1
+1  extra/libinput           1.26.1-1 -> 1.26.2-1
+==> Packages to exclude: (eg: "1 2 3", "1-3", "^4" or repo name)
+ -> Excluding packages may cause partial upgrades and break systems
+==> Sync Dependency (6): aquamarine-0.3.2-1, fakeroot-1.36-1, libinput-1.26.2-1, systemd-256.5-1, systemd-libs-256.5-1, systemd-sysvcompat-256.5-1
+:: Synchronizing package databases...
+ core downloading...
+ extra downloading...
+:: Starting full system upgrade...
+resolving dependencies...
+looking for conflicting packages...
+
+Packages (6) aquamarine-0.3.2-1  fakeroot-1.36-1  libinput-1.26.2-1  systemd-256.5-1  systemd-libs-256.5-1  systemd-sysvcompat-256.5-1
+
+Total Download Size:   10.27 MiB
+Total Installed Size:  37.67 MiB
+Net Upgrade Size:       0.01 MiB
+
+:: Proceed with installation? [Y/n] :: Retrieving packages...
+ systemd-256.5-1-x86_64 downloading...
+ systemd-libs-256.5-1-x86_64 downloading...
+ aquamarine-0.3.2-1-x86_64 downloading...
+ libinput-1.26.2-1-x86_64 downloading...
+ fakeroot-1.36-1-x86_64 downloading...
+ systemd-sysvcompat-256.5-1-x86_64 downloading...
+checking keyring...
+checking package integrity...
+loading package files...
+checking for file conflicts...
+checking available disk space...
+:: Processing package changes...
+upgrading systemd-libs...
+upgrading systemd...
+warning: directory permissions differ on /etc/cryptsetup-keys.d/
+filesystem: 755  package: 700
+upgrading libinput...
+upgrading aquamarine...
+upgrading fakeroot...
+upgrading systemd-sysvcompat...
+:: Running post-transaction hooks...
+( 1/12) Creating system user accounts...
+( 2/12) Updating journal message catalog...
+( 3/12) Reloading system manager configuration...
+( 4/12) Reloading user manager configuration...
+( 5/12) Updating udev hardware database...
+( 6/12) Applying kernel sysctl settings...
+( 7/12) Creating temporary files...
+( 8/12) Reloading device manager configuration...
+( 9/12) Arming ConditionNeedsUpdate...
+(10/12) Updating the MIME type database...
+(11/12) Updating linux initcpios...
+==> Building image from preset: /etc/mkinitcpio.d/linux.preset: 'default'
+==> Using default configuration file: '/etc/mkinitcpio.conf'
+  -> -k /boot/vmlinuz-linux -g /boot/initramfs-linux.img
+==> Starting build: '6.10.5-arch1-1'
+  -> Running build hook: [base]
+  -> Running build hook: [udev]
+  -> Running build hook: [autodetect]
+  -> Running build hook: [microcode]
+  -> Running build hook: [modconf]
+  -> Running build hook: [kms]
+  -> Running build hook: [keyboard]
+==> WARNING: Possibly missing firmware for module: 'xhci_pci'
+  -> Running build hook: [keymap]
+  -> Running build hook: [consolefont]
+==> WARNING: consolefont: no font found in configuration
+  -> Running build hook: [block]
+  -> Running build hook: [encrypt]
+==> WARNING: Possibly missing firmware for module: 'qat_420xx'
+  -> Running build hook: [filesystems]
+  -> Running build hook: [fsck]
+==> Generating module dependencies
+==> Creating zstd-compressed initcpio image: '/boot/initramfs-linux.img'
+  -> Early uncompressed CPIO image generation successful
+==> Initcpio image generation successful
+==> Building image from preset: /etc/mkinitcpio.d/linux.preset: 'fallback'
+==> Using default configuration file: '/etc/mkinitcpio.conf'
+  -> -k /boot/vmlinuz-linux -g /boot/initramfs-linux-fallback.img -S autodetect
+==> Starting build: '6.10.5-arch1-1'
+  -> Running build hook: [base]
+  -> Running build hook: [udev]
+  -> Running build hook: [microcode]
+  -> Running build hook: [modconf]
+  -> Running build hook: [kms]
+==> WARNING: Possibly missing firmware for module: 'ast'
+  -> Running build hook: [keyboard]
+==> WARNING: Possibly missing firmware for module: 'xhci_pci'
+  -> Running build hook: [keymap]
+  -> Running build hook: [consolefont]
+==> WARNING: consolefont: no font found in configuration
+  -> Running build hook: [block]
+==> WARNING: Possibly missing firmware for module: 'qla2xxx'
+==> WARNING: Possibly missing firmware for module: 'qed'
+==> WARNING: Possibly missing firmware for module: 'aic94xx'
+==> WARNING: Possibly missing firmware for module: 'wd719x'
+==> WARNING: Possibly missing firmware for module: 'qla1280'
+==> WARNING: Possibly missing firmware for module: 'bfa'
+  -> Running build hook: [encrypt]
+==> WARNING: Possibly missing firmware for module: 'qat_420xx'
+  -> Running build hook: [filesystems]
+  -> Running build hook: [fsck]
+==> Generating module dependencies
+==> Creating zstd-compressed initcpio image: '/boot/initramfs-linux-fallback.img'
+  -> Early uncompressed CPIO image generation successful
+==> Initcpio image generation successful
+(12/12) Reloading system bus configuration...
+
+real	0m58.374s
+user	0m1.311s
+sys	0m0.150s
+Script completed at Mon Aug 19 06:50:08 PM +03 2024
+Script started at Tue Aug 20 10:53:27 PM +03 2024
+Mounted '/dev/dm-1 (nvme0n1p3)' at '/run/timeshift/97276/backup'
+------------------------------------------------------------------------------
+Creating new snapshot...(RSYNC)
+Saving to device: /dev/dm-1, mounted at path: /run/timeshift/97276/backup
+Linking from snapshot: 2024-08-19_18-48-53
+Syncing files with rsync...
+  2.43% complete (00:00:42 remaining)  7.63% complete (00:00:12 remaining) 13.27% complete (00:00:13 remaining) 15.10% complete (00:00:17 remaining) 16.69% complete (00:00:20 remaining) 18.87% complete (00:00:21 remaining) 21.91% complete (00:00:21 remaining) 25.75% complete (00:00:20 remaining) 28.91% complete (00:00:19 remaining) 30.96% complete (00:00:20 remaining) 34.36% complete (00:00:19 remaining) 35.69% complete (00:00:19 remaining) 41.27% complete (00:00:17 remaining) 50.18% complete (00:00:12 remaining) 56.70% complete (00:00:10 remaining) 58.60% complete (00:00:10 remaining) 65.74% complete (00:00:08 remaining) 71.77% complete (00:00:06 remaining) 76.35% complete (00:00:05 remaining) 83.84% complete (00:00:03 remaining) 90.73% complete (00:00:02 remaining) 96.61% complete (00:00:00 remaining)104.10% complete (00:00:00 remaining)112.04% complete (00:00:00 remaining)121.33% complete (00:00:00 remaining)126.12% complete (00:00:00 remaining)136.84% complete (00:00:00 remaining)142.68% complete (00:00:00 remaining)149.21% complete (00:00:00 remaining)150.28% complete (00:00:00 remaining)                                                                                Created control file: /run/timeshift/97276/backup/timeshift/snapshots/2024-08-20_22-53-38/info.json
+RSYNC Snapshot saved successfully (30s)
+Tagged snapshot '2024-08-20_22-53-38': ondemand
+------------------------------------------------------------------------------
+
+real	0m35.228s
+user	0m0.053s
+sys	0m0.039s
+:: Synchronizing package databases...
+ core downloading...
+ extra downloading...
+:: [1mSearching AUR for updates...[0m
+:: [1mChecking development packages...[0m
+:: [1mSearching databases for updates...[0m
+ -> Missing AUR Debug Packages: ente-auth-debug
+:: 9 packages to upgrade/install.
+9  core/libpcap                        1.10.4-1       -> 1.10.4-2
+8  core/libsasl                        2.1.28-4       -> 2.1.28-5
+7  core/linux                          6.10.5.arch1-1 -> 6.10.6.arch1-1
+6  core/pambase                        20230918-1     -> 20230918-2
+5  extra/aquamarine                    0.3.2-1        -> 0.3.3-1
+4  extra/ffmpeg                        2:7.0.1-2      -> 2:7.0.2-1
+3  extra/libbluray                     1.3.4-1        -> 1.3.4-2
+2  extra/libimobiledevice              1.3.0-13       -> 1.3.0-14
+1  extra/virtualbox-host-modules-arch  7.0.20-12      -> 7.0.20-13
+==> Packages to exclude: (eg: "1 2 3", "1-3", "^4" or repo name)
+ -> Excluding packages may cause partial upgrades and break systems
+==> Sync Dependency (8): ffmpeg-2:7.0.2-1, libimobiledevice-1.3.0-14, virtualbox-host-modules-arch-7.0.20-13, libsasl-2.1.28-5, libbluray-1.3.4-2, pambase-20230918-2, aquamarine-0.3.3-1, libpcap-1.10.4-2
+Sync Explicit (1): linux-6.10.6.arch1-1
+:: Synchronizing package databases...
+ core downloading...
+ extra downloading...
+:: Starting full system upgrade...
+resolving dependencies...
+looking for conflicting packages...
+
+Packages (9) aquamarine-0.3.3-1  ffmpeg-2:7.0.2-1  libbluray-1.3.4-2  libimobiledevice-1.3.0-14  libpcap-1.10.4-2  libsasl-2.1.28-5  linux-6.10.6.arch1-1  pambase-20230918-2  virtualbox-host-modules-arch-7.0.20-13
+
+Total Download Size:   150.11 MiB
+Total Installed Size:  184.81 MiB
+Net Upgrade Size:        3.16 MiB
+
+:: Proceed with installation? [Y/n] :: Retrieving packages...
+ linux-6.10.6.arch1-1-x86_64 downloading...
+ ffmpeg-2:7.0.2-1-x86_64 downloading...
+ libbluray-1.3.4-2-x86_64 downloading...
+ libimobiledevice-1.3.0-14-x86_64 downloading...
+ aquamarine-0.3.3-1-x86_64 downloading...
+ virtualbox-host-modules-arch-7.0.20-13-x86_64 downloading...
+ libpcap-1.10.4-2-x86_64 downloading...
+ libsasl-2.1.28-5-x86_64 downloading...
+ pambase-20230918-2-any downloading...
+checking keyring...
+checking package integrity...
+loading package files...
+checking for file conflicts...
+checking available disk space...
+:: Running pre-transaction hooks...
+(1/1) Removing linux initcpios...
+:: Processing package changes...
+upgrading libsasl...
+upgrading pambase...
+upgrading aquamarine...
+upgrading libbluray...
+upgrading ffmpeg...
+upgrading libimobiledevice...
+upgrading libpcap...
+upgrading linux...
+upgrading virtualbox-host-modules-arch...
+:: Running post-transaction hooks...
+(1/3) Arming ConditionNeedsUpdate...
+(2/3) Updating module dependencies...
+(3/3) Updating linux initcpios...
+==> Building image from preset: /etc/mkinitcpio.d/linux.preset: 'default'
+==> Using default configuration file: '/etc/mkinitcpio.conf'
+  -> -k /boot/vmlinuz-linux -g /boot/initramfs-linux.img
+==> Starting build: '6.10.6-arch1-1'
+  -> Running build hook: [base]
+  -> Running build hook: [udev]
+  -> Running build hook: [autodetect]
+  -> Running build hook: [microcode]
+  -> Running build hook: [modconf]
+  -> Running build hook: [kms]
+  -> Running build hook: [keyboard]
+==> WARNING: Possibly missing firmware for module: 'xhci_pci'
+  -> Running build hook: [keymap]
+  -> Running build hook: [consolefont]
+==> WARNING: consolefont: no font found in configuration
+  -> Running build hook: [block]
+  -> Running build hook: [encrypt]
+==> WARNING: Possibly missing firmware for module: 'qat_420xx'
+  -> Running build hook: [filesystems]
+  -> Running build hook: [fsck]
+==> Generating module dependencies
+==> Creating zstd-compressed initcpio image: '/boot/initramfs-linux.img'
+  -> Early uncompressed CPIO image generation successful
+==> Initcpio image generation successful
+==> Building image from preset: /etc/mkinitcpio.d/linux.preset: 'fallback'
+==> Using default configuration file: '/etc/mkinitcpio.conf'
+  -> -k /boot/vmlinuz-linux -g /boot/initramfs-linux-fallback.img -S autodetect
+==> Starting build: '6.10.6-arch1-1'
+  -> Running build hook: [base]
+  -> Running build hook: [udev]
+  -> Running build hook: [microcode]
+  -> Running build hook: [modconf]
+  -> Running build hook: [kms]
+==> WARNING: Possibly missing firmware for module: 'ast'
+  -> Running build hook: [keyboard]
+==> WARNING: Possibly missing firmware for module: 'xhci_pci'
+  -> Running build hook: [keymap]
+  -> Running build hook: [consolefont]
+==> WARNING: consolefont: no font found in configuration
+  -> Running build hook: [block]
+==> WARNING: Possibly missing firmware for module: 'qla2xxx'
+==> WARNING: Possibly missing firmware for module: 'qed'
+==> WARNING: Possibly missing firmware for module: 'aic94xx'
+==> WARNING: Possibly missing firmware for module: 'wd719x'
+==> WARNING: Possibly missing firmware for module: 'qla1280'
+==> WARNING: Possibly missing firmware for module: 'bfa'
+  -> Running build hook: [encrypt]
+==> WARNING: Possibly missing firmware for module: 'qat_420xx'
+  -> Running build hook: [filesystems]
+  -> Running build hook: [fsck]
+==> Generating module dependencies
+==> Creating zstd-compressed initcpio image: '/boot/initramfs-linux-fallback.img'
+  -> Early uncompressed CPIO image generation successful
+==> Initcpio image generation successful
+
+real	1m17.242s
+user	0m1.510s
+sys	0m0.128s
+Script completed at Tue Aug 20 10:55:26 PM +03 2024
