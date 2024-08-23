@@ -64,10 +64,10 @@ prompt_user
 # Validate the user's choice and run the appropriate commands, 69 choice is for testing purpuses.
 if [ "$choice" == "1" ]; then
     create_backup
-    run_update "yay -Syu --devel"
+    run_update "yay -Syyu --devel"
 elif [ "$choice" == "2" ]; then
     create_backup
-    run_update "yay -Syu"
+    run_update "yay -Syyu"
 elif [ "$choice" == "69" ]; then
     print_colored "32" "...NICE!, THIS IS A TEST CASE, SYSTEM WAS NOT UPDATED OR BACKED UP"
 else
