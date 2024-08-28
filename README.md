@@ -21,4 +21,5 @@
 ## get grub theme from here: https://github.com/vinceliuice/grub2-themes orrr download the theme and config file for grub from this repo. dont forget "grub-mkconfig -o /boot/grub/grub.cfg" to regen. grub
 ## install ly as your dm becuase y not :), run "yay -S ly, sudo systemctl disable gdm (or insert curr dm name here), sudo systemctl enable ly" then reboot.
 ## DONE!
+# Auto Install Script in arch-hypr-script repo.
 # I USE ARCH BTW ;)
