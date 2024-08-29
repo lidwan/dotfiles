@@ -122,9 +122,12 @@
         ]
     },
     "custom/updates":{
-        "format": "{} Update",
+        "format": "{} Update(s)",
+        "exec": "~/.config/hypr/Scripts/checkupdates.sh",
+        "interval": 3600,
         "tooltip": false,
-        "on-click": "alacritty -e ~/.config/hypr/Scripts/updates.sh"
+        "on-click": "alacritty -e ~/.config/hypr/Scripts/updates.sh",
+        "return-type": "json"
     },
 
     // "network": {
@@ -232,7 +235,7 @@
         "tooltip": true,
         "format-icons":{
             "activated": "",
-            "deactivated": ""
+            "deactivatedfeeling": ""
         },
         "on-click-right": "hyprlock"        
     }
