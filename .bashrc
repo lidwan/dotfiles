@@ -31,3 +31,6 @@ alias gcm="git commit -m"
 alias gc="git commit"
 alias gp="git push"
 
+#vim
+alias v="vim"
+alias nv="nvim"
