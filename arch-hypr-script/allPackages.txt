@@ -97,6 +97,7 @@ default-cursors
 desktop-file-utils
 device-mapper
 diffutils
+discord
 djvulibre
 dotconf
 double-conversion
@@ -288,7 +289,6 @@ hdparm
 hicolor-icon-theme
 hidapi
 highway
-hotspotshield-bin
 htop
 hunspell
 hwdata
@@ -832,7 +832,6 @@ pixman
 pkcs11-helper
 pkgconf
 playerctl
-plex-media-server
 polkit
 polkit-kde-agent
 polkit-qt6
