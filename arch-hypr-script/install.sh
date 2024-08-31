@@ -53,8 +53,8 @@ cp ../.config/user-dirs.dirs ~/.config/
 cp ../.config/user-dirs.locale ~/.config/
 cp ../.config/.gsd-keyboard.settings-ported ~/.config/
 
-cp -r /etc/systemd/system/system ~/etcSystemdSystem.backup
-sudo cp -r ../etc-systemd-system/system /etc/systemd
+cp -r /etc/systemd/system ~/etcSystemdSystem.backup
+
 systemctl --user daemon-reload
 
 
