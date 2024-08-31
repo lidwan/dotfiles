@@ -1,0 +1,6 @@
+[Unit]
+Description=Update AUR Package Database
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/yay -Sy --noconfirm

@@ -31,4 +31,5 @@
 ## clone the repo and make ./install.sh ex and run it
 ## the script  will install yay then install all the pkgs in pkg.txt then backup .config and cp config files and cp .bashrc too
 ## pkg list & config files to be updated often - run "yay -Qq > pkgs.txt"
+## manu sudo cp systemd files for update timer and stuff to work
 # I USE ARCH BTW ;)

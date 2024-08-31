@@ -1,0 +1,10 @@
+[Unit]
+Description=Timer for updating AUR Package Database
+
+[Timer]
+OnCalendar=hourly
+Persistent=true
+OnBootSec=5min
+
+[Install]
+WantedBy=timers.target
