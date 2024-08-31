@@ -156,9 +156,10 @@ window#waybar.empty #window {
 #backlight,
 #custom-appmenu,
 #clock,
-#custom-updates {
+#custom-updates,
+#idle_inhibitor {
     
-    margin-right: 20px;
+    margin-right: 10px;
     font-size: 20px;
     font-weight: bold;
     color: @textcolor3;
@@ -254,13 +255,15 @@ window#waybar.empty #window {
 
 #network,
 #backlight,
-#custom-updates {
+#custom-updates,
+#idle_inhibitor {
     background-color: @backgrounddark;
     font-size: 13px;
     color: @textcolor3;
     border-radius: 10px;
     margin: 10px 10px 10px 0px;
 }
+
 #backlight {
     font-size: 16px;
 }
@@ -365,3 +368,26 @@ label:focus {
     background-color: #f53c3c;
 }
 
+
+#custom-browser, 
+#custom-filemanager,
+#network,
+#pulseaudio,
+#battery,
+#backlight,
+#custom-appmenu,
+#clock,
+#custom-updates,
+#idle_inhibitor,
+#network,
+#backlight,
+#custom-updates,
+#idle_inhibitor {
+    
+    margin-right: 4px;
+    margin-left: 4px;
+}
+#idle_inhibitor {
+    margin-left: 10px;
+    margin-right: 0px;
+}

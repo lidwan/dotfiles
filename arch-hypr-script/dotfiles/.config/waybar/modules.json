@@ -32,9 +32,11 @@
             "(.*) - Chromium": "$1",
             "(.*) - Brave Search": "$1",
             "(.*) - Outlook": "$1",
-            "(.*) Microsoft Teams": "$1"
+            "(.*) Microsoft Teams": "$1",
+            "(.*) — Mozilla Firefox": "$1",
         },
-        "separate-outputs": true
+        "separate-outputs": true,
+        "max-length": 85,
         },
 
     // Rofi Application Launcher
@@ -86,13 +88,13 @@
     // CPU
     "cpu": {
         "format": " C {usage}% ",
-        "on-click": "alacritty -e htop"
+        "on-click": "alacritty -e btop"
     },
 
     // Memory
     "memory": {
-        "format": "/ M {}% ",
-        "on-click": "alacritty -e htop"
+        "format": "/ M {}% / ",
+        "on-click": "alacritty -e btop"
     },
 
     // Harddisc space used
@@ -100,32 +102,36 @@
         "interval": 30,
         "format": "D {percentage_used}% ",
         "path": "/",
-        "on-click": "alacritty -e htop"
+        "on-click": "alacritty -e btop"
     }, 
 
     "hyprland/language": {
-        "format": "/ {short}"
+        "format": " {short}"
     },
 
     // Group Hardware
     "group/hardware": {
         "orientation": "inherit",
-        // "drawer": {
-        //     "transition-duration": 300,
-        //     "children-class": "not-memory",
-        //     "transition-left-to-right": false
-        // },        
+        "drawer": {
+            "transition-duration": 300,
+            "children-class": "not-memory",
+            "transition-left-to-right": false
+        },        
         "modules": [
+            "hyprland/language",
             "cpu",
-            "memory",
-            "hyprland/language"
+            "memory"
         ]
     },
     "custom/updates":{
-        "format": "{} Update",
+        "format": "{} Update(s)",
+        "exec": "~/.config/hypr/Scripts/checkupdates.sh",
+        "interval": 3600,
         "tooltip": false,
-        "on-click": "alacritty -e ~/.config/hypr/Scripts/updates.sh"
-    },
+        "on-click": "alacritty -e ~/.config/hypr/Scripts/updates.sh",
+        "return-type": "json",
+        "on-empty": "hide" 
+   },
 
     // "network": {
     //     	"format-ethernet": "<span foreground='#7aa2f7' font='14.5' rise='-1000'> </span>{ipaddr}",
@@ -134,7 +140,7 @@
    // Network
     "network": {
         "format": "{ifname}",
-        "format-wifi": "   {essid}",
+        "format-wifi": "     {essid}",
         "format-ethernet": "  {ipaddr}",
         "format-disconnected": "Not connected", //An empty format will hide the module.
         "tooltip-format": " {ifname} via {gwaddri}",
@@ -206,7 +212,7 @@
 
 "backlight": {
         // "device": "acpi_video1",
-	"format": "{icon} {percent}%",
+	"format": "{icon}   {percent}%",
         "format-icons": ["", "", "", "", "", "", "", "", ""]
 	},
 
@@ -229,11 +235,9 @@
     // Idle Inhibator
     "idle_inhibitor": {
         "format": "{icon}",
-        "tooltip": true,
         "format-icons":{
-            "activated": "",
-            "deactivated": ""
-        },
-        "on-click-right": "hyprlock"        
-    }
+            "activated": "🍵",
+            "deactivated": "💤"
+        }
+    },
 }

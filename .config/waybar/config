@@ -15,6 +15,7 @@
         "~/.config/waybar/modules.json"
     ],    
     "modules-left": [
+        "idle_inhibitor",
         "hyprland/window"
     ],
     "modules-center": [
