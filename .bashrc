@@ -32,17 +32,26 @@ alias n="nano"
 
 #yay
 alias ys="yay -S"
+alias ysy="yay -Sy"
+alias ysyu="yay -Syu"
+alias yr="yay -R"
 
 #pacman
-alias ro='sudo pacman -Rns $(pacman -Qtdq)'
+alias ro='sudo pacman -Rns $(pacman -Qtdq)' #remove orphan packages.
+alias ps="sudo pacman -S"
+alias psy="sudo pacman -Sy"
+alias psyu="sudo pacman -Syu"
+alias pr="sudo pacman -R"
 
 #grup
-alias grubupdate='sudo grub-mkconfig -o /boot/grub/grub.cfg'
+alias grubupdate='sudo grub-mkconfig -o /boot/grub/grub.cfg' #updates grub
 
 #shutdown
 alias sdn="shutdown now"
 alias sd30="shutdown +30"
+alias sd45="shutdown +45"
 alias sd60="shutdown +60"
+alias sd90="shutdown +90"
 alias sdc="shutdown -c"
 alias sds="shutdown --show"
 
@@ -55,3 +64,4 @@ alias ll="ls --color=auto -hal --group-directories-first"
 #other
 alias mkfile='touch'
 alias ff="fastfetch"
+alias code="code ."
