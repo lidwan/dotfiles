@@ -66,6 +66,7 @@ cantarell-fonts
 capstone
 cdparanoia
 cdrtools
+chili-sddm-theme
 chromaprint
 cifs-utils
 cmake
@@ -121,6 +122,7 @@ exempi
 exiv2
 exo
 expat
+extra-cmake-modules
 faac
 faad2
 fakeroot
@@ -544,6 +546,7 @@ liblouis
 liblqr
 liblrdf
 libltc
+libluv
 liblzf
 libmad
 libmalcontent
@@ -658,6 +661,7 @@ libupnp
 liburing
 libusb
 libusbmuxd
+libutf8proc
 libuv
 libva
 libva-intel-driver
@@ -670,6 +674,7 @@ libvncserver
 libvorbis
 libvpl
 libvpx
+libvterm
 libwacom
 libwbclient
 libwebp
@@ -729,9 +734,9 @@ loupe
 lsb-release
 lsof
 lua
+lua51-lpeg
 luajit
 lv2
-ly
 lz4
 lzo
 m4
@@ -757,6 +762,7 @@ mod_dnssd
 mpdecimal
 mpfr
 mpg123
+msgpack-c
 msgraph
 mtdev
 mtools
@@ -770,6 +776,7 @@ nautilus-open-any-terminal
 ncurses
 ndctl
 neon
+neovim
 net-snmp
 nettle
 network-manager-applet
@@ -833,6 +840,8 @@ pkcs11-helper
 pkgconf
 playerctl
 polkit
+polkit-explorer-git
+polkit-gnome
 polkit-kde-agent
 polkit-qt6
 poppler
@@ -863,6 +872,7 @@ python-cryptography
 python-dbus
 python-defusedxml
 python-distlib
+python-docutils
 python-dulwich
 python-fastjsonschema
 python-filelock
@@ -880,6 +890,7 @@ python-jsonschema-specifications
 python-keyring
 python-lark-parser
 python-lockfile
+python-lxml
 python-mako
 python-markdown
 python-markupsafe
@@ -898,6 +909,8 @@ python-psutil
 python-ptyprocess
 python-pycparser
 python-pyproject-hooks
+python-pyqt5
+python-pyqt5-sip
 python-pyxdg
 python-rapidfuzz
 python-referencing
@@ -919,7 +932,6 @@ python-urllib3
 python-validate-pyproject
 python-virtualenv
 python-webencodings
-python-wheel
 python-yaml
 qbittorrent
 qca-qt6
@@ -965,6 +977,8 @@ qqc2-desktop-style
 qrencode
 qt5-base
 qt5-declarative
+qt5-graphicaleffects
+qt5-quickcontrols
 qt5-svg
 qt5-tools
 qt5-translations
@@ -980,6 +994,7 @@ qt6-positioning
 qt6-shadertools
 qt6-speech
 qt6-svg
+qt6-tools
 qt6-translations
 qt6-wayland
 qt6-webchannel
@@ -1001,6 +1016,8 @@ rygel
 sane
 sbc
 sdbus-cpp
+sddm-git
+sddm-git-debug
 sdl12-compat
 sdl2
 sdl2_image
@@ -1049,6 +1066,7 @@ suitesparse
 sushi
 svt-av1
 svt-hevc
+swtpm
 syndication
 systemd
 systemd-libs
@@ -1072,6 +1090,13 @@ totem-pl-parser
 tpm2-tss
 tracker3
 tracker3-miners
+tree-sitter
+tree-sitter-c
+tree-sitter-lua
+tree-sitter-markdown
+tree-sitter-query
+tree-sitter-vim
+tree-sitter-vimdoc
 tslib
 ttf-carlito
 ttf-dejavu
@@ -1085,6 +1110,7 @@ tzdata
 uchardet
 udisks2
 ufw
+unibilium
 unzip
 upower
 usbmuxd
