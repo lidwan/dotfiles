@@ -5,7 +5,7 @@
     "theme": {
         "mode": 1,
         "brightness": 100,
-        "contrast": 100,
+        "contrast": 120,
         "grayscale": 0,
         "sepia": 0,
         "useFont": false,
@@ -79,6 +79,141 @@
                 "darkColorScheme": "Default",
                 "immediateModify": false
             }
+        },
+        {
+            "url": [
+                "justedujo-my.sharepoint.com"
+            ],
+            "theme": {
+                "mode": 1,
+                "brightness": 105,
+                "contrast": 110,
+                "grayscale": 0,
+                "sepia": 0,
+                "useFont": false,
+                "fontFamily": "Segoe UI",
+                "textStroke": 0,
+                "engine": "dynamicTheme",
+                "stylesheet": "",
+                "darkSchemeBackgroundColor": "#181a1b",
+                "darkSchemeTextColor": "#e8e6e3",
+                "lightSchemeBackgroundColor": "#dcdad7",
+                "lightSchemeTextColor": "#181a1b",
+                "scrollbarColor": "auto",
+                "selectionColor": "auto",
+                "styleSystemControls": false,
+                "lightColorScheme": "Default",
+                "darkColorScheme": "Default",
+                "immediateModify": false
+            }
+        },
+        {
+            "url": [
+                "drive.google.com"
+            ],
+            "theme": {
+                "mode": 1,
+                "brightness": 100,
+                "contrast": 65,
+                "grayscale": 0,
+                "sepia": 0,
+                "useFont": false,
+                "fontFamily": "Segoe UI",
+                "textStroke": 0,
+                "engine": "dynamicTheme",
+                "stylesheet": "",
+                "darkSchemeBackgroundColor": "#181a1b",
+                "darkSchemeTextColor": "#e8e6e3",
+                "lightSchemeBackgroundColor": "#dcdad7",
+                "lightSchemeTextColor": "#181a1b",
+                "scrollbarColor": "auto",
+                "selectionColor": "auto",
+                "styleSystemControls": false,
+                "lightColorScheme": "Default",
+                "darkColorScheme": "Default",
+                "immediateModify": false
+            }
+        },
+        {
+            "url": [
+                "services.just.edu.jo"
+            ],
+            "theme": {
+                "mode": 1,
+                "brightness": 100,
+                "contrast": 125,
+                "grayscale": 0,
+                "sepia": 0,
+                "useFont": false,
+                "fontFamily": "Segoe UI",
+                "textStroke": 0,
+                "engine": "dynamicTheme",
+                "stylesheet": "",
+                "darkSchemeBackgroundColor": "#181a1b",
+                "darkSchemeTextColor": "#e8e6e3",
+                "lightSchemeBackgroundColor": "#dcdad7",
+                "lightSchemeTextColor": "#181a1b",
+                "scrollbarColor": "auto",
+                "selectionColor": "auto",
+                "styleSystemControls": false,
+                "lightColorScheme": "Default",
+                "darkColorScheme": "Default",
+                "immediateModify": false
+            }
+        },
+        {
+            "url": [
+                "eservices.ssc.gov.jo"
+            ],
+            "theme": {
+                "mode": 1,
+                "brightness": 100,
+                "contrast": 120,
+                "grayscale": 0,
+                "sepia": 0,
+                "useFont": false,
+                "fontFamily": "Segoe UI",
+                "textStroke": 0,
+                "engine": "dynamicTheme",
+                "stylesheet": "",
+                "darkSchemeBackgroundColor": "#181a1b",
+                "darkSchemeTextColor": "#e8e6e3",
+                "lightSchemeBackgroundColor": "#dcdad7",
+                "lightSchemeTextColor": "#181a1b",
+                "scrollbarColor": "auto",
+                "selectionColor": "auto",
+                "styleSystemControls": false,
+                "lightColorScheme": "Default",
+                "darkColorScheme": "Default",
+                "immediateModify": false
+            }
+        },
+        {
+            "url": [
+                "docs.google.com"
+            ],
+            "theme": {
+                "mode": 1,
+                "brightness": 100,
+                "contrast": 120,
+                "grayscale": 0,
+                "sepia": 0,
+                "useFont": false,
+                "fontFamily": "Segoe UI",
+                "textStroke": 0,
+                "engine": "dynamicTheme",
+                "stylesheet": "",
+                "darkSchemeBackgroundColor": "#181a1b",
+                "darkSchemeTextColor": "#e8e6e3",
+                "lightSchemeBackgroundColor": "#dcdad7",
+                "lightSchemeTextColor": "#181a1b",
+                "scrollbarColor": "auto",
+                "selectionColor": "auto",
+                "styleSystemControls": false,
+                "lightColorScheme": "Default",
+                "darkColorScheme": "Default",
+                "immediateModify": false
+            }
         }
     ],
     "enabledByDefault": true,
@@ -91,8 +226,28 @@
         "www.youtube.com",
         "www.google.com",
         "github.com",
-        "mullvad.net",
-        "www.quora.com"
+        "www.quora.com",
+        "2fas.com",
+        "duckduckgo.com",
+        "leta.mullvad.net",
+        "protonvpn.com",
+        "web.facebook.com",
+        "bitwarden.com",
+        "vault.bitwarden.com",
+        "www.theodinproject.com",
+        "developer.mozilla.org",
+        "127.0.0.1:5500",
+        "css-tricks.com",
+        "www.tiktok.com",
+        "zoroxtv.to",
+        "lidwan.github.io",
+        "www.canva.com",
+        "studio.youtube.com",
+        "auth.ente.io",
+        "drive.google.com",
+        "www.icloud.com",
+        "outlook.office.com",
+        "claude.ai"
     ],
     "changeBrowserTheme": false,
     "syncSettings": true,
@@ -111,7 +266,8 @@
         "longitude": null
     },
     "previewNewDesign": false,
-    "enableForPDF": true,
+    "previewNewestDesign": false,
+    "enableForPDF": false,
     "enableForProtectedPages": false,
     "enableContextMenus": false,
     "detectDarkTheme": false,
