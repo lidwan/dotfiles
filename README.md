@@ -23,13 +23,10 @@
 ## DONE!
 # Auto Install Script:
 # arch-hypr-script
-# A script to get my arch linux hyprland setup up and running quickly, more detailed (including grub theme, firefox extention config, fixing dual booting and much more) i>
-## this is NOT for public use! might break your system, this is me just bein
-## update archinstall after running -Sy then install base using archinstall
-## choose gnome and hyprland w/ gdm
-## add firefox git curl wget to the installtion
-## clone the repo and make ./install.sh ex and run it
+# A script to get my arch linux hyprland setup up and running quickly 
+## (including grub theme, firefox extention configs) TB done manualy upon completion.
 ## the script  will install yay then install all the pkgs in pkg.txt then backup .config and cp config files and cp .bashrc too
 ## pkg list & config files to be updated often - run "yay -Qq > pkgs.txt"
 ## manu sudo cp systemd files for update timer and stuff to work
+## grub theme, firefox extention configs TB done manualy upon completion.
 # I USE ARCH BTW ;)
