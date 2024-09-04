@@ -22,7 +22,7 @@
 ## install ly as your dm becuase y not :), run "yay -S ly, sudo systemctl disable gdm (or insert curr dm name here), sudo systemctl enable ly" then reboot.
 ## DONE!
 # Auto Install Script:
-# arch-hypr-script
+# arch-hypr-script:
 # A script to get my arch linux hyprland setup up and running quickly 
 ## (including grub theme, firefox extention configs) TB done manualy upon completion.
 ## the script  will install yay then install all the pkgs in pkg.txt then backup .config and cp config files and cp .bashrc too
