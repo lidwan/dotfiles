@@ -33,7 +33,7 @@
             "(.*) - Brave Search": "$1",
             "(.*) - Outlook": "$1",
             "(.*) Microsoft Teams": "$1",
-            "(.*) — Mozilla Firefox": "$1",
+            "(.*) — Mozilla Firefox": "Mozilla Firefox",
         },
         "separate-outputs": true,
         "max-length": 85,
@@ -140,7 +140,7 @@
    // Network
     "network": {
         "format": "{ifname}",
-        "format-wifi": "     {essid}",
+        "format-wifi": " ",
         "format-ethernet": "  {ipaddr}",
         "format-disconnected": "Not connected", //An empty format will hide the module.
         "tooltip-format": " {ifname} via {gwaddri}",
@@ -156,14 +156,14 @@
         "states": {
             // "good": 95,
             "warning": 30,
-            "critical": 15
+            "critical": 10
         },
         "format": "{icon}   {capacity}%",
         "format-charging": "  {capacity}%",
         "format-plugged": "  {capacity}%",
         "format-alt": "{icon}  {time}",
         // "format-good": "", // An empty format will hide the module
-        "format-full": "YO! UNPLUG ME",
+        "format-full": "FULL!",
         "format-icons": [" ", " ", " ", " ", " "]
     },
 
@@ -193,7 +193,7 @@
         "format": "{volume}% {icon}  {format_source}",
         "format-bluetooth": "{volume}%   {icon}  {format_source}  ",
         "format-bluetooth-muted": "  {icon}  {format_source}  ",
-        "format-muted": "{icon}   {format_source}",
+        "format-muted": "󰝟  {format_source}",
         "format-source": "   {volume}% ",
         "format-source-muted": " ",
         "format-icons": {
@@ -240,4 +240,8 @@
             "deactivated": "💤"
         }
     },
+    "custom/logo": {
+    "format": "",
+    "tooltip": false,
+  },
 }
