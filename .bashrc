@@ -34,7 +34,12 @@ alias n="nano"
 alias ys="yay -S"
 alias ysy="yay -Sy"
 alias ysyu="yay -Syu"
+
 alias yr="yay -R"
+
+alias yq="yay -Q"
+alias yqu="yay -Qu"
+alias yqm="yay -Qm"
 
 #pacman
 alias ro='sudo pacman -Rns $(pacman -Qtdq)' #remove orphan packages.
@@ -55,6 +60,11 @@ alias sd90="shutdown +90"
 alias sdc="shutdown -c"
 alias sds="shutdown --show"
 
+#suspend
+alias susn="systemctl suspend"
+alias sus30="sleep 1800 && systemctl suspend"
+alias sus45="sleep 2700 && systemctl suspend"
+alias sus60="sleep 3600 && systemctl suspend"
 #ls
 alias l="ls --color=auto -h --group-directories-first"
 alias ls="ls --color=auto -h --group-directories-first"
@@ -65,3 +75,7 @@ alias ll="ls --color=auto -hal --group-directories-first"
 alias mkfile='touch'
 alias ff="fastfetch"
 alias code="code ."
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
