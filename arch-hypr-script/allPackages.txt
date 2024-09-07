@@ -69,7 +69,6 @@ cdrtools
 chili-sddm-theme
 chromaprint
 cifs-utils
-cmake
 code
 colord
 colord-gtk-common
@@ -78,7 +77,6 @@ colord-sane
 composefs
 convertlit
 coreutils
-cppdap
 cracklib
 cronie
 cryptsetup
@@ -98,8 +96,8 @@ default-cursors
 desktop-file-utils
 device-mapper
 diffutils
-discord
 djvulibre
+dosfstools
 dotconf
 double-conversion
 dtc
@@ -122,7 +120,6 @@ exempi
 exiv2
 exo
 expat
-extra-cmake-modules
 faac
 faad2
 fakeroot
@@ -224,6 +221,7 @@ gnutls
 gobject-introspection
 gobject-introspection-runtime
 gom
+google-chrome
 gparted
 gperftools
 gpgme
@@ -343,6 +341,9 @@ kcoreaddons
 kcrash
 kdbusaddons
 kdenlive
+kdnssd
+kdsoap-qt6
+kdsoap-ws-discovery-client
 keyutils
 kfilemetadata
 kglobalaccel
@@ -350,6 +351,7 @@ kguiaddons
 ki18n
 kiconthemes
 kio
+kio-extras
 kirigami
 kitemviews
 kjobwidgets
@@ -537,6 +539,7 @@ libisl
 libjpeg-turbo
 libjuice
 libjxl
+libkexiv2
 libksba
 liblc3
 libldac
@@ -767,6 +770,7 @@ msgraph
 mtdev
 mtools
 mullvad-vpn-bin
+mullvad-vpn-bin-debug
 mutter
 mypaint-brushes1
 nano
@@ -829,6 +833,8 @@ perl-error
 perl-mailtools
 perl-timedate
 phodav
+phonon-qt6
+phonon-qt6-vlc
 pinentry
 pipewire
 pipewire-alsa
@@ -838,6 +844,7 @@ pipewire-pulse
 pixman
 pkcs11-helper
 pkgconf
+plasma-activities
 playerctl
 polkit
 polkit-explorer-git
@@ -872,7 +879,6 @@ python-cryptography
 python-dbus
 python-defusedxml
 python-distlib
-python-docutils
 python-dulwich
 python-fastjsonschema
 python-filelock
@@ -1003,7 +1009,6 @@ raptor
 rav1e
 readline
 reflector
-rhash
 ripgrep
 rnnoise
 rofi-wayland
@@ -1017,7 +1022,6 @@ sane
 sbc
 sdbus-cpp
 sddm-git
-sddm-git-debug
 sdl12-compat
 sdl2
 sdl2_image
@@ -1068,6 +1072,7 @@ svt-av1
 svt-hevc
 swtpm
 syndication
+syntax-highlighting
 systemd
 systemd-libs
 systemd-sysvcompat
@@ -1122,6 +1127,8 @@ util-linux-libs
 v4l-utils
 vapoursynth
 vde2
+ventoy-bin
+ventoy-bin-debug
 veracrypt
 vid.stab
 vim
