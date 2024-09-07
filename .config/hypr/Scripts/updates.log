@@ -2895,3 +2895,1023 @@ real	0m27.749s
 user	0m1.807s
 sys	0m0.198s
 Script completed at Mon Sep  2 09:26:32 AM +03 2024
+Script started at Mon Sep  2 09:35:39 PM +03 2024
+Mounted '/dev/dm-1 (nvme0n1p3)' at '/run/timeshift/95902/backup'
+------------------------------------------------------------------------------
+Creating new snapshot...(RSYNC)
+Saving to device: /dev/dm-1, mounted at path: /run/timeshift/95902/backup
+Linking from snapshot: 2024-09-02_09-25-24
+Syncing files with rsync...
+  5.09% complete (00:00:19 remaining) 10.39% complete (00:00:09 remaining) 17.12% complete (00:00:10 remaining) 22.65% complete (00:00:10 remaining) 29.02% complete (00:00:09 remaining) 35.01% complete (00:00:09 remaining) 41.09% complete (00:00:08 remaining) 46.92% complete (00:00:07 remaining) 49.77% complete (00:00:08 remaining) 55.48% complete (00:00:07 remaining) 62.09% complete (00:00:06 remaining) 69.28% complete (00:00:04 remaining) 73.99% complete (00:00:04 remaining) 80.37% complete (00:00:03 remaining) 88.13% complete (00:00:01 remaining) 94.34% complete (00:00:00 remaining)103.51% complete (00:00:00 remaining)110.96% complete (00:00:00 remaining)118.54% complete (00:00:00 remaining)125.47% complete (00:00:00 remaining)133.49% complete (00:00:00 remaining)141.63% complete (00:00:00 remaining)150.12% complete (00:00:00 remaining)157.99% complete (00:00:00 remaining)166.87% complete (00:00:00 remaining)175.94% complete (00:00:00 remaining)181.15% complete (00:00:00 remaining)193.52% complete (00:00:00 remaining)201.49% complete (00:00:00 remaining)208.12% complete (00:00:00 remaining)212.20% complete (00:00:00 remaining)212.24% complete (00:00:00 remaining)                                                                                Created control file: /run/timeshift/95902/backup/timeshift/snapshots/2024-09-02_21-35-47/info.json
+RSYNC Snapshot saved successfully (32s)
+Tagged snapshot '2024-09-02_21-35-47': ondemand
+------------------------------------------------------------------------------
+
+real	0m38.875s
+user	0m0.067s
+sys	0m0.028s
+:: Synchronizing package databases...
+ core downloading...
+ extra downloading...
+ multilib downloading...
+:: [1mSearching AUR for updates...[0m
+:: [1mChecking development packages...[0m
+:: [1mSearching databases for updates...[0m
+:: 9 packages to upgrade/install.
+9  core/coreutils              9.5-1      -> 9.5-2
+8  core/libisl                 0.26-2     -> 0.27-1
+7  core/libpcap                1.10.4-2   -> 1.10.5-2
+6  extra/boost-libs            1.83.0-9   -> 1.86.0-1
+5  extra/imagemagick           7.1.1.37-1 -> 7.1.1.38-1
+4  extra/imath                 3.1.11-2   -> 3.1.11-3
+3  extra/iwd                   2.20-1     -> 2.20-2
+2  extra/libtorrent-rasterbar  1:2.0.10-2 -> 1:2.0.10-3
+1  extra/sdl2                  2.30.6-1   -> 2.30.7-1
+==> Packages to exclude: (eg: "1 2 3", "1-3", "^4" or repo name)
+ -> Excluding packages may cause partial upgrades and break systems
+==> Sync Explicit (1): iwd-2.20-2
+Sync Dependency (8): libtorrent-rasterbar-1:2.0.10-3, libisl-0.27-1, imagemagick-7.1.1.38-1, imath-3.1.11-3, libpcap-1.10.5-2, sdl2-2.30.7-1, coreutils-9.5-2, boost-libs-1.86.0-1
+:: Synchronizing package databases...
+ core downloading...
+ extra downloading...
+ multilib downloading...
+:: Starting full system upgrade...
+resolving dependencies...
+looking for conflicting packages...
+
+Packages (9) boost-libs-1.86.0-1  coreutils-9.5-2  imagemagick-7.1.1.38-1  imath-3.1.11-3  iwd-2.20-2  libisl-0.27-1  libpcap-1.10.5-2  libtorrent-rasterbar-1:2.0.10-3  sdl2-2.30.7-1
+
+Total Download Size:   22.68 MiB
+Total Installed Size:  96.23 MiB
+Net Upgrade Size:       1.07 MiB
+
+:: Proceed with installation? [Y/n] :: Retrieving packages...
+ imagemagick-7.1.1.38-1-x86_64 downloading...
+ imath-3.1.11-3-x86_64 downloading...
+ coreutils-9.5-2-x86_64 downloading...
+ libtorrent-rasterbar-1:2.0.10-3-x86_64 downloading...
+ boost-libs-1.86.0-1-x86_64 downloading...
+ sdl2-2.30.7-1-x86_64 downloading...
+ libisl-0.27-1-x86_64 downloading...
+ iwd-2.20-2-x86_64 downloading...
+ libpcap-1.10.5-2-x86_64 downloading...
+checking keyring...
+checking package integrity...
+loading package files...
+checking for file conflicts...
+checking available disk space...
+:: Processing package changes...
+upgrading boost-libs...
+upgrading coreutils...
+upgrading imagemagick...
+upgrading imath...
+upgrading iwd...
+upgrading libisl...
+upgrading libpcap...
+upgrading libtorrent-rasterbar...
+upgrading sdl2...
+:: Running post-transaction hooks...
+(1/5) Reloading system manager configuration...
+(2/5) Arming ConditionNeedsUpdate...
+(3/5) Reloading system bus configuration...
+(4/5) Warn about old perl modules
+(5/5) Updating the info directory file...
+
+real	3m15.942s
+user	0m2.052s
+sys	0m0.204s
+Script completed at Mon Sep  2 09:39:35 PM +03 2024
+Script started at Tue Sep  3 07:05:25 PM +03 2024
+Mounted '/dev/dm-1 (nvme0n1p3)' at '/run/timeshift/3287/backup'
+------------------------------------------------------------------------------
+Creating new snapshot...(RSYNC)
+Saving to device: /dev/dm-1, mounted at path: /run/timeshift/3287/backup
+Linking from snapshot: 2024-09-02_21-35-47
+Syncing files with rsync...
+  4.26% complete (00:00:23 remaining)  8.22% complete (00:00:11 remaining) 13.33% complete (00:00:13 remaining) 18.66% complete (00:00:13 remaining) 22.67% complete (00:00:13 remaining) 27.11% complete (00:00:13 remaining) 32.04% complete (00:00:12 remaining) 36.02% complete (00:00:12 remaining) 40.82% complete (00:00:11 remaining) 42.25% complete (00:00:12 remaining) 42.25% complete (00:00:13 remaining) 42.25% complete (00:00:15 remaining) 42.25% complete (00:00:16 remaining) 42.25% complete (00:00:17 remaining) 42.25% complete (00:00:19 remaining) 42.25% complete (00:00:20 remaining) 42.25% complete (00:00:21 remaining) 42.25% complete (00:00:23 remaining) 42.25% complete (00:00:24 remaining) 42.25% complete (00:00:26 remaining) 42.25% complete (00:00:27 remaining) 42.25% complete (00:00:28 remaining) 42.25% complete (00:00:30 remaining) 42.25% complete (00:00:31 remaining) 42.25% complete (00:00:32 remaining) 42.25% complete (00:00:34 remaining) 42.25% complete (00:00:35 remaining) 42.25% complete (00:00:36 remaining) 42.25% complete (00:00:38 remaining) 42.25% complete (00:00:39 remaining) 42.25% complete (00:00:41 remaining) 42.25% complete (00:00:42 remaining) 42.25% complete (00:00:43 remaining) 42.25% complete (00:00:45 remaining) 42.25% complete (00:00:46 remaining) 42.25% complete (00:00:47 remaining) 42.25% complete (00:00:49 remaining) 42.25% complete (00:00:50 remaining) 42.25% complete (00:00:52 remaining) 42.25% complete (00:00:53 remaining) 42.25% complete (00:00:54 remaining) 42.25% complete (00:00:56 remaining) 42.25% complete (00:00:57 remaining) 42.25% complete (00:00:58 remaining) 43.00% complete (00:00:58 remaining) 46.60% complete (00:00:51 remaining) 49.01% complete (00:00:47 remaining) 52.48% complete (00:00:42 remaining) 56.50% complete (00:00:37 remaining) 61.56% complete (00:00:30 remaining) 67.05% complete (00:00:24 remaining) 71.69% complete (00:00:20 remaining) 76.02% complete (00:00:16 remaining) 81.42% complete (00:00:12 remaining) 88.01% complete (00:00:07 remaining) 94.02% complete (00:00:03 remaining) 97.91% complete (00:00:01 remaining)103.86% complete (00:00:00 remaining)107.84% complete (00:00:00 remaining)113.85% complete (00:00:00 remaining)120.47% complete (00:00:00 remaining)126.00% complete (00:00:00 remaining)131.45% complete (00:00:00 remaining)136.92% complete (00:00:00 remaining)143.37% complete (00:00:00 remaining)149.96% complete (00:00:00 remaining)156.00% complete (00:00:00 remaining)162.46% complete (00:00:00 remaining)169.09% complete (00:00:00 remaining)173.41% complete (00:00:00 remaining)177.94% complete (00:00:00 remaining)181.38% complete (00:00:00 remaining)192.05% complete (00:00:00 remaining)198.33% complete (00:00:00 remaining)204.10% complete (00:00:00 remaining)209.83% complete (00:00:00 remaining)212.43% complete (00:00:00 remaining)212.47% complete (00:00:00 remaining)                                                                                Created control file: /run/timeshift/3287/backup/timeshift/snapshots/2024-09-03_19-05-34/info.json
+RSYNC Snapshot saved successfully (78s)
+Tagged snapshot '2024-09-03_19-05-34': ondemand
+------------------------------------------------------------------------------
+
+real	1m25.736s
+user	0m0.082s
+sys	0m0.026s
+:: Synchronizing package databases...
+ core downloading...
+ extra downloading...
+ multilib downloading...
+:: [1mSearching AUR for updates...[0m
+:: [1mChecking development packages...[0m
+:: [1mSearching databases for updates...[0m
+:: 6 packages to upgrade/install.
+6  extra/aquamarine          0.3.3-1  -> 0.4.0-1
+5  extra/fastfetch           2.22.0-1 -> 2.23.0-1
+4  extra/gnome-disk-utility  46.0-1   -> 46.1-1
+3  extra/hyprland            0.42.0-1 -> 0.42.0-2
+2  extra/libevdev            1.13.2-1 -> 1.13.3-1
+1  extra/liblouis            3.30.0-1 -> 3.31.0-1
+==> Packages to exclude: (eg: "1 2 3", "1-3", "^4" or repo name)
+ -> Excluding packages may cause partial upgrades and break systems
+==> Sync Explicit (3): fastfetch-2.23.0-1, gnome-disk-utility-46.1-1, hyprland-0.42.0-2
+Sync Dependency (3): libevdev-1.13.3-1, liblouis-3.31.0-1, aquamarine-0.4.0-1
+:: Synchronizing package databases...
+ core downloading...
+ extra downloading...
+ multilib downloading...
+:: Starting full system upgrade...
+resolving dependencies...
+looking for conflicting packages...
+
+Packages (6) aquamarine-0.4.0-1  fastfetch-2.23.0-1  gnome-disk-utility-46.1-1  hyprland-0.42.0-2  libevdev-1.13.3-1  liblouis-3.31.0-1
+
+Total Download Size:   51.04 MiB
+Total Installed Size:  78.16 MiB
+Net Upgrade Size:       0.20 MiB
+
+:: Proceed with installation? [Y/n] :: Retrieving packages...
+ hyprland-0.42.0-2-x86_64 downloading...
+ liblouis-3.31.0-1-x86_64 downloading...
+ gnome-disk-utility-46.1-1-x86_64 downloading...
+ fastfetch-2.23.0-1-x86_64 downloading...
+ aquamarine-0.4.0-1-x86_64 downloading...
+ libevdev-1.13.3-1-x86_64 downloading...
+checking keyring...
+checking package integrity...
+loading package files...
+checking for file conflicts...
+checking available disk space...
+:: Processing package changes...
+upgrading libevdev...
+upgrading aquamarine...
+upgrading fastfetch...
+upgrading gnome-disk-utility...
+upgrading hyprland...
+upgrading liblouis...
+:: Running post-transaction hooks...
+(1/5) Arming ConditionNeedsUpdate...
+(2/5) Compiling GSettings XML schema files...
+(3/5) Updating icon theme caches...
+(4/5) Updating the info directory file...
+(5/5) Updating the desktop file MIME type cache...
+
+real	0m27.464s
+user	0m2.684s
+sys	0m0.236s
+Script completed at Tue Sep  3 07:07:19 PM +03 2024
+Script started at Tue Sep  3 09:00:15 PM +03 2024
+Mounted '/dev/dm-1 (nvme0n1p3)' at '/run/timeshift/14763/backup'
+------------------------------------------------------------------------------
+Creating new snapshot...(RSYNC)
+Saving to device: /dev/dm-1, mounted at path: /run/timeshift/14763/backup
+Linking from snapshot: 2024-09-03_19-05-34
+Syncing files with rsync...
+  5.63% complete (00:00:17 remaining) 10.87% complete (00:00:08 remaining) 17.66% complete (00:00:09 remaining) 22.71% complete (00:00:10 remaining) 28.56% complete (00:00:10 remaining) 34.08% complete (00:00:09 remaining) 40.09% complete (00:00:09 remaining) 47.24% complete (00:00:07 remaining) 53.09% complete (00:00:07 remaining) 60.25% complete (00:00:05 remaining) 70.01% complete (00:00:04 remaining) 76.24% complete (00:00:03 remaining) 84.54% complete (00:00:02 remaining) 92.02% complete (00:00:01 remaining)102.23% complete (00:00:00 remaining)108.00% complete (00:00:00 remaining)118.30% complete (00:00:00 remaining)128.66% complete (00:00:00 remaining)141.53% complete (00:00:00 remaining)150.58% complete (00:00:00 remaining)158.83% complete (00:00:00 remaining)168.49% complete (00:00:00 remaining)179.86% complete (00:00:00 remaining)190.01% complete (00:00:00 remaining)202.73% complete (00:00:00 remaining)211.79% complete (00:00:00 remaining)212.47% complete (00:00:00 remaining)                                                                                Created control file: /run/timeshift/14763/backup/timeshift/snapshots/2024-09-03_21-00-22/info.json
+RSYNC Snapshot saved successfully (27s)
+Tagged snapshot '2024-09-03_21-00-22': ondemand
+------------------------------------------------------------------------------
+
+real	0m32.454s
+user	0m0.072s
+sys	0m0.040s
+:: Synchronizing package databases...
+ core downloading...
+ extra downloading...
+ multilib downloading...
+:: [1mSearching AUR for updates...[0m
+:: [1mChecking development packages...[0m
+:: [1mSearching databases for updates...[0m
+:: 2 packages to upgrade/install.
+2  extra/firefox        129.0.2-1 -> 130.0-1
+1  aur/mullvad-vpn-bin  2024.4-1  -> 2024.5-1
+==> Packages to exclude: (eg: "1 2 3", "1-3", "^4" or repo name)
+ -> Excluding packages may cause partial upgrades and break systems
+==> AUR Explicit (1): mullvad-vpn-bin-2024.5-1
+Sync Explicit (1): firefox-130.0-1
+:: [1m(1/1) Downloaded PKGBUILD: mullvad-vpn-bin[0m
+  1 mullvad-vpn-bin                          (Installed) (Build Files Exist)
+==> Packages to cleanBuild?
+==> [N]one [A]ll [Ab]ort [I]nstalled [No]tInstalled or (1 2 3, 1-3, ^4)
+==>   1 mullvad-vpn-bin                          (Installed) (Build Files Exist)
+==> Diffs to show?
+==> [N]one [A]ll [Ab]ort [I]nstalled [No]tInstalled or (1 2 3, 1-3, ^4)
+==> ==> Making package: mullvad-vpn-bin 2024.5-1 (Tue 03 Sep 2024 09:01:10 PM +03)
+==> Retrieving sources...
+  -> Found mullvad-vpn.sh
+  -> Downloading MullvadVPN-2024.5_amd64.deb...
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0
+  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0  0 88.1M    0 39649    0     0  16596      0  1:32:47  0:00:02  1:32:45 43003  0 88.1M    0  304k    0     0  90658      0  0:16:59  0:00:03  0:16:56  154k  1 88.1M    1 1039k    0     0   238k      0  0:06:17  0:00:04  0:06:13  360k  2 88.1M    2 2476k    0     0   458k      0  0:03:16  0:00:05  0:03:11  629k  4 88.1M    4 4380k    0     0   679k      0  0:02:12  0:00:06  0:02:06  879k  7 88.1M    7 6924k    0     0   943k      0  0:01:35  0:00:07  0:01:28 1390k 22 88.1M   22 20.0M    0     0  2438k      0  0:00:37  0:00:08  0:00:29 4051k 38 88.1M   38 34.2M    0     0  3759k      0  0:00:24  0:00:09  0:00:15 6829k 57 88.1M   57 50.5M    0     0  4868k      0  0:00:18  0:00:10  0:00:08 9418k 61 88.1M   61 53.9M    0     0  4868k      0  0:00:18  0:00:11  0:00:07 10.1M 72 88.1M   72 64.0M    0     0  5268k      0  0:00:17  0:00:12  0:00:05 11.2M 77 88.1M   77 68.5M    0     0  5262k      0  0:00:17  0:00:13  0:00:04  9.8M 80 88.1M   80 71.0M    0     0  5073k      0  0:00:17  0:00:14  0:00:03 7529k 82 88.1M   82 73.0M    0     0  4878k      0  0:00:18  0:00:15  0:00:03 4902k 85 88.1M   85 75.2M    0     0  4717k      0  0:00:19  0:00:16  0:00:03 4375k 88 88.1M   88 77.7M    0     0  4592k      0  0:00:19  0:00:17  0:00:02 2868k 91 88.1M   91 80.6M    0     0  4503k      0  0:00:20  0:00:18  0:00:02 2480k 95 88.1M   95 83.9M    0     0  4443k      0  0:00:20  0:00:19  0:00:01 2636k 99 88.1M   99 87.5M    0     0  4409k      0  0:00:20  0:00:20 --:--:-- 2966k100 88.1M  100 88.1M    0     0  4406k      0  0:00:20  0:00:20 --:--:-- 3176k
+  -> Downloading MullvadVPN-2024.5_amd64.deb.asc...
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100   833  100   833    0     0    585      0  0:00:01  0:00:01 --:--:--   585100   833  100   833    0     0    585      0  0:00:01  0:00:01 --:--:--     0
+==> WARNING: Skipping verification of source file PGP signatures.
+==> Validating source files with sha256sums...
+    mullvad-vpn.sh ... Passed
+==> Validating source_x86_64 files with sha256sums...
+    MullvadVPN-2024.5_amd64.deb ... Passed
+    MullvadVPN-2024.5_amd64.deb.asc ... Skipped
+:: [1m(1/1) Parsing SRCINFO: mullvad-vpn-bin[0m
+pub   rsa4096 2016-10-27 [SC]
+      A1198702FC3E0A09A9AE5B75D5A1D4F266DE8DDF
+uid           [ unknown] Mullvad (code signing) <admin@mullvad.net>
+sub   rsa4096 2016-10-27 [S]
+sub   rsa4096 2016-10-27 [E]
+
+:: Synchronizing package databases...
+ core downloading...
+ extra downloading...
+ multilib downloading...
+:: Starting full system upgrade...
+resolving dependencies...
+looking for conflicting packages...
+
+Packages (1) firefox-130.0-1
+
+Total Download Size:    69.79 MiB
+Total Installed Size:  238.13 MiB
+Net Upgrade Size:        1.66 MiB
+
+:: Proceed with installation? [Y/n] :: Retrieving packages...
+ firefox-130.0-1-x86_64 downloading...
+checking keyring...
+checking package integrity...
+loading package files...
+checking for file conflicts...
+checking available disk space...
+:: Processing package changes...
+upgrading firefox...
+:: Running post-transaction hooks...
+(1/3) Arming ConditionNeedsUpdate...
+(2/3) Updating icon theme caches...
+(3/3) Updating the desktop file MIME type cache...
+==> Making package: mullvad-vpn-bin 2024.5-1 (Tue 03 Sep 2024 09:01:45 PM +03)
+==> Checking runtime dependencies...
+==> Checking buildtime dependencies...
+==> Retrieving sources...
+  -> Found mullvad-vpn.sh
+  -> Found MullvadVPN-2024.5_amd64.deb
+  -> Found MullvadVPN-2024.5_amd64.deb.asc
+==> Validating source files with sha256sums...
+    mullvad-vpn.sh ... Passed
+==> Validating source_x86_64 files with sha256sums...
+    MullvadVPN-2024.5_amd64.deb ... Passed
+    MullvadVPN-2024.5_amd64.deb.asc ... Skipped
+==> Verifying source file signatures with gpg...
+    MullvadVPN-2024.5_amd64.deb ... Passed
+==> Removing existing $srcdir/ directory...
+==> Extracting sources...
+  -> Extracting MullvadVPN-2024.5_amd64.deb with bsdtar
+==> Sources are ready.
+==> Making package: mullvad-vpn-bin 2024.5-1 (Tue 03 Sep 2024 09:01:52 PM +03)
+==> Checking runtime dependencies...
+==> Checking buildtime dependencies...
+==> WARNING: Using existing $srcdir/ tree
+==> Entering fakeroot environment...
+==> Starting package()...
+x ./
+x ./usr/
+x ./usr/lib/
+x ./usr/lib/systemd/
+x ./usr/lib/systemd/system/
+x ./usr/lib/systemd/system/mullvad-daemon.service
+x ./usr/lib/systemd/system/mullvad-early-boot-blocking.service
+x ./usr/bin/
+x ./usr/bin/mullvad
+x ./usr/bin/mullvad-daemon
+x ./usr/bin/mullvad-exclude
+x ./usr/bin/mullvad-problem-report
+x ./usr/share/
+x ./usr/share/bash-completion/
+x ./usr/share/bash-completion/completions/
+x ./usr/share/bash-completion/completions/mullvad
+x ./usr/share/fish/
+x ./usr/share/fish/vendor_completions.d/
+x ./usr/share/fish/vendor_completions.d/mullvad.fish
+x ./usr/share/icons/
+x ./usr/share/icons/hicolor/
+x ./usr/share/icons/hicolor/16x16/
+x ./usr/share/icons/hicolor/16x16/apps/
+x ./usr/share/icons/hicolor/16x16/apps/mullvad-vpn.png
+x ./usr/share/icons/hicolor/32x32/
+x ./usr/share/icons/hicolor/32x32/apps/
+x ./usr/share/icons/hicolor/32x32/apps/mullvad-vpn.png
+x ./usr/share/icons/hicolor/48x48/
+x ./usr/share/icons/hicolor/48x48/apps/
+x ./usr/share/icons/hicolor/48x48/apps/mullvad-vpn.png
+x ./usr/share/icons/hicolor/64x64/
+x ./usr/share/icons/hicolor/64x64/apps/
+x ./usr/share/icons/hicolor/64x64/apps/mullvad-vpn.png
+x ./usr/share/icons/hicolor/128x128/
+x ./usr/share/icons/hicolor/128x128/apps/
+x ./usr/share/icons/hicolor/128x128/apps/mullvad-vpn.png
+x ./usr/share/icons/hicolor/256x256/
+x ./usr/share/icons/hicolor/256x256/apps/
+x ./usr/share/icons/hicolor/256x256/apps/mullvad-vpn.png
+x ./usr/share/icons/hicolor/512x512/
+x ./usr/share/icons/hicolor/512x512/apps/
+x ./usr/share/icons/hicolor/512x512/apps/mullvad-vpn.png
+x ./usr/share/icons/hicolor/1024x1024/
+x ./usr/share/icons/hicolor/1024x1024/apps/
+x ./usr/share/icons/hicolor/1024x1024/apps/mullvad-vpn.png
+x ./usr/share/applications/
+x ./usr/share/applications/mullvad-vpn.desktop
+x ./usr/share/doc/
+x ./usr/share/doc/mullvad-vpn/
+x ./usr/share/doc/mullvad-vpn/changelog.gz
+x ./usr/local/
+x ./usr/local/share/
+x ./usr/local/share/zsh/
+x ./usr/local/share/zsh/site-functions/
+x ./usr/local/share/zsh/site-functions/_mullvad
+x ./opt/
+x ./opt/Mullvad VPN/
+x ./opt/Mullvad VPN/LICENSE.electron.txt
+x ./opt/Mullvad VPN/LICENSES.chromium.html
+x ./opt/Mullvad VPN/chrome-sandbox
+x ./opt/Mullvad VPN/chrome_100_percent.pak
+x ./opt/Mullvad VPN/chrome_200_percent.pak
+x ./opt/Mullvad VPN/chrome_crashpad_handler
+x ./opt/Mullvad VPN/icudtl.dat
+x ./opt/Mullvad VPN/libEGL.so
+x ./opt/Mullvad VPN/libGLESv2.so
+x ./opt/Mullvad VPN/libffmpeg.so
+x ./opt/Mullvad VPN/libvk_swiftshader.so
+x ./opt/Mullvad VPN/libvulkan.so.1
+x ./opt/Mullvad VPN/locales/
+x ./opt/Mullvad VPN/locales/af.pak
+x ./opt/Mullvad VPN/locales/am.pak
+x ./opt/Mullvad VPN/locales/ar.pak
+x ./opt/Mullvad VPN/locales/bg.pak
+x ./opt/Mullvad VPN/locales/bn.pak
+x ./opt/Mullvad VPN/locales/ca.pak
+x ./opt/Mullvad VPN/locales/cs.pak
+x ./opt/Mullvad VPN/locales/da.pak
+x ./opt/Mullvad VPN/locales/de.pak
+x ./opt/Mullvad VPN/locales/el.pak
+x ./opt/Mullvad VPN/locales/en-GB.pak
+x ./opt/Mullvad VPN/locales/en-US.pak
+x ./opt/Mullvad VPN/locales/es-419.pak
+x ./opt/Mullvad VPN/locales/es.pak
+x ./opt/Mullvad VPN/locales/et.pak
+x ./opt/Mullvad VPN/locales/fa.pak
+x ./opt/Mullvad VPN/locales/fi.pak
+x ./opt/Mullvad VPN/locales/fil.pak
+x ./opt/Mullvad VPN/locales/fr.pak
+x ./opt/Mullvad VPN/locales/gu.pak
+x ./opt/Mullvad VPN/locales/he.pak
+x ./opt/Mullvad VPN/locales/hi.pak
+x ./opt/Mullvad VPN/locales/hr.pak
+x ./opt/Mullvad VPN/locales/hu.pak
+x ./opt/Mullvad VPN/locales/id.pak
+x ./opt/Mullvad VPN/locales/it.pak
+x ./opt/Mullvad VPN/locales/ja.pak
+x ./opt/Mullvad VPN/locales/kn.pak
+x ./opt/Mullvad VPN/locales/ko.pak
+x ./opt/Mullvad VPN/locales/lt.pak
+x ./opt/Mullvad VPN/locales/lv.pak
+x ./opt/Mullvad VPN/locales/ml.pak
+x ./opt/Mullvad VPN/locales/mr.pak
+x ./opt/Mullvad VPN/locales/ms.pak
+x ./opt/Mullvad VPN/locales/nb.pak
+x ./opt/Mullvad VPN/locales/nl.pak
+x ./opt/Mullvad VPN/locales/pl.pak
+x ./opt/Mullvad VPN/locales/pt-BR.pak
+x ./opt/Mullvad VPN/locales/pt-PT.pak
+x ./opt/Mullvad VPN/locales/ro.pak
+x ./opt/Mullvad VPN/locales/ru.pak
+x ./opt/Mullvad VPN/locales/sk.pak
+x ./opt/Mullvad VPN/locales/sl.pak
+x ./opt/Mullvad VPN/locales/sr.pak
+x ./opt/Mullvad VPN/locales/sv.pak
+x ./opt/Mullvad VPN/locales/sw.pak
+x ./opt/Mullvad VPN/locales/ta.pak
+x ./opt/Mullvad VPN/locales/te.pak
+x ./opt/Mullvad VPN/locales/th.pak
+x ./opt/Mullvad VPN/locales/tr.pak
+x ./opt/Mullvad VPN/locales/uk.pak
+x ./opt/Mullvad VPN/locales/ur.pak
+x ./opt/Mullvad VPN/locales/vi.pak
+x ./opt/Mullvad VPN/locales/zh-CN.pak
+x ./opt/Mullvad VPN/locales/zh-TW.pak
+x ./opt/Mullvad VPN/mullvad-gui
+x ./opt/Mullvad VPN/mullvad-vpn
+x ./opt/Mullvad VPN/resources/
+x ./opt/Mullvad VPN/resources/CHANGELOG.md
+x ./opt/Mullvad VPN/resources/apisocks5
+x ./opt/Mullvad VPN/resources/app.asar
+x ./opt/Mullvad VPN/resources/apparmor_mullvad
+x ./opt/Mullvad VPN/resources/ca.crt
+x ./opt/Mullvad VPN/resources/libtalpid_openvpn_plugin.so
+x ./opt/Mullvad VPN/resources/maybenot_machines
+x ./opt/Mullvad VPN/resources/mullvad-problem-report
+x ./opt/Mullvad VPN/resources/mullvad-setup
+x ./opt/Mullvad VPN/resources/openvpn
+x ./opt/Mullvad VPN/resources/relays.json
+x ./opt/Mullvad VPN/resources.pak
+x ./opt/Mullvad VPN/snapshot_blob.bin
+x ./opt/Mullvad VPN/v8_context_snapshot.bin
+x ./opt/Mullvad VPN/vk_swiftshader_icd.json
+==> Tidying install...
+  -> Removing libtool files...
+  -> Purging unwanted files...
+  -> Removing static library files...
+  -> Stripping unneeded symbols from binaries and libraries...
+objcopy: ./opt/Mullvad VPN/chrome_crashpad_handler: debuglink section already exists
+objcopy: ./opt/Mullvad VPN/libEGL.so: debuglink section already exists
+objcopy: ./opt/Mullvad VPN/libGLESv2.so: debuglink section already exists
+objcopy: ./opt/Mullvad VPN/libffmpeg.so: debuglink section already exists
+objcopy: ./opt/Mullvad VPN/libvk_swiftshader.so: debuglink section already exists
+objcopy: ./opt/Mullvad VPN/mullvad-gui: debuglink section already exists
+libfakeroot internal error: payload not recognized!
+  -> Compressing man and info pages...
+==> Checking for packaging issues...
+libfakeroot internal error: payload not recognized!
+==> Creating package "mullvad-vpn-bin"...
+  -> Generating .PKGINFO file...
+  -> Generating .BUILDINFO file...
+  -> Adding install file...
+  -> Generating .MTREE file...
+  -> Compressing package...
+==> Creating package "mullvad-vpn-bin-debug"...
+  -> Generating .PKGINFO file...
+  -> Generating .BUILDINFO file...
+  -> Generating .MTREE file...
+  -> Compressing package...
+==> Leaving fakeroot environment.
+==> Finished making: mullvad-vpn-bin 2024.5-1 (Tue 03 Sep 2024 09:03:54 PM +03)
+==> Cleaning up...
+loading packages...
+resolving dependencies...
+looking for conflicting packages...
+
+Packages (2) mullvad-vpn-bin-2024.5-1  mullvad-vpn-bin-debug-2024.5-1
+
+Total Installed Size:  346.73 MiB
+Net Upgrade Size:        8.70 MiB
+
+:: Proceed with installation? [Y/n] checking keyring...
+checking package integrity...
+loading package files...
+checking for file conflicts...
+checking available disk space...
+:: Processing package changes...
+upgrading mullvad-vpn-bin...
+Stopping & disabling Mullvad VPN daemon...
+Removed '/etc/systemd/system/multi-user.target.wants/mullvad-daemon.service'.
+Disabling Mullvad early boot blocking service...
+Removed '/etc/systemd/system/mullvad-daemon.service.wants/mullvad-early-boot-blocking.service'.
+Starting & enabling Mullvad VPN daemon...
+Created symlink '/etc/systemd/system/multi-user.target.wants/mullvad-daemon.service' → '/usr/lib/systemd/system/mullvad-daemon.service'.
+Enabling Mullvad early boot blocking service...
+Created symlink '/etc/systemd/system/mullvad-daemon.service.wants/mullvad-early-boot-blocking.service' → '/usr/lib/systemd/system/mullvad-early-boot-blocking.service'.
+installing mullvad-vpn-bin-debug...
+:: Running post-transaction hooks...
+(1/4) Reloading system manager configuration...
+(2/4) Arming ConditionNeedsUpdate...
+(3/4) Updating icon theme caches...
+(4/4) Updating the desktop file MIME type cache...
+
+real	3m15.367s
+user	4m5.383s
+sys	0m16.272s
+Script completed at Tue Sep  3 09:04:04 PM +03 2024
+Script started at Wed Sep  4 09:51:21 PM +03 2024
+Mounted '/dev/dm-1 (nvme0n1p3)' at '/run/timeshift/123010/backup'
+------------------------------------------------------------------------------
+Creating new snapshot...(RSYNC)
+Saving to device: /dev/dm-1, mounted at path: /run/timeshift/123010/backup
+Linking from snapshot: 2024-09-03_21-00-22
+Syncing files with rsync...
+  4.37% complete (00:00:23 remaining)  8.13% complete (00:00:12 remaining) 12.86% complete (00:00:14 remaining) 18.51% complete (00:00:13 remaining) 22.38% complete (00:00:14 remaining) 27.59% complete (00:00:13 remaining) 32.51% complete (00:00:12 remaining) 36.73% complete (00:00:12 remaining) 42.25% complete (00:00:11 remaining) 46.02% complete (00:00:10 remaining) 49.25% complete (00:00:10 remaining) 51.63% complete (00:00:10 remaining) 54.67% complete (00:00:10 remaining) 58.98% complete (00:00:09 remaining) 63.04% complete (00:00:08 remaining) 68.93% complete (00:00:06 remaining) 72.78% complete (00:00:06 remaining) 75.22% complete (00:00:05 remaining) 75.25% complete (00:00:05 remaining) 77.87% complete (00:00:05 remaining) 83.96% complete (00:00:03 remaining) 91.05% complete (00:00:02 remaining) 95.67% complete (00:00:00 remaining)100.73% complete (00:00:00 remaining)102.82% complete (00:00:00 remaining)107.45% complete (00:00:00 remaining)113.19% complete (00:00:00 remaining)118.86% complete (00:00:00 remaining)124.92% complete (00:00:00 remaining)132.19% complete (00:00:00 remaining)138.94% complete (00:00:00 remaining)145.34% complete (00:00:00 remaining)152.27% complete (00:00:00 remaining)159.35% complete (00:00:00 remaining)166.72% complete (00:00:00 remaining)175.14% complete (00:00:00 remaining)180.99% complete (00:00:00 remaining)182.51% complete (00:00:00 remaining)197.79% complete (00:00:00 remaining)205.43% complete (00:00:00 remaining)212.26% complete (00:00:00 remaining)213.57% complete (00:00:00 remaining)213.61% complete (00:00:00 remaining)                                                                                Created control file: /run/timeshift/123010/backup/timeshift/snapshots/2024-09-04_21-51-28/info.json
+RSYNC Snapshot saved successfully (43s)
+Tagged snapshot '2024-09-04_21-51-28': ondemand
+------------------------------------------------------------------------------
+
+real	0m48.402s
+user	0m0.071s
+sys	0m0.039s
+:: Synchronizing package databases...
+ core downloading...
+ extra downloading...
+ multilib downloading...
+:: [1mSearching AUR for updates...[0m
+:: [1mChecking development packages...[0m
+:: [1mSearching databases for updates...[0m
+:: 15 packages to upgrade/install.
+15  extra/cairo                 1.18.0-2           -> 1.18.2-1
+14  extra/discord               0.0.66-1           -> 0.0.67-1
+13  extra/kirigami              6.5.0-1            -> 6.5.0-2
+12  extra/libspiro              1:20221101-3       -> 1:20240903-1
+11  extra/libvirt               1:10.6.0-1         -> 1:10.7.0-1
+10  extra/qt5-base              5.15.14+kde+r143-1 -> 5.15.15+kde+r127-1
+ 9  extra/qt5-declarative       5.15.14+kde+r28-1  -> 5.15.15+kde+r25-1
+ 8  extra/qt5-graphicaleffects  5.15.14-1          -> 5.15.15-1
+ 7  extra/qt5-quickcontrols     5.15.14-1          -> 5.15.15-1
+ 6  extra/qt5-svg               5.15.14+kde+r5-1   -> 5.15.15+kde+r5-1
+ 5  extra/qt5-tools             5.15.14+kde+r4-2   -> 5.15.15+kde+r3-1
+ 4  extra/qt5-translations      5.15.14-1          -> 5.15.15-1
+ 3  extra/qt5-wayland           5.15.14+kde+r59-1  -> 5.15.15+kde+r59-1
+ 2  extra/qt5-x11extras         5.15.14-1          -> 5.15.15-1
+ 1  extra/udisks2               2.10.1-4           -> 2.10.1-5
+==> Packages to exclude: (eg: "1 2 3", "1-3", "^4" or repo name)
+ -> Excluding packages may cause partial upgrades and break systems
+==> Sync Dependency (13): qt5-base-5.15.15+kde+r127-1, libspiro-1:20240903-1, qt5-declarative-5.15.15+kde+r25-1, qt5-graphicaleffects-5.15.15-1, udisks2-2.10.1-5, cairo-1.18.2-1, qt5-x11extras-5.15.15-1, kirigami-6.5.0-2, qt5-tools-5.15.15+kde+r3-1, libvirt-1:10.7.0-1, qt5-quickcontrols-5.15.15-1, qt5-svg-5.15.15+kde+r5-1, qt5-translations-5.15.15-1
+Sync Explicit (2): qt5-wayland-5.15.15+kde+r59-1, discord-0.0.67-1
+:: Synchronizing package databases...
+ core downloading...
+ extra downloading...
+ multilib downloading...
+:: Starting full system upgrade...
+resolving dependencies...
+looking for conflicting packages...
+
+Packages (15) cairo-1.18.2-1  discord-0.0.67-1  kirigami-6.5.0-2  libspiro-1:20240903-1  libvirt-1:10.7.0-1  qt5-base-5.15.15+kde+r127-1  qt5-declarative-5.15.15+kde+r25-1  qt5-graphicaleffects-5.15.15-1  qt5-quickcontrols-5.15.15-1  qt5-svg-5.15.15+kde+r5-1  qt5-tools-5.15.15+kde+r3-1  qt5-translations-5.15.15-1  qt5-wayland-5.15.15+kde+r59-1  qt5-x11extras-5.15.15-1  udisks2-2.10.1-5
+
+Total Download Size:   113.49 MiB
+Total Installed Size:  437.93 MiB
+Net Upgrade Size:       -8.48 MiB
+
+:: Proceed with installation? [Y/n] :: Retrieving packages...
+ discord-0.0.67-1-x86_64 downloading...
+ qt5-base-5.15.15+kde+r127-1-x86_64 downloading...
+ libvirt-1:10.7.0-1-x86_64 downloading...
+ qt5-tools-5.15.15+kde+r3-1-x86_64 downloading...
+ qt5-declarative-5.15.15+kde+r25-1-x86_64 downloading...
+ qt5-translations-5.15.15-1-any downloading...
+ qt5-wayland-5.15.15+kde+r59-1-x86_64 downloading...
+ qt5-quickcontrols-5.15.15-1-x86_64 downloading...
+ kirigami-6.5.0-2-x86_64 downloading...
+ udisks2-2.10.1-5-x86_64 downloading...
+ cairo-1.18.2-1-x86_64 downloading...
+ qt5-svg-5.15.15+kde+r5-1-x86_64 downloading...
+ qt5-graphicaleffects-5.15.15-1-x86_64 downloading...
+ libspiro-1:20240903-1-x86_64 downloading...
+ qt5-x11extras-5.15.15-1-x86_64 downloading...
+checking keyring...
+checking package integrity...
+loading package files...
+checking for file conflicts...
+checking available disk space...
+:: Processing package changes...
+upgrading cairo...
+upgrading discord...
+upgrading kirigami...
+upgrading libspiro...
+upgrading libvirt...
+warning: directory permissions differ on /var/log/swtpm/libvirt/qemu/
+filesystem: 730  package: 755
+upgrading qt5-translations...
+upgrading qt5-base...
+upgrading qt5-declarative...
+upgrading qt5-graphicaleffects...
+upgrading qt5-quickcontrols...
+upgrading qt5-svg...
+upgrading qt5-tools...
+upgrading qt5-wayland...
+upgrading qt5-x11extras...
+upgrading udisks2...
+New optional dependencies for udisks2
+    udisks2-docs: API documentation
+:: Running post-transaction hooks...
+(1/9) Creating system user accounts...
+(2/9) Reloading system manager configuration...
+(3/9) Applying kernel sysctl settings...
+(4/9) Creating temporary files...
+(5/9) Reloading device manager configuration...
+(6/9) Arming ConditionNeedsUpdate...
+(7/9) Reloading system bus configuration...
+(8/9) Updating icon theme caches...
+(9/9) Updating the desktop file MIME type cache...
+
+real	0m50.444s
+user	0m2.382s
+sys	0m0.250s
+Script completed at Wed Sep  4 09:53:02 PM +03 2024
+Script started at Thu Sep  5 02:30:32 PM +03 2024
+Mounted '/dev/dm-1 (nvme0n1p3)' at '/run/timeshift/208091/backup'
+------------------------------------------------------------------------------
+Creating new snapshot...(RSYNC)
+Saving to device: /dev/dm-1, mounted at path: /run/timeshift/208091/backup
+Linking from snapshot: 2024-09-04_21-51-28
+Syncing files with rsync...
+  5.69% complete (00:00:17 remaining) 10.87% complete (00:00:08 remaining) 17.20% complete (00:00:09 remaining) 22.21% complete (00:00:10 remaining) 28.48% complete (00:00:10 remaining) 33.49% complete (00:00:10 remaining) 38.39% complete (00:00:09 remaining) 45.01% complete (00:00:08 remaining) 49.30% complete (00:00:08 remaining) 56.64% complete (00:00:06 remaining) 65.46% complete (00:00:05 remaining) 72.40% complete (00:00:04 remaining) 75.30% complete (00:00:03 remaining) 76.60% complete (00:00:03 remaining) 82.05% complete (00:00:03 remaining) 89.09% complete (00:00:01 remaining) 94.19% complete (00:00:00 remaining) 98.30% complete (00:00:00 remaining)105.04% complete (00:00:00 remaining)109.92% complete (00:00:00 remaining)115.95% complete (00:00:00 remaining)122.07% complete (00:00:00 remaining)128.70% complete (00:00:00 remaining)135.02% complete (00:00:00 remaining)141.99% complete (00:00:00 remaining)149.19% complete (00:00:00 remaining)155.88% complete (00:00:00 remaining)161.90% complete (00:00:00 remaining)170.38% complete (00:00:00 remaining)179.86% complete (00:00:00 remaining)182.49% complete (00:00:00 remaining)195.43% complete (00:00:00 remaining)200.97% complete (00:00:00 remaining)205.71% complete (00:00:00 remaining)212.24% complete (00:00:00 remaining)213.59% complete (00:00:00 remaining)                                                                                Created control file: /run/timeshift/208091/backup/timeshift/snapshots/2024-09-05_14-30-40/info.json
+RSYNC Snapshot saved successfully (36s)
+Tagged snapshot '2024-09-05_14-30-40': ondemand
+------------------------------------------------------------------------------
+
+real	0m41.388s
+user	0m0.074s
+sys	0m0.037s
+:: Synchronizing package databases...
+ core downloading...
+ extra downloading...
+ multilib downloading...
+:: [1mSearching AUR for updates...[0m
+:: [1mChecking development packages...[0m
+:: [1mSearching databases for updates...[0m
+:: 24 packages to upgrade/install.
+24  core/audit                          4.0.2-1        -> 4.0.2-2
+23  core/cryptsetup                     2.7.4-1        -> 2.7.5-1
+22  core/expat                          2.6.2-1        -> 2.6.3-2
+21  core/hwdata                         0.385-1        -> 0.386-1
+20  core/libldap                        2.6.8-1        -> 2.6.8-2
+19  core/linux                          6.10.7.arch1-1 -> 6.10.8.arch1-1
+18  core/perl                           5.38.2-2       -> 5.40.0-1
+17  extra/geoclue                       2.7.1-3        -> 2.7.2-1
+16  extra/gparted                       1.6.0-1        -> 1.6.0-2
+15  extra/imagemagick                   7.1.1.38-1     -> 7.1.1.38-2
+14  extra/intel-gmmlib                  22.3.20-1      -> 22.4.1-1
+13  extra/intel-media-driver            24.2.5-1       -> 24.3.2-1
+12  extra/libportal                     0.7.1-3        -> 0.8.0-1
+11  extra/libportal-gtk3                0.7.1-3        -> 0.8.0-1
+10  extra/libportal-gtk4                0.7.1-3        -> 0.8.0-1
+ 9  extra/libvpl                        2.12.0-1       -> 2.13.0-1
+ 8  extra/libxi                         1.8.1-2        -> 1.8.2-1
+ 7  extra/net-snmp                      5.9.4-4        -> 5.9.4-5
+ 6  extra/perl-error                    0.17029-6      -> 0.17029-7
+ 5  extra/perl-mailtools                2.21-8         -> 2.21-9
+ 4  extra/perl-timedate                 2.33-6         -> 2.33-7
+ 3  extra/tree-sitter-c                 0.21.4-1       -> 0.23.0-1
+ 2  extra/virtualbox-host-modules-arch  7.0.20-14      -> 7.0.20-15
+ 1  multilib/lib32-expat                2.6.2-1        -> 2.6.3-1
+==> Packages to exclude: (eg: "1 2 3", "1-3", "^4" or repo name)
+ -> Excluding packages may cause partial upgrades and break systems
+==> Sync Dependency (21): perl-error-0.17029-7, libxi-1.8.2-1, libvpl-2.13.0-1, expat-2.6.3-2, libportal-gtk4-0.8.0-1, net-snmp-5.9.4-5, perl-5.40.0-1, perl-mailtools-2.21-9, cryptsetup-2.7.5-1, geoclue-2.7.2-1, tree-sitter-c-0.23.0-1, libportal-0.8.0-1, intel-gmmlib-22.4.1-1, lib32-expat-2.6.3-1, libldap-2.6.8-2, hwdata-0.386-1, audit-4.0.2-2, libportal-gtk3-0.8.0-1, perl-timedate-2.33-7, imagemagick-7.1.1.38-2, virtualbox-host-modules-arch-7.0.20-15
+Sync Explicit (3): linux-6.10.8.arch1-1, intel-media-driver-24.3.2-1, gparted-1.6.0-2
+:: Synchronizing package databases...
+ core downloading...
+ extra downloading...
+ multilib downloading...
+:: Starting full system upgrade...
+resolving dependencies...
+looking for conflicting packages...
+
+Packages (24) audit-4.0.2-2  cryptsetup-2.7.5-1  expat-2.6.3-2  geoclue-2.7.2-1  gparted-1.6.0-2  hwdata-0.386-1  imagemagick-7.1.1.38-2  intel-gmmlib-22.4.1-1  intel-media-driver-24.3.2-1  lib32-expat-2.6.3-1  libldap-2.6.8-2  libportal-0.8.0-1  libportal-gtk3-0.8.0-1  libportal-gtk4-0.8.0-1  libvpl-2.13.0-1  libxi-1.8.2-1  linux-6.10.8.arch1-1  net-snmp-5.9.4-5  perl-5.40.0-1  perl-error-0.17029-7  perl-mailtools-2.21-9  perl-timedate-2.33-7  tree-sitter-c-0.23.0-1  virtualbox-host-modules-arch-7.0.20-15
+
+Total Download Size:   178.12 MiB
+Total Installed Size:  296.50 MiB
+Net Upgrade Size:       -3.19 MiB
+
+:: Proceed with installation? [Y/n] :: Retrieving packages...
+ linux-6.10.8.arch1-1-x86_64 downloading...
+ perl-5.40.0-1-x86_64 downloading...
+ imagemagick-7.1.1.38-2-x86_64 downloading...
+ intel-media-driver-24.3.2-1-x86_64 downloading...
+ net-snmp-5.9.4-5-x86_64 downloading...
+ gparted-1.6.0-2-x86_64 downloading...
+ cryptsetup-2.7.5-1-x86_64 downloading...
+ hwdata-0.386-1-any downloading...
+ audit-4.0.2-2-x86_64 downloading...
+ virtualbox-host-modules-arch-7.0.20-15-x86_64 downloading...
+ intel-gmmlib-22.4.1-1-x86_64 downloading...
+ libldap-2.6.8-2-x86_64 downloading...
+ libvpl-2.13.0-1-x86_64 downloading...
+ geoclue-2.7.2-1-x86_64 downloading...
+ libxi-1.8.2-1-x86_64 downloading...
+ expat-2.6.3-2-x86_64 downloading...
+ libportal-0.8.0-1-x86_64 downloading...
+ lib32-expat-2.6.3-1-x86_64 downloading...
+ perl-mailtools-2.21-9-any downloading...
+ tree-sitter-c-0.23.0-1-x86_64 downloading...
+ perl-timedate-2.33-7-any downloading...
+ perl-error-0.17029-7-any downloading...
+ libportal-gtk3-0.8.0-1-x86_64 downloading...
+ libportal-gtk4-0.8.0-1-x86_64 downloading...
+checking keyring...
+checking package integrity...
+loading package files...
+checking for file conflicts...
+checking available disk space...
+:: Running pre-transaction hooks...
+(1/1) Removing linux initcpios...
+:: Processing package changes...
+upgrading libldap...
+upgrading audit...
+upgrading cryptsetup...
+upgrading expat...
+upgrading geoclue...
+upgrading libxi...
+upgrading hwdata...
+upgrading gparted...
+upgrading imagemagick...
+upgrading intel-gmmlib...
+upgrading intel-media-driver...
+upgrading lib32-expat...
+upgrading libportal...
+New optional dependencies for libportal
+    libportal-docs: API documentation
+    libportal-gtk3: GTK 3 backend [installed]
+    libportal-gtk4: GTK 4 backend [installed]
+    libportal-qt5: Qt 5 backend
+    libportal-qt6: Qt 6 backend
+upgrading libportal-gtk3...
+upgrading libportal-gtk4...
+upgrading libvpl...
+upgrading linux...
+upgrading perl...
+upgrading net-snmp...
+upgrading perl-error...
+upgrading perl-timedate...
+upgrading perl-mailtools...
+upgrading tree-sitter-c...
+upgrading virtualbox-host-modules-arch...
+:: Running post-transaction hooks...
+( 1/10) Creating system user accounts...
+( 2/10) Reloading system manager configuration...
+( 3/10) Creating temporary files...
+( 4/10) Arming ConditionNeedsUpdate...
+( 5/10) Updating module dependencies...
+( 6/10) Updating linux initcpios...
+==> Building image from preset: /etc/mkinitcpio.d/linux.preset: 'default'
+==> Using default configuration file: '/etc/mkinitcpio.conf'
+  -> -k /boot/vmlinuz-linux -g /boot/initramfs-linux.img
+==> Starting build: '6.10.8-arch1-1'
+  -> Running build hook: [base]
+  -> Running build hook: [udev]
+  -> Running build hook: [autodetect]
+  -> Running build hook: [microcode]
+  -> Running build hook: [modconf]
+  -> Running build hook: [kms]
+  -> Running build hook: [keyboard]
+==> WARNING: Possibly missing firmware for module: 'xhci_pci'
+  -> Running build hook: [keymap]
+  -> Running build hook: [consolefont]
+==> WARNING: consolefont: no font found in configuration
+  -> Running build hook: [block]
+  -> Running build hook: [encrypt]
+==> WARNING: Possibly missing firmware for module: 'qat_420xx'
+  -> Running build hook: [filesystems]
+  -> Running build hook: [fsck]
+==> Generating module dependencies
+==> Creating zstd-compressed initcpio image: '/boot/initramfs-linux.img'
+  -> Early uncompressed CPIO image generation successful
+==> Initcpio image generation successful
+==> Building image from preset: /etc/mkinitcpio.d/linux.preset: 'fallback'
+==> Using default configuration file: '/etc/mkinitcpio.conf'
+  -> -k /boot/vmlinuz-linux -g /boot/initramfs-linux-fallback.img -S autodetect
+==> Starting build: '6.10.8-arch1-1'
+  -> Running build hook: [base]
+  -> Running build hook: [udev]
+  -> Running build hook: [microcode]
+  -> Running build hook: [modconf]
+  -> Running build hook: [kms]
+==> WARNING: Possibly missing firmware for module: 'ast'
+  -> Running build hook: [keyboard]
+==> WARNING: Possibly missing firmware for module: 'xhci_pci'
+  -> Running build hook: [keymap]
+  -> Running build hook: [consolefont]
+==> WARNING: consolefont: no font found in configuration
+  -> Running build hook: [block]
+==> WARNING: Possibly missing firmware for module: 'qla2xxx'
+==> WARNING: Possibly missing firmware for module: 'qed'
+==> WARNING: Possibly missing firmware for module: 'aic94xx'
+==> WARNING: Possibly missing firmware for module: 'wd719x'
+==> WARNING: Possibly missing firmware for module: 'qla1280'
+==> WARNING: Possibly missing firmware for module: 'bfa'
+  -> Running build hook: [encrypt]
+==> WARNING: Possibly missing firmware for module: 'qat_420xx'
+  -> Running build hook: [filesystems]
+  -> Running build hook: [fsck]
+==> Generating module dependencies
+==> Creating zstd-compressed initcpio image: '/boot/initramfs-linux-fallback.img'
+  -> Early uncompressed CPIO image generation successful
+==> Initcpio image generation successful
+( 7/10) Reloading system bus configuration...
+( 8/10) Warn about old perl modules
+( 9/10) Updating icon theme caches...
+(10/10) Updating the desktop file MIME type cache...
+
+real	1m56.370s
+user	0m2.491s
+sys	0m0.232s
+Script completed at Thu Sep  5 02:33:13 PM +03 2024
+Script started at Fri Sep  6 10:32:15 PM +03 2024
+Mounted '/dev/dm-1 (nvme0n1p3)' at '/run/timeshift/2522/backup'
+------------------------------------------------------------------------------
+Creating new snapshot...(RSYNC)
+Saving to device: /dev/dm-1, mounted at path: /run/timeshift/2522/backup
+Linking from snapshot: 2024-09-05_14-30-40
+Syncing files with rsync...
+  0.93% complete (00:01:53 remaining)  5.25% complete (00:00:19 remaining)  9.25% complete (00:00:20 remaining) 14.86% complete (00:00:17 remaining) 20.20% complete (00:00:16 remaining) 24.75% complete (00:00:15 remaining) 29.70% complete (00:00:14 remaining) 34.81% complete (00:00:13 remaining) 39.73% complete (00:00:12 remaining) 45.01% complete (00:00:11 remaining) 48.51% complete (00:00:10 remaining) 52.29% complete (00:00:10 remaining) 57.26% complete (00:00:09 remaining) 61.23% complete (00:00:08 remaining) 67.33% complete (00:00:06 remaining) 73.41% complete (00:00:05 remaining) 77.34% complete (00:00:04 remaining) 84.85% complete (00:00:03 remaining) 91.18% complete (00:00:01 remaining) 97.89% complete (00:00:00 remaining)103.61% complete (00:00:00 remaining)107.09% complete (00:00:00 remaining)109.18% complete (00:00:00 remaining)114.41% complete (00:00:00 remaining)121.79% complete (00:00:00 remaining)126.85% complete (00:00:00 remaining)133.35% complete (00:00:00 remaining)140.81% complete (00:00:00 remaining)147.70% complete (00:00:00 remaining)154.20% complete (00:00:00 remaining)161.89% complete (00:00:00 remaining)169.38% complete (00:00:00 remaining)178.06% complete (00:00:00 remaining)182.69% complete (00:00:00 remaining)192.64% complete (00:00:00 remaining)198.63% complete (00:00:00 remaining)205.26% complete (00:00:00 remaining)207.34% complete (00:00:00 remaining)211.81% complete (00:00:00 remaining)213.96% complete (00:00:00 remaining)214.01% complete (00:00:00 remaining)                                                                                Created control file: /run/timeshift/2522/backup/timeshift/snapshots/2024-09-06_22-32-38/info.json
+RSYNC Snapshot saved successfully (41s)
+Tagged snapshot '2024-09-06_22-32-38': ondemand
+------------------------------------------------------------------------------
+
+real	0m47.286s
+user	0m0.073s
+sys	0m0.034s
+:: Synchronizing package databases...
+ core downloading...
+ extra downloading...
+ multilib downloading...
+:: [1mSearching AUR for updates...[0m
+:: [1mChecking development packages...[0m
+:: [1mSearching databases for updates...[0m
+:: 10 packages to upgrade/install.
+10  core/hwdata             0.386-1   -> 0.387-1
+ 9  core/openssl            3.3.1-1   -> 3.3.2-1
+ 8  extra/electron30        30.4.0-1  -> 30.5.0-1
+ 7  extra/kio-extras        24.08.0-1 -> 24.08.0-2
+ 6  extra/libportal         0.8.0-1   -> 0.8.1-1
+ 5  extra/libportal-gtk3    0.8.0-1   -> 0.8.1-1
+ 4  extra/libportal-gtk4    0.8.0-1   -> 0.8.1-1
+ 3  extra/ostree            2024.7-1  -> 2024.7-2
+ 2  extra/python-urllib3    1.26.19-1 -> 1.26.20-1
+ 1  multilib/lib32-openssl  1:3.3.1-1 -> 1:3.3.2-1
+==> Packages to exclude: (eg: "1 2 3", "1-3", "^4" or repo name)
+ -> Excluding packages may cause partial upgrades and break systems
+==> Sync Dependency (10): electron30-30.5.0-1, libportal-0.8.1-1, libportal-gtk3-0.8.1-1, openssl-3.3.2-1, libportal-gtk4-0.8.1-1, lib32-openssl-1:3.3.2-1, hwdata-0.387-1, python-urllib3-1.26.20-1, ostree-2024.7-2, kio-extras-24.08.0-2
+:: Synchronizing package databases...
+ core downloading...
+ extra downloading...
+ multilib downloading...
+:: Starting full system upgrade...
+resolving dependencies...
+looking for conflicting packages...
+
+Packages (10) electron30-30.5.0-1  hwdata-0.387-1  kio-extras-24.08.0-2  lib32-openssl-1:3.3.2-1  libportal-0.8.1-1  libportal-gtk3-0.8.1-1  libportal-gtk4-0.8.1-1  openssl-3.3.2-1  ostree-2024.7-2  python-urllib3-1.26.20-1
+
+Total Download Size:    78.08 MiB
+Total Installed Size:  266.48 MiB
+Net Upgrade Size:        7.13 MiB
+
+:: Proceed with installation? [Y/n] :: Retrieving packages...
+ electron30-30.5.0-1-x86_64 downloading...
+ openssl-3.3.2-1-x86_64 downloading...
+ kio-extras-24.08.0-2-x86_64 downloading...
+ lib32-openssl-1:3.3.2-1-x86_64 downloading...
+ hwdata-0.387-1-any downloading...
+ ostree-2024.7-2-x86_64 downloading...
+ python-urllib3-1.26.20-1-any downloading...
+ libportal-0.8.1-1-x86_64 downloading...
+ libportal-gtk4-0.8.1-1-x86_64 downloading...
+ libportal-gtk3-0.8.1-1-x86_64 downloading...
+checking keyring...
+checking package integrity...
+loading package files...
+checking for file conflicts...
+checking available disk space...
+:: Processing package changes...
+upgrading openssl...
+upgrading hwdata...
+upgrading electron30...
+upgrading kio-extras...
+upgrading lib32-openssl...
+upgrading libportal...
+upgrading libportal-gtk3...
+upgrading libportal-gtk4...
+upgrading ostree...
+upgrading python-urllib3...
+:: Running post-transaction hooks...
+(1/6) Reloading system manager configuration...
+(2/6) Creating temporary files...
+(3/6) Arming ConditionNeedsUpdate...
+(4/6) Updating the MIME type database...
+(5/6) Updating linux initcpios...
+==> Building image from preset: /etc/mkinitcpio.d/linux.preset: 'default'
+==> Using default configuration file: '/etc/mkinitcpio.conf'
+  -> -k /boot/vmlinuz-linux -g /boot/initramfs-linux.img
+==> Starting build: '6.10.8-arch1-1'
+  -> Running build hook: [base]
+  -> Running build hook: [udev]
+  -> Running build hook: [autodetect]
+  -> Running build hook: [microcode]
+  -> Running build hook: [modconf]
+  -> Running build hook: [kms]
+  -> Running build hook: [keyboard]
+==> WARNING: Possibly missing firmware for module: 'xhci_pci'
+  -> Running build hook: [keymap]
+  -> Running build hook: [consolefont]
+==> WARNING: consolefont: no font found in configuration
+  -> Running build hook: [block]
+  -> Running build hook: [encrypt]
+==> WARNING: Possibly missing firmware for module: 'qat_420xx'
+  -> Running build hook: [filesystems]
+  -> Running build hook: [fsck]
+==> Generating module dependencies
+==> Creating zstd-compressed initcpio image: '/boot/initramfs-linux.img'
+  -> Early uncompressed CPIO image generation successful
+==> Initcpio image generation successful
+==> Building image from preset: /etc/mkinitcpio.d/linux.preset: 'fallback'
+==> Using default configuration file: '/etc/mkinitcpio.conf'
+  -> -k /boot/vmlinuz-linux -g /boot/initramfs-linux-fallback.img -S autodetect
+==> Starting build: '6.10.8-arch1-1'
+  -> Running build hook: [base]
+  -> Running build hook: [udev]
+  -> Running build hook: [microcode]
+  -> Running build hook: [modconf]
+  -> Running build hook: [kms]
+==> WARNING: Possibly missing firmware for module: 'ast'
+  -> Running build hook: [keyboard]
+==> WARNING: Possibly missing firmware for module: 'xhci_pci'
+  -> Running build hook: [keymap]
+  -> Running build hook: [consolefont]
+==> WARNING: consolefont: no font found in configuration
+  -> Running build hook: [block]
+==> WARNING: Possibly missing firmware for module: 'qla2xxx'
+==> WARNING: Possibly missing firmware for module: 'qed'
+==> WARNING: Possibly missing firmware for module: 'aic94xx'
+==> WARNING: Possibly missing firmware for module: 'wd719x'
+==> WARNING: Possibly missing firmware for module: 'qla1280'
+==> WARNING: Possibly missing firmware for module: 'bfa'
+  -> Running build hook: [encrypt]
+==> WARNING: Possibly missing firmware for module: 'qat_420xx'
+  -> Running build hook: [filesystems]
+  -> Running build hook: [fsck]
+==> Generating module dependencies
+==> Creating zstd-compressed initcpio image: '/boot/initramfs-linux-fallback.img'
+  -> Early uncompressed CPIO image generation successful
+==> Initcpio image generation successful
+(6/6) Updating the desktop file MIME type cache...
+
+real	1m33.492s
+user	0m2.431s
+sys	0m0.168s
+Script completed at Fri Sep  6 10:34:53 PM +03 2024
+Script started at Fri Sep  6 11:42:42 PM +03 2024
+Mounted '/dev/dm-1 (nvme0n1p3)' at '/run/timeshift/23554/backup'
+------------------------------------------------------------------------------
+Creating new snapshot...(RSYNC)
+Saving to device: /dev/dm-1, mounted at path: /run/timeshift/23554/backup
+Linking from snapshot: 2024-09-06_22-32-38
+Syncing files with rsync...
+  3.08% complete (00:00:33 remaining)  8.09% complete (00:00:12 remaining) 13.85% complete (00:00:12 remaining) 19.22% complete (00:00:12 remaining) 23.53% complete (00:00:13 remaining) 29.01% complete (00:00:12 remaining) 34.31% complete (00:00:11 remaining) 39.25% complete (00:00:10 remaining) 45.40% complete (00:00:09 remaining) 49.44% complete (00:00:09 remaining) 54.42% complete (00:00:08 remaining) 60.58% complete (00:00:07 remaining) 68.49% complete (00:00:05 remaining) 75.98% complete (00:00:04 remaining) 81.67% complete (00:00:03 remaining) 89.30% complete (00:00:01 remaining) 95.39% complete (00:00:00 remaining)100.89% complete (00:00:00 remaining)100.89% complete (00:00:00 remaining)105.25% complete (00:00:00 remaining)112.99% complete (00:00:00 remaining)121.88% complete (00:00:00 remaining)129.47% complete (00:00:00 remaining)137.87% complete (00:00:00 remaining)145.54% complete (00:00:00 remaining)152.46% complete (00:00:00 remaining)160.15% complete (00:00:00 remaining)167.41% complete (00:00:00 remaining)176.13% complete (00:00:00 remaining)182.71% complete (00:00:00 remaining)190.05% complete (00:00:00 remaining)198.64% complete (00:00:00 remaining)206.09% complete (00:00:00 remaining)213.94% complete (00:00:00 remaining)214.02% complete (00:00:00 remaining)                                                                                Created control file: /run/timeshift/23554/backup/timeshift/snapshots/2024-09-06_23-42-49/info.json
+RSYNC Snapshot saved successfully (35s)
+Tagged snapshot '2024-09-06_23-42-49': ondemand
+------------------------------------------------------------------------------
+
+real	0m41.776s
+user	0m0.057s
+sys	0m0.057s
+:: Synchronizing package databases...
+ core downloading...
+ extra downloading...
+ multilib downloading...
+:: [1mSearching AUR for updates...[0m
+:: [1mChecking development packages...[0m
+:: [1mSearching databases for updates...[0m
+:: 9 packages to upgrade/install.
+9  core/iputils             20240117-1 -> 20240905-1
+8  extra/boost-libs         1.86.0-1   -> 1.86.0-2
+7  extra/libva-mesa-driver  1:24.2.1-1 -> 1:24.2.2-1
+6  extra/libwireplumber     0.5.5-1    -> 0.5.6-1
+5  extra/mesa               1:24.2.1-1 -> 1:24.2.2-1
+4  extra/vulkan-intel       1:24.2.1-1 -> 1:24.2.2-1
+3  extra/vulkan-radeon      1:24.2.1-1 -> 1:24.2.2-1
+2  extra/wireplumber        0.5.5-1    -> 0.5.6-1
+1  multilib/lib32-mesa      1:24.2.1-1 -> 1:24.2.2-1
+==> Packages to exclude: (eg: "1 2 3", "1-3", "^4" or repo name)
+ -> Excluding packages may cause partial upgrades and break systems
+==> Sync Explicit (4): libva-mesa-driver-1:24.2.2-1, vulkan-radeon-1:24.2.2-1, wireplumber-0.5.6-1, vulkan-intel-1:24.2.2-1
+Sync Dependency (5): mesa-1:24.2.2-1, lib32-mesa-1:24.2.2-1, iputils-20240905-1, libwireplumber-0.5.6-1, boost-libs-1.86.0-2
+:: Synchronizing package databases...
+ core downloading...
+ extra downloading...
+ multilib downloading...
+:: Starting full system upgrade...
+resolving dependencies...
+looking for conflicting packages...
+
+Packages (9) boost-libs-1.86.0-2  iputils-20240905-1  lib32-mesa-1:24.2.2-1  libva-mesa-driver-1:24.2.2-1  libwireplumber-0.5.6-1  mesa-1:24.2.2-1  vulkan-intel-1:24.2.2-1  vulkan-radeon-1:24.2.2-1  wireplumber-0.5.6-1
+
+Total Download Size:    51.66 MiB
+Total Installed Size:  282.73 MiB
+Net Upgrade Size:        0.10 MiB
+
+:: Proceed with installation? [Y/n] :: Retrieving packages...
+ mesa-1:24.2.2-1-x86_64 downloading...
+ lib32-mesa-1:24.2.2-1-x86_64 downloading...
+ vulkan-intel-1:24.2.2-1-x86_64 downloading...
+ libva-mesa-driver-1:24.2.2-1-x86_64 downloading...
+ vulkan-radeon-1:24.2.2-1-x86_64 downloading...
+ boost-libs-1.86.0-2-x86_64 downloading...
+ libwireplumber-0.5.6-1-x86_64 downloading...
+ wireplumber-0.5.6-1-x86_64 downloading...
+ iputils-20240905-1-x86_64 downloading...
+checking keyring...
+checking package integrity...
+loading package files...
+checking for file conflicts...
+checking available disk space...
+:: Processing package changes...
+upgrading boost-libs...
+upgrading iputils...
+upgrading mesa...
+upgrading lib32-mesa...
+upgrading libva-mesa-driver...
+upgrading libwireplumber...
+upgrading vulkan-intel...
+upgrading vulkan-radeon...
+upgrading wireplumber...
+:: Running post-transaction hooks...
+(1/2) Reloading user manager configuration...
+(2/2) Arming ConditionNeedsUpdate...
+
+real	0m40.967s
+user	0m2.681s
+sys	0m0.213s
+Script completed at Fri Sep  6 11:44:06 PM +03 2024
+Script started at Sat Sep  7 07:03:51 PM +03 2024

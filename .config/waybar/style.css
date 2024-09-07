@@ -194,6 +194,12 @@ window#waybar.empty #window {
     margin: 10px 10px 10px 10px;
 }
 
+#custom-logo {
+    margin-left: 10px;
+    margin-right: 7px;
+    font-size: 20px;
+}
+
 /* -----------------------------------------------------
  * Custom Exit
  * ----------------------------------------------------- */
@@ -387,7 +393,7 @@ label:focus {
     margin-right: 4px;
     margin-left: 4px;
 }
-#idle_inhibitor {
+/*#idle_inhibitor {
     margin-left: 10px;
     margin-right: 0px;
-}
+}*/

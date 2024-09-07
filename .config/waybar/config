@@ -15,7 +15,7 @@
         "~/.config/waybar/modules.json"
     ],    
     "modules-left": [
-        "idle_inhibitor",
+        "custom/logo",
         "hyprland/window"
     ],
     "modules-center": [
@@ -25,6 +25,7 @@
         "mpd",
         "group/hardware",
         "custom/updates",
+        "idle_inhibitor",
         "backlight",
         "pulseaudio",
         "network",  
