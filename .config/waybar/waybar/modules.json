@@ -76,7 +76,8 @@
     "clock": {
         // "timezone": "America/New_York",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%Y-%m-%d}"
+        //"format-alt": "{:%Y-%m-%d}"
+        "format-alt": "{:%d-%m-%Y}"
     },
 
     // System
@@ -156,14 +157,14 @@
         "states": {
             // "good": 95,
             "warning": 30,
-            "critical": 15
+            "critical": 10
         },
         "format": "{icon}   {capacity}%",
         "format-charging": "  {capacity}%",
         "format-plugged": "  {capacity}%",
         "format-alt": "{icon}  {time}",
         // "format-good": "", // An empty format will hide the module
-        "format-full": "YO! UNPLUG ME",
+        //"format-full": "FULL!",
         "format-icons": [" ", " ", " ", " ", " "]
     },
 
@@ -243,5 +244,8 @@
     "custom/logo": {
     "format": "",
     "tooltip": false,
+    "on-click": "~/.config/rofi/launchers/type-7/launcher.sh",
+
   },
 }
+
