@@ -76,6 +76,9 @@ alias mkfile='touch'
 alias ff="fastfetch"
 alias code="code ."
 
+#firefox
+alias yt-music='firefox --new-window https://music.youtube.com/ & sleep 1 && hyprctl dispatch movetoworkspace 9 && hyprctl dispatch fullscreen'
+
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
