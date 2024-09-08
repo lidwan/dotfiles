@@ -1,0 +1,11 @@
+2024-09-02 18:56:34.186 [info] Extension host with pid 80130 started
+2024-09-02 18:56:34.419 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2024-09-02 18:56:34.552 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2024-09-02 18:56:34.571 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2024-09-02 18:56:34.634 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2024-09-02 18:56:34.717 [info] Eager extensions activated
+2024-09-02 18:56:34.755 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2024-09-02 18:56:34.759 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2024-09-02 18:56:34.772 [info] ExtensionService#_doActivateExtension ritwickdey.LiveServer, startup: false, activationEvent: 'onStartupFinished'
+2024-09-02 18:56:36.388 [info] Extension host terminating: renderer closed the MessagePort
+2024-09-02 18:56:36.401 [info] Extension host with pid 80130 exiting with code 0

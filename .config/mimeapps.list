@@ -1,3 +1,16 @@
 [Added Associations]
 inode/directory=org.gnome.Nautilus.desktop;thunar.desktop;
 video/x-matroska=vlc.desktop;
+video/mp4=vlc.desktop;
+x-scheme-handler/mailto=userapp-Thunderbird-FXK3R2.desktop;
+x-scheme-handler/mid=userapp-Thunderbird-FXK3R2.desktop;
+video/quicktime=vlc.desktop;
+text/plain=code-oss.desktop;
+
+[Default Applications]
+video/mp4=vlc.desktop
+x-scheme-handler/mailto=userapp-Thunderbird-FXK3R2.desktop
+message/rfc822=userapp-Thunderbird-FXK3R2.desktop
+x-scheme-handler/mid=userapp-Thunderbird-FXK3R2.desktop
+video/quicktime=vlc.desktop
+text/plain=code-oss.desktop

@@ -1,0 +1,3 @@
+2024-09-02 18:56:32.091 [info] Initial editor state {"filesToOpenOrCreate":[{"fileUri":{"$mid":1,"path":"/home/lidwan/Downloads/pmis-erm.mermaid","scheme":"file"},"type":1,"exists":true,"options":{}}],"filesToDiff":[],"filesToMerge":[]}
+2024-09-02 18:56:33.051 [info] Started local extension host with pid 80130.
+2024-09-02 18:56:36.259 [info] [perf] Render performance baseline is 56ms

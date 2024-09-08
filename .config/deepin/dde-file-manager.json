@@ -1,0 +1,96 @@
+{
+    "QuickAccess": {
+        "Items": [
+            {
+                "created": "",
+                "defaultItem": true,
+                "index": 0,
+                "lastModified": "",
+                "locateUrl": "",
+                "mountPoint": "",
+                "name": "Recent",
+                "url": "recent:///"
+            },
+            {
+                "created": "",
+                "defaultItem": true,
+                "index": 1,
+                "lastModified": "",
+                "locateUrl": "",
+                "mountPoint": "",
+                "name": "Home",
+                "url": "file:///home/lidwan"
+            },
+            {
+                "created": "",
+                "defaultItem": true,
+                "index": 2,
+                "lastModified": "",
+                "locateUrl": "",
+                "mountPoint": "",
+                "name": "Desktop",
+                "url": "file:///home/lidwan/Desktop"
+            },
+            {
+                "created": "",
+                "defaultItem": true,
+                "index": 3,
+                "lastModified": "",
+                "locateUrl": "",
+                "mountPoint": "",
+                "name": "Videos",
+                "url": "file:///home/lidwan/Videos"
+            },
+            {
+                "created": "",
+                "defaultItem": true,
+                "index": 4,
+                "lastModified": "",
+                "locateUrl": "",
+                "mountPoint": "",
+                "name": "Music",
+                "url": "file:///home/lidwan/Music"
+            },
+            {
+                "created": "",
+                "defaultItem": true,
+                "index": 5,
+                "lastModified": "",
+                "locateUrl": "",
+                "mountPoint": "",
+                "name": "Pictures",
+                "url": "file:///home/lidwan/Pictures"
+            },
+            {
+                "created": "",
+                "defaultItem": true,
+                "index": 6,
+                "lastModified": "",
+                "locateUrl": "",
+                "mountPoint": "",
+                "name": "Documents",
+                "url": "file:///home/lidwan/Documents"
+            },
+            {
+                "created": "",
+                "defaultItem": true,
+                "index": 7,
+                "lastModified": "",
+                "locateUrl": "",
+                "mountPoint": "",
+                "name": "Downloads",
+                "url": "file:///home/lidwan/Downloads"
+            },
+            {
+                "created": "",
+                "defaultItem": true,
+                "index": 8,
+                "lastModified": "",
+                "locateUrl": "",
+                "mountPoint": "",
+                "name": "Trash",
+                "url": "trash:///"
+            }
+        ]
+    }
+}

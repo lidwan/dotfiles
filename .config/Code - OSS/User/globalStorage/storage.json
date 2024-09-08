@@ -2,16 +2,27 @@
     "userDataProfilesMigration": true,
     "profileAssociations": {
         "workspaces": {
-            "file:///home/lidwan": "__default__profile__",
             "file:///etc/systemd/system": "__default__profile__",
             "file:///home/lidwan/.config/rofi/launchers/type-7": "__default__profile__",
             "file:///home/lidwan/.config/rofi": "__default__profile__",
             "file:///home/lidwan/.config/ml4w/settings": "__default__profile__",
+            "file:///home/lidwan/.config/alacritty": "__default__profile__",
+            "file:///home/lidwan/Documents/tmp": "__default__profile__",
+            "file:///home/lidwan/git/ML4W-Modfied-repo": "__default__profile__",
+            "file:///home/lidwan/tmp": "__default__profile__",
+            "file:///home/lidwan/Downloads/Hyprdots-main/.config/waybar": "__default__profile__",
             "file:///home/lidwan/.config/hypr": "__default__profile__",
+            "file:///home/lidwan/Documents/projectArchSetup": "__default__profile__",
+            "file:///home/lidwan/git/arch-hypr-script-ssh/arch-hypr-script": "__default__profile__",
             "file:///home/lidwan/.config/waybar": "__default__profile__",
-            "file:///home/lidwan/.config/alacritty": "__default__profile__"
+            "file:///home/lidwan/git/dotrepo/arch-hypr-script": "__default__profile__",
+            "file:///home/lidwan/Documents/TOP": "__default__profile__",
+            "file:///home/lidwan": "__default__profile__"
         },
-        "emptyWindows": {}
+        "emptyWindows": {
+            "1725292590886": "__default__profile__",
+            "1725307518799": "__default__profile__"
+        }
     },
     "profileAssociationsMigration": true,
     "telemetry.sqmId": "",
@@ -21,21 +32,21 @@
         "workspaces": [],
         "folders": [
             {
-                "folderUri": "file:///home/lidwan/.config/alacritty"
+                "folderUri": "file:///home/lidwan"
             }
         ],
         "emptyWindows": []
     },
     "windowsState": {
         "lastActiveWindow": {
-            "folder": "file:///home/lidwan/.config/alacritty",
-            "backupPath": "/home/lidwan/.config/Code - OSS/Backups/0ae2209a3e57007f3a2f4ec0fe4dce55",
+            "folder": "file:///home/lidwan",
+            "backupPath": "/home/lidwan/.config/Code - OSS/Backups/e119ee4042f4bb0d6017c004fbde9022",
             "uiState": {
                 "mode": 1,
-                "x": 966,
-                "y": 48,
-                "width": 952,
-                "height": 509,
+                "x": 0,
+                "y": 0,
+                "width": 1920,
+                "height": 1080,
                 "zoomLevel": 1
             }
         },
@@ -101,12 +112,34 @@
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/lidwan/.config/alacritty",
-                                        "path": "/home/lidwan/.config/alacritty",
+                                        "external": "file:///home/lidwan",
+                                        "path": "/home/lidwan",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/.config/alacritty"
+                                    "label": "/home/lidwan"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/lidwan/Documents/TOP",
+                                        "path": "/home/lidwan/Documents/TOP",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Documents/TOP"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/lidwan/git/dotrepo/arch-hypr-script",
+                                        "path": "/home/lidwan/git/dotrepo/arch-hypr-script",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/git/dotrepo/arch-hypr-script"
                                 },
                                 {
                                     "id": "openRecentFolder",
@@ -123,6 +156,28 @@
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
+                                        "external": "file:///home/lidwan/git/arch-hypr-script-ssh/arch-hypr-script",
+                                        "path": "/home/lidwan/git/arch-hypr-script-ssh/arch-hypr-script",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/git/arch-hypr-script-ssh/arch-hypr-script"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/lidwan/Documents/projectArchSetup",
+                                        "path": "/home/lidwan/Documents/projectArchSetup",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Documents/projectArchSetup"
+                                },
+                                {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
                                         "external": "file:///home/lidwan/.config/hypr",
                                         "path": "/home/lidwan/.config/hypr",
                                         "scheme": "file"
@@ -134,56 +189,147 @@
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/lidwan/.config/ml4w/settings",
-                                        "path": "/home/lidwan/.config/ml4w/settings",
+                                        "external": "file:///home/lidwan/tmp",
+                                        "path": "/home/lidwan/tmp",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/.config/ml4w/settings"
+                                    "label": "~/tmp"
                                 },
                                 {
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/lidwan/.config/rofi",
-                                        "path": "/home/lidwan/.config/rofi",
+                                        "external": "file:///home/lidwan/git/ML4W-Modfied-repo",
+                                        "path": "/home/lidwan/git/ML4W-Modfied-repo",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/.config/rofi"
+                                    "label": "~/git/ML4W-Modfied-repo"
                                 },
                                 {
                                     "id": "openRecentFolder",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/lidwan/.config/rofi/launchers/type-7",
-                                        "path": "/home/lidwan/.config/rofi/launchers/type-7",
+                                        "external": "file:///home/lidwan/Documents/tmp",
+                                        "path": "/home/lidwan/Documents/tmp",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "~/.config/rofi/launchers/type-7"
+                                    "label": "~/Documents/tmp"
                                 },
                                 {
-                                    "id": "openRecentFolder",
-                                    "uri": {
-                                        "$mid": 1,
-                                        "external": "file:///etc/systemd/system",
-                                        "path": "/etc/systemd/system",
-                                        "scheme": "file"
-                                    },
-                                    "enabled": true,
-                                    "label": "/etc/systemd/system"
+                                    "id": "vscode.menubar.separator"
                                 },
                                 {
-                                    "id": "openRecentFolder",
+                                    "id": "openRecentFile",
                                     "uri": {
                                         "$mid": 1,
-                                        "external": "file:///home/lidwan",
-                                        "path": "/home/lidwan",
+                                        "external": "file:///home/lidwan/Downloads/pmis-dfd-level-0.mermaid",
+                                        "path": "/home/lidwan/Downloads/pmis-dfd-level-0.mermaid",
                                         "scheme": "file"
                                     },
                                     "enabled": true,
-                                    "label": "/home/lidwan"
+                                    "label": "~/Downloads/pmis-dfd-level-0.mermaid"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/lidwan/Downloads/pmis-erm.mermaid",
+                                        "path": "/home/lidwan/Downloads/pmis-erm.mermaid",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/Downloads/pmis-erm.mermaid"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/lidwan/.config/dunst/dunstrc",
+                                        "path": "/home/lidwan/.config/dunst/dunstrc",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/.config/dunst/dunstrc"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/lidwan/git/dotrepo/arch-hypr-script/pkgsNEW.txt",
+                                        "path": "/home/lidwan/git/dotrepo/arch-hypr-script/pkgsNEW.txt",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/git/dotrepo/arch-hypr-script/pkgsNEW.txt"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/lidwan/git/dotrepo/arch-hypr-script/allPackages.txt",
+                                        "path": "/home/lidwan/git/dotrepo/arch-hypr-script/allPackages.txt",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/git/dotrepo/arch-hypr-script/allPackages.txt"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/lidwan/.win11.draft.txt",
+                                        "path": "/home/lidwan/.win11.draft.txt",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/.win11.draft.txt"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/lidwan/git/dotrepo/.bash_history",
+                                        "path": "/home/lidwan/git/dotrepo/.bash_history",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/git/dotrepo/.bash_history"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/lidwan/git/dotrepo/.bash_logout",
+                                        "path": "/home/lidwan/git/dotrepo/.bash_logout",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/git/dotrepo/.bash_logout"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/lidwan/git/dotrepo/.bash_profile",
+                                        "path": "/home/lidwan/git/dotrepo/.bash_profile",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/git/dotrepo/.bash_profile"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/lidwan/.config/waybar/%2C",
+                                        "path": "/home/lidwan/.config/waybar/,",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "~/.config/waybar/,"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -241,6 +387,13 @@
                         "label": "Share",
                         "submenu": {
                             "items": [
+                                {
+                                    "id": "github.copyVscodeDevLinkFile",
+                                    "label": "Copy vscode.dev Link"
+                                },
+                                {
+                                    "id": "vscode.menubar.separator"
+                                },
                                 {
                                     "id": "workbench.profiles.actions.exportProfile",
                                     "label": "Export Profile (Default)..."
@@ -781,13 +934,6 @@
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
-                                    "id": "workbench.action.splitEditorInGroup",
-                                    "label": "Split in &&Group"
-                                },
-                                {
-                                    "id": "vscode.menubar.separator"
-                                },
-                                {
                                     "id": "workbench.action.moveEditorToNewWindow",
                                     "label": "&&Move Editor into New Window"
                                 },
@@ -887,7 +1033,8 @@
                     },
                     {
                         "id": "editor.action.toggleWordWrap",
-                        "label": "&&Word Wrap"
+                        "label": "&&Word Wrap",
+                        "enabled": false
                     }
                 ]
             },
@@ -1562,11 +1709,6 @@
                 "label": "Ctrl+K Ctrl+\\",
                 "isNative": false,
                 "userSettingsLabel": "ctrl+k ctrl+\\"
-            },
-            "workbench.action.splitEditorInGroup": {
-                "label": "Ctrl+K Ctrl+Shift+\\",
-                "isNative": false,
-                "userSettingsLabel": "ctrl+k ctrl+shift+\\"
             },
             "workbench.action.copyEditorToNewWindow": {
                 "label": "Ctrl+K O",

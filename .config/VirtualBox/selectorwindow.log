@@ -1,0 +1,21 @@
+00:00:00.575503 VirtualBox GUI VM Selector Window 7.0.20 r163906 linux.amd64 (Jul 16 2024 13:33:48) release log
+00:00:00.575505 Log opened 2024-09-03T06:54:17.564981000Z
+00:00:00.575506 Build Type: release
+00:00:00.575508 OS Product: Linux
+00:00:00.575509 OS Release: 6.10.7-arch1-1
+00:00:00.575510 OS Version: #1 SMP PREEMPT_DYNAMIC Thu, 29 Aug 2024 16:48:57 +0000
+00:00:00.575546 DMI Product Name: NBLK-WAX9X
+00:00:00.575559 DMI Product Version: M1010
+00:00:00.575564 Firmware type: UEFI
+00:00:00.575791 Secure Boot: Disabled
+00:00:00.575852 Host RAM: 6869MB (6.7GB) total, 3572MB (3.4GB) available
+00:00:00.575856 Executable: /usr/lib/virtualbox/VirtualBox
+00:00:00.575856 Process ID: 19373
+00:00:00.575857 Package type: LINUX_64BITS_GENERIC (OSE)
+00:00:00.575912 Qt version: 5.15.14
+00:00:00.577629 GUI: UIMediumEnumerator: Initial medium-enumeration finished!
+00:00:00.584642 GUI: UIMediumEnumerator: Medium-enumeration started...
+00:00:00.584700 GUI: UIMediumEnumerator: Medium-enumeration finished!
+00:00:01.671930 GUI: UIDesktopWidgetWatchdog::sltHandleHostScreenAvailableGeometryCalculated: Screen 0 work area is actually resized to: 560x140 x 800x800
+00:00:05.376323 GUI: UICommon: Handling aboutToQuit request..
+00:00:06.241754 GUI: UICommon: aboutToQuit request handled!

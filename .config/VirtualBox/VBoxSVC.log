@@ -1,0 +1,73 @@
+00:00:00.002075 main     VirtualBox XPCOM Server 7.0.20 r163906 linux.amd64 (Jul 16 2024 13:33:48) release log
+00:00:00.002080 main     Log opened 2024-09-03T06:54:17.333542000Z
+00:00:00.002080 main     Build Type: release
+00:00:00.002083 main     OS Product: Linux
+00:00:00.002085 main     OS Release: 6.10.7-arch1-1
+00:00:00.002086 main     OS Version: #1 SMP PREEMPT_DYNAMIC Thu, 29 Aug 2024 16:48:57 +0000
+00:00:00.002135 main     DMI Product Name: NBLK-WAX9X
+00:00:00.002157 main     DMI Product Version: M1010
+00:00:00.002166 main     Firmware type: UEFI
+00:00:00.002979 main     Secure Boot: Disabled
+00:00:00.003111 main     Host RAM: 6869MB (6.7GB) total, 3582MB (3.4GB) available
+00:00:00.003116 main     Executable: /usr/lib/virtualbox/VBoxSVC
+00:00:00.003116 main     Process ID: 19404
+00:00:00.003117 main     Package type: LINUX_64BITS_GENERIC (OSE)
+00:00:00.006997 main     IPC socket path: /tmp/.vbox-lidwan-ipc/ipcd
+00:00:00.121224 nspr-2   VirtualBox: object creation starts
+00:00:00.122940 nspr-2   Home directory: '/home/lidwan/.config/VirtualBox'
+00:00:00.123967 nspr-2   Loading settings file "/home/lidwan/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+00:00:00.133844 nspr-2   Failed to retrive disk info: getDiskName(/dev/mapper/root) --> root
+00:00:00.156414 nspr-2   NetIfAdpCtlOut: VBoxNetAdpCtl: Error while retrieving link speed for wlan0: VBoxNetAdpCtl: ioctl failed: Operation not supported
+00:00:00.159177 nspr-2   HostDnsMonitor: initializing
+00:00:00.159593 nspr-2   NAT: resolv.conf: nameserver 172.20.10.1
+00:00:00.159623 nspr-2   HostDnsMonitor: updating information
+00:00:00.159654 nspr-2   HostDnsMonitor: old information
+00:00:00.159657 nspr-2     no server entries
+00:00:00.159659 nspr-2     no domain set
+00:00:00.159661 nspr-2     no search string entries
+00:00:00.159664 nspr-2   HostDnsMonitor: new information
+00:00:00.159666 nspr-2     server 1: 172.20.10.1
+00:00:00.159669 nspr-2     no domain set
+00:00:00.159671 nspr-2     no search string entries
+00:00:00.165726 nspr-2   VD: VDInit finished with VINF_SUCCESS
+00:00:00.166623 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={aac6c7cb-a371-4c58-ab51-0616896b2f2c} aComponent={SystemPropertiesWrap} aText={Cannot determine default Guest Additions ISO location. Most likely they are not available}, preserve=false aResultDetail=0
+00:00:00.173546 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={Runtime error opening '/home/lidwan/VirtualBox VMs/win11TempTest/win11TempTest.vbox' for reading VERR_FILE_NOT_FOUND (File not found.).
+00:00:00.173555 nspr-2   /build/virtualbox/src/VirtualBox-7.0.20/src/VBox/Main/src-server/MachineImpl.cpp[1011] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:00.174519 nspr-2   VirtualBox: object created
+00:00:01.197368 nspr-3   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={Runtime error opening '/home/lidwan/VirtualBox VMs/win11TempTest/win11TempTest.vbox' for reading VERR_FILE_NOT_FOUND (File not found.).
+00:00:01.197379 nspr-3   /build/virtualbox/src/VirtualBox-7.0.20/src/VBox/Main/src-server/MachineImpl.cpp[1011] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:01.198088 nspr-3   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={Runtime error opening '/home/lidwan/VirtualBox VMs/win11TempTest/win11TempTest.vbox' for reading VERR_FILE_NOT_FOUND (File not found.).
+00:00:01.198094 nspr-3   /build/virtualbox/src/VirtualBox-7.0.20/src/VBox/Main/src-server/MachineImpl.cpp[1011] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:01.198947 nspr-3   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={Runtime error opening '/home/lidwan/VirtualBox VMs/win11TempTest/win11TempTest.vbox' for reading VERR_FILE_NOT_FOUND (File not found.).
+00:00:01.198952 nspr-3   /build/virtualbox/src/VirtualBox-7.0.20/src/VBox/Main/src-server/MachineImpl.cpp[1011] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:01.383506 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The object functionality is limited}, preserve=false aResultDetail=0
+00:00:01.385260 nspr-2   WARNING [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={e54f6256-97a7-4947-8a78-10c013ddf4b8} aComponent={HostWrap} aText={VirtualBox is not currently allowed to access USB devices.  You can change this by adding your user to the 'vboxusers' group.  Please see the user manual for a more detailed explanation}, preserve=false aResultDetail=0
+00:00:01.416640 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={Runtime error opening '/home/lidwan/VirtualBox VMs/win11TempTest/win11TempTest.vbox' for reading VERR_FILE_NOT_FOUND (File not found.).
+00:00:01.416653 nspr-2   /build/virtualbox/src/VirtualBox-7.0.20/src/VBox/Main/src-server/MachineImpl.cpp[1011] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:01.470823 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={Runtime error opening '/home/lidwan/VirtualBox VMs/win11TempTest/win11TempTest.vbox' for reading VERR_FILE_NOT_FOUND (File not found.).
+00:00:01.470831 nspr-2   /build/virtualbox/src/VirtualBox-7.0.20/src/VBox/Main/src-server/MachineImpl.cpp[1011] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:01.607439 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={Runtime error opening '/home/lidwan/VirtualBox VMs/win11TempTest/win11TempTest.vbox' for reading VERR_FILE_NOT_FOUND (File not found.).
+00:00:01.607448 nspr-2   /build/virtualbox/src/VirtualBox-7.0.20/src/VBox/Main/src-server/MachineImpl.cpp[1011] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:01.608376 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The object functionality is limited}, preserve=false aResultDetail=0
+00:00:01.609319 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The object functionality is limited}, preserve=false aResultDetail=0
+00:00:01.614589 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The object functionality is limited}, preserve=false aResultDetail=0
+00:00:01.615629 nspr-2   ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={The object functionality is limited}, preserve=false aResultDetail=0
+00:00:01.619299 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={Runtime error opening '/home/lidwan/VirtualBox VMs/win11TempTest/win11TempTest.vbox' for reading VERR_FILE_NOT_FOUND (File not found.).
+00:00:01.619309 nspr-2   /build/virtualbox/src/VirtualBox-7.0.20/src/VBox/Main/src-server/MachineImpl.cpp[1011] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:01.626112 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={Runtime error opening '/home/lidwan/VirtualBox VMs/win11TempTest/win11TempTest.vbox' for reading VERR_FILE_NOT_FOUND (File not found.).
+00:00:01.626123 nspr-2   /build/virtualbox/src/VirtualBox-7.0.20/src/VBox/Main/src-server/MachineImpl.cpp[1011] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:01.629195 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={Runtime error opening '/home/lidwan/VirtualBox VMs/win11TempTest/win11TempTest.vbox' for reading VERR_FILE_NOT_FOUND (File not found.).
+00:00:01.629203 nspr-2   /build/virtualbox/src/VirtualBox-7.0.20/src/VBox/Main/src-server/MachineImpl.cpp[1011] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:01.631324 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={Runtime error opening '/home/lidwan/VirtualBox VMs/win11TempTest/win11TempTest.vbox' for reading VERR_FILE_NOT_FOUND (File not found.).
+00:00:01.631334 nspr-2   /build/virtualbox/src/VirtualBox-7.0.20/src/VBox/Main/src-server/MachineImpl.cpp[1011] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:01.636815 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={Runtime error opening '/home/lidwan/VirtualBox VMs/win11TempTest/win11TempTest.vbox' for reading VERR_FILE_NOT_FOUND (File not found.).
+00:00:01.636825 nspr-2   /build/virtualbox/src/VirtualBox-7.0.20/src/VBox/Main/src-server/MachineImpl.cpp[1011] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:01.645508 nspr-2   ERROR [COM]: aRC=NS_ERROR_FAILURE (0x80004005) aIID={300763af-5d6b-46e6-aa96-273eac15538a} aComponent={MachineWrap} aText={Runtime error opening '/home/lidwan/VirtualBox VMs/win11TempTest/win11TempTest.vbox' for reading VERR_FILE_NOT_FOUND (File not found.).
+00:00:01.645516 nspr-2   /build/virtualbox/src/VirtualBox-7.0.20/src/VBox/Main/src-server/MachineImpl.cpp[1011] (nsresult Machine::i_registeredInit())}, preserve=false aResultDetail=0
+00:00:02.354631 nspr-3   Saving settings file "/home/lidwan/.config/VirtualBox/VirtualBox.xml" with version "1.12-linux"
+00:00:02.357120 nspr-3   Finished saving settings file "/home/lidwan/.config/VirtualBox/VirtualBox.xml"
+00:00:10.879094 main     VirtualBox: object deletion starts
+00:00:10.879813 main     HostDnsMonitor: shutting down ...
+00:00:10.893234 main     HostDnsMonitor: shut down
+00:00:10.904069 Watcher  ERROR [COM]: aRC=E_ACCESSDENIED (0x80070005) aIID={7682d5eb-f00e-44f1-8ca2-99d08b1cd607} aComponent={VirtualBoxWrap} aText={The object is not ready}, preserve=false aResultDetail=0
+00:00:10.904240 main     VirtualBox: object deleted
