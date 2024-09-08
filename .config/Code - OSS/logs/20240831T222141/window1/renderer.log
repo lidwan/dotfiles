@@ -1,3 +1,0 @@
-2024-08-31 22:21:42.330 [info] Initial editor state {"filesToOpenOrCreate":[{"fileUri":{"$mid":1,"path":"/home/lidwan/.win11.draft.txt","scheme":"file"},"type":1,"exists":true,"options":{}}],"filesToDiff":[],"filesToMerge":[]}
-2024-08-31 22:21:42.865 [info] Started local extension host with pid 57009.
-2024-08-31 22:21:46.100 [info] [perf] Render performance baseline is 200ms

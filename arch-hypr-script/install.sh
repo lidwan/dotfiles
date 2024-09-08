@@ -14,13 +14,13 @@ install_yay() {
     fi
 }
 
-# Step 1: Install yay
+#Install yay
 install_yay
 
-# Step 2: Update the system and install official Arch packages
+#Update the system and install official Arch packages
 sudo yay -Syu --noconfirm
 
-# Step 4: Install AUR packages using yay
+#Install AUR packages using yay
 while read -r aur_package; do
     if ! yay -Qi $aur_package > /dev/null; then
         echo "Installing $aur_package from AUR..."
@@ -31,10 +31,10 @@ while read -r aur_package; do
 done < allPackages.txt
 
 
-# Step 5: backing up existing configuration files
+#backing up existing configuration files
 cp -r ~/.config ~/.config.backup
 
-# Step 6: Copy configuration files
+#Copy configuration files
 echo "Copying configuration files..."
 cp -r ../.config/hypr ~/.config/
 cp -r ../.config/alacritty ~/.config/
@@ -53,12 +53,8 @@ cp ../.config/user-dirs.dirs ~/.config/
 cp ../.config/user-dirs.locale ~/.config/
 cp ../.config/.gsd-keyboard.settings-ported ~/.config/
 
-cp -r /etc/systemd/system ~/etcSystemdSystem.backup
 
-systemctl --user daemon-reload
-
-
-sudo cp ../.bashrc ~/.bashrc
+sudo cp .bashrc ~/.bashrc
 
 
 echo "Setup complete!"
