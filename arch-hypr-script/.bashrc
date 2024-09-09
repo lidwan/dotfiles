@@ -75,6 +75,8 @@ alias ll="ls --color=auto -hal --group-directories-first"
 alias mkfile='touch'
 alias ff="fastfetch"
 alias code="code ."
+alias ref="sudo reflector --save /etc/pacman.d/mirrorlist --protocol https --country Germany --latest 5 --sort age --fastest 5"
+
 
 #firefox
 alias yt-music='firefox --new-window https://music.youtube.com/ & sleep 1 && hyprctl dispatch movetoworkspace 9 && hyprctl dispatch fullscreen'
