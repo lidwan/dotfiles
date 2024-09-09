@@ -9,6 +9,8 @@ NC='\033[0m' # No color
 
 # Function to install yay if it's not already installed
 install_yay() {
+    sudo pacman -Syu --noconfirm
+
     if ! command -v yay &> /dev/null; then
         echo -e "${YELLOW}Installing yay...${NC}"
         git clone https://aur.archlinux.org/yay.git
@@ -32,7 +34,7 @@ install_aur_packages() {
 
     if [[ "$install_aur" == "y" ]]; then
         echo -e "${YELLOW}Updating system and installing AUR packages...${NC}"
-        sudo yay -Syu --noconfirm
+        sudo yay -Sy
 
         if [ -f "allPackages.txt" ]; then
             while read -r aur_package; do
