@@ -80,6 +80,11 @@
         //"format-alt": "{:%Y-%m-%d}"
         "format-alt": "{:%d-%m-%Y}"
     },
+        "custom/clock": {
+        "format": "{}",
+        "interval": 60,
+        "exec": "date +'%H:%M'",
+    },
 
     // System
     "custom/system": {
