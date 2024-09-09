@@ -1,1 +1,1 @@
-discord
+com.discordapp.Discord
