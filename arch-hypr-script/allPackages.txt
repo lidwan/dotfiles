@@ -167,6 +167,7 @@ ghostscript
 giflib
 gimp
 git
+git-filter-repo
 gjs
 glib-networking
 glib2
