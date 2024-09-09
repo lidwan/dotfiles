@@ -1,6 +1,6 @@
 # dotfiles
 # includes config files for hyprland, waybar, rofi and much more. it also includes a script to get started quicklly: arch-hypr-script!
-# to get the dotfiles run the following command: " bash <(curl -s https://raw.githubusercontent.com/lidwan/dotfiles/main/arch-hypr-script/install.sh) "
+# to get the dotfiles run the following command:" git clone https://github.com/lidwan/dotfiles && cd dotfiles/arch-hypr-script && chmod +x install.sh && ./install.sh "
 # 
 # arch-hypr-script:
 # A script to get my hyprland config setup up and running quickly 
