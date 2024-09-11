@@ -31,8 +31,8 @@
         "network",  
         "keyboard-state", 
         "battery", 
-        //"clock", since tzdate new update broke waybar's clock
-        "custom/clock", //tmp while waybar's implemention of tzdate gets fixed!
+        "clock",
+        //"custom/clock", //tmp while waybar's implemention of tzdate gets fixed! -- it's fixed!
         "tray",
         "custom/exit"
     ]
