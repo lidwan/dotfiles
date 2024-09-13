@@ -41,6 +41,7 @@ base-devel
 bash
 binutils
 bison
+bitwarden
 blas
 blueman
 bluez
@@ -110,6 +111,7 @@ edk2-ovmf
 efibootmgr
 efivar
 electron30
+electron31
 ell
 enchant
 ente-auth-bin
@@ -590,6 +592,7 @@ libnma-common
 libnma-gtk4
 libnotify
 libnsl
+libnss_nis
 libnvme
 liboauth
 libogg
@@ -998,6 +1001,7 @@ qt6-multimedia
 qt6-multimedia-ffmpeg
 qt6-networkauth
 qt6-positioning
+qt6-scxml
 qt6-shadertools
 qt6-speech
 qt6-svg
@@ -1008,6 +1012,7 @@ qt6-webchannel
 qt6-webengine
 raptor
 rav1e
+re2
 readline
 reflector
 ripgrep
