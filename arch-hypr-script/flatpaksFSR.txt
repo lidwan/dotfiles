@@ -1,2 +1,3 @@
 com.discordapp.Discord
+io.github.zen_browser.zen
 com.github.unrud.VideoDownloader
