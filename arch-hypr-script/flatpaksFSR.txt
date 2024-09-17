@@ -1,1 +1,2 @@
 com.discordapp.Discord
+com.github.unrud.VideoDownloader
