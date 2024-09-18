@@ -16,15 +16,28 @@ prompt_user() {
     print_colored "34" "       Update and Backup"
     print_colored "34" "================================"
     print_colored "32" "Choose an option:"
-    print_colored "32" "Note that the script will make a timeshift backup either way"
     echo -e "\e[33m1)\e[0m Update everything (including --devel)"
     echo -e "\e[33m2)\e[0m Update AUR and official repos only"
-    echo -n -e "\e[36mEnter your choice [1 or 2, default is 1]: \e[0m"
+    echo -e "\e[33m3)\e[0m Update everything (including Flatpaks)"
+    echo -n -e "\e[36mEnter your choice [1, 2, or 3, default is 3]: \e[0m"
     read -r choice
-    
+
     # Default to option 1 if the user just presses enter
     if [ -z "$choice" ]; then
-        choice=1
+        choice=3
+    fi
+}
+
+# Function to ask the user if they want to create a backup
+prompt_backup() {
+    echo -n -e "\e[36mDo you want to create a Timeshift backup? [y/N, default is yes]: \e[0m"
+    read -r backup_choice
+
+    # Default to yes (backup) if the user just presses enter
+    if [ -z "$backup_choice" ] || [[ "$backup_choice" =~ ^[Yy]$ ]]; then
+        create_backup
+    else
+        print_colored "33" "Skipping Timeshift backup."
     fi
 }
 
@@ -37,20 +50,32 @@ create_backup() {
         exit 1
     fi
     print_colored "32" "Backup completed."
-    clear #clears if update is completed without errors.
+    clear # Clears if update is completed without errors.
 }
 
-# Function to run the update
+# Function to run the update with color output
 run_update() {
     command=$1
     print_colored "34" "Running: $command"
 
-    { time $command; } 2>&1 | tee -a "$LOGFILE"
+    # Ensure color output is preserved
+    { time $command --color=always; } 2>&1 | tee -a "$LOGFILE"
     if [ $? -ne 0 ]; then
         print_colored "31" "Update failed. Check the log for details."
         exit 1
     fi
     print_colored "32" "Update process complete."
+}
+
+# Function to update Flatpaks
+update_flatpaks() {
+    print_colored "34" "Updating Flatpaks..."
+    { time flatpak update -y; } 2>&1 | tee -a "$LOGFILE"
+    if [ $? -ne 0 ]; then
+        print_colored "31" "Flatpak update failed. Check the log for details."
+        exit 1
+    fi
+    print_colored "32" "Flatpaks updated successfully."
 }
 
 # Main script
@@ -60,16 +85,18 @@ clear
 echo "Script started at $(date)" | tee -a "$LOGFILE"
 
 prompt_user
+prompt_backup
 
-# Validate the user's choice and run the appropriate commands, 69 choice is for testing purpuses.
+# Validate the user's choice and run the appropriate commands
 if [ "$choice" == "1" ]; then
-    create_backup
     run_update "yay -Syu --devel"
 elif [ "$choice" == "2" ]; then
-    create_backup
     run_update "yay -Syu"
+elif [ "$choice" == "3" ]; then
+    run_update "yay -Syu --devel"
+    update_flatpaks
 elif [ "$choice" == "69" ]; then
-    print_colored "32" "...NICE!, THIS IS A TEST CASE, SYSTEM WAS NOT UPDATED OR BACKED UP"
+    print_colored "32" "...NICE!, THIS IS A TEST CASE, SYSTEM WAS NOT UPDATED OR BACKED UP."
 else
     print_colored "31" "Invalid choice. Exiting."
     exit 1
@@ -77,8 +104,8 @@ fi
 
 print_colored "32" "All tasks completed successfully!"
 echo "Script completed at $(date)" | tee -a "$LOGFILE"
-
 # Wait for the user to press Enter before exiting
 print_colored "34" "Press Enter to exit..."
 read -r
 exit
+
