@@ -65,14 +65,11 @@ cairomm
 cairomm-1.16
 cantarell-fonts
 capstone
-catch2
 cdparanoia
 cdrtools
 chili-sddm-theme
 chromaprint
-chrono-date
 cifs-utils
-cmake
 code
 colord
 colord-gtk-common
@@ -81,7 +78,6 @@ colord-sane
 composefs
 convertlit
 coreutils
-cppdap
 cracklib
 cronie
 cryptsetup
@@ -227,7 +223,6 @@ gnome-weather
 gnu-free-fonts
 gnupg
 gnutls
-go
 gobject-introspection
 gobject-introspection-runtime
 gom
@@ -481,7 +476,6 @@ libcolord
 libcue
 libcups
 libdaemon
-libdatachannel
 libdatrie
 libdbusmenu-glib
 libdbusmenu-gtk3
@@ -547,7 +541,6 @@ libinstpatch
 libiptcdata
 libisl
 libjpeg-turbo
-libjuice
 libjxl
 libkexiv2
 libksba
@@ -759,7 +752,6 @@ make
 malcontent
 man-db
 man-pages
-mbedtls
 md4c
 mdadm
 media-player-info
@@ -781,7 +773,6 @@ msgraph
 mtdev
 mtools
 mullvad-vpn-bin
-mullvad-vpn-bin-debug
 mutter
 mypaint-brushes1
 nano
@@ -807,7 +798,6 @@ nspr
 nss
 ntfs-3g
 numactl
-obs-studio
 ocl-icd
 oniguruma
 onlyoffice-bin
@@ -1022,9 +1012,7 @@ rav1e
 re2
 readline
 reflector
-rhash
 ripgrep
-rnnoise
 rofi-wayland
 rsync
 rtkit
@@ -1034,7 +1022,6 @@ run-parts
 rygel
 sane
 sbc
-scdoc
 sdbus-cpp
 sddm-git
 sdl12-compat
@@ -1136,14 +1123,12 @@ upower
 usbmuxd
 usbredir
 usbutils
-uthash
 util-linux
 util-linux-libs
 v4l-utils
 vapoursynth
 vde2
 ventoy-bin
-ventoy-bin-debug
 veracrypt
 vid.stab
 vim
@@ -1166,7 +1151,6 @@ vulkan-radeon
 vulkan-validation-layers
 wavpack
 waybar
-waybar-git-debug
 wayland
 wayland-protocols
 webkit2gtk
@@ -1233,7 +1217,6 @@ xxhash
 xz
 yajl
 yay
-yay-debug
 yelp
 yelp-xsl
 yyjson
