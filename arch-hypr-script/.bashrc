@@ -75,7 +75,7 @@ alias ll="ls --color=auto -hal --group-directories-first"
 alias mkfile='touch'
 alias ff="fastfetch"
 alias code="code ."
-alias ref="sudo reflector --save /etc/pacman.d/mirrorlist --protocol https --country Germany --latest 5 --sort age --fastest 5"
+alias ref="sudo reflector --country Germany,France --protocol https --latest 10 --sort rate --save /etc/pacman.d/mirrorlist"
 
 
 #firefox
