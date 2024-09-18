@@ -5,7 +5,7 @@
     "theme": {
         "mode": 1,
         "brightness": 100,
-        "contrast": 120,
+        "contrast": 100,
         "grayscale": 0,
         "sepia": 0,
         "useFont": false,
@@ -61,33 +61,6 @@
                 "mode": 1,
                 "brightness": 100,
                 "contrast": 85,
-                "grayscale": 0,
-                "sepia": 0,
-                "useFont": false,
-                "fontFamily": "Segoe UI",
-                "textStroke": 0,
-                "engine": "dynamicTheme",
-                "stylesheet": "",
-                "darkSchemeBackgroundColor": "#181a1b",
-                "darkSchemeTextColor": "#e8e6e3",
-                "lightSchemeBackgroundColor": "#dcdad7",
-                "lightSchemeTextColor": "#181a1b",
-                "scrollbarColor": "auto",
-                "selectionColor": "auto",
-                "styleSystemControls": false,
-                "lightColorScheme": "Default",
-                "darkColorScheme": "Default",
-                "immediateModify": false
-            }
-        },
-        {
-            "url": [
-                "justedujo-my.sharepoint.com"
-            ],
-            "theme": {
-                "mode": 1,
-                "brightness": 105,
-                "contrast": 110,
                 "grayscale": 0,
                 "sepia": 0,
                 "useFont": false,
@@ -214,6 +187,222 @@
                 "darkColorScheme": "Default",
                 "immediateModify": false
             }
+        },
+        {
+            "url": [
+                "justedujo-my.sharepoint.com"
+            ],
+            "theme": {
+                "mode": 1,
+                "brightness": 120,
+                "contrast": 90,
+                "grayscale": 0,
+                "sepia": 0,
+                "useFont": false,
+                "fontFamily": "Segoe UI",
+                "textStroke": 0,
+                "engine": "dynamicTheme",
+                "stylesheet": "",
+                "darkSchemeBackgroundColor": "#181a1b",
+                "darkSchemeTextColor": "#e8e6e3",
+                "lightSchemeBackgroundColor": "#dcdad7",
+                "lightSchemeTextColor": "#181a1b",
+                "scrollbarColor": "auto",
+                "selectionColor": "auto",
+                "styleSystemControls": false,
+                "lightColorScheme": "Default",
+                "darkColorScheme": "Default",
+                "immediateModify": false
+            }
+        },
+        {
+            "url": [
+                "www.icloud.com"
+            ],
+            "theme": {
+                "mode": 1,
+                "brightness": 120,
+                "contrast": 140,
+                "grayscale": 0,
+                "sepia": 0,
+                "useFont": false,
+                "fontFamily": "Segoe UI",
+                "textStroke": 0,
+                "engine": "dynamicTheme",
+                "stylesheet": "",
+                "darkSchemeBackgroundColor": "#181a1b",
+                "darkSchemeTextColor": "#e8e6e3",
+                "lightSchemeBackgroundColor": "#dcdad7",
+                "lightSchemeTextColor": "#181a1b",
+                "scrollbarColor": "auto",
+                "selectionColor": "auto",
+                "styleSystemControls": false,
+                "lightColorScheme": "Default",
+                "darkColorScheme": "Default",
+                "immediateModify": false
+            }
+        },
+        {
+            "url": [
+                "www.gnome-look.org"
+            ],
+            "theme": {
+                "mode": 1,
+                "brightness": 150,
+                "contrast": 95,
+                "grayscale": 0,
+                "sepia": 0,
+                "useFont": false,
+                "fontFamily": "Segoe UI",
+                "textStroke": 0,
+                "engine": "dynamicTheme",
+                "stylesheet": "",
+                "darkSchemeBackgroundColor": "#181a1b",
+                "darkSchemeTextColor": "#e8e6e3",
+                "lightSchemeBackgroundColor": "#dcdad7",
+                "lightSchemeTextColor": "#181a1b",
+                "scrollbarColor": "auto",
+                "selectionColor": "auto",
+                "styleSystemControls": false,
+                "lightColorScheme": "Default",
+                "darkColorScheme": "Default",
+                "immediateModify": false
+            }
+        },
+        {
+            "url": [
+                "css-tricks.com"
+            ],
+            "theme": {
+                "mode": 1,
+                "brightness": 120,
+                "contrast": 95,
+                "grayscale": 0,
+                "sepia": 0,
+                "useFont": false,
+                "fontFamily": "Segoe UI",
+                "textStroke": 0,
+                "engine": "dynamicTheme",
+                "stylesheet": "",
+                "darkSchemeBackgroundColor": "#181a1b",
+                "darkSchemeTextColor": "#e8e6e3",
+                "lightSchemeBackgroundColor": "#dcdad7",
+                "lightSchemeTextColor": "#181a1b",
+                "scrollbarColor": "auto",
+                "selectionColor": "auto",
+                "styleSystemControls": false,
+                "lightColorScheme": "Default",
+                "darkColorScheme": "Default",
+                "immediateModify": false
+            }
+        },
+        {
+            "url": [
+                "codyloyd.com"
+            ],
+            "theme": {
+                "mode": 1,
+                "brightness": 130,
+                "contrast": 100,
+                "grayscale": 0,
+                "sepia": 0,
+                "useFont": false,
+                "fontFamily": "Segoe UI",
+                "textStroke": 0,
+                "engine": "dynamicTheme",
+                "stylesheet": "",
+                "darkSchemeBackgroundColor": "#181a1b",
+                "darkSchemeTextColor": "#e8e6e3",
+                "lightSchemeBackgroundColor": "#dcdad7",
+                "lightSchemeTextColor": "#181a1b",
+                "scrollbarColor": "auto",
+                "selectionColor": "auto",
+                "styleSystemControls": false,
+                "lightColorScheme": "Default",
+                "darkColorScheme": "Default",
+                "immediateModify": false
+            }
+        },
+        {
+            "url": [
+                "www.kevinpowell.co"
+            ],
+            "theme": {
+                "mode": 1,
+                "brightness": 95,
+                "contrast": 95,
+                "grayscale": 0,
+                "sepia": 0,
+                "useFont": false,
+                "fontFamily": "Segoe UI",
+                "textStroke": 0,
+                "engine": "dynamicTheme",
+                "stylesheet": "",
+                "darkSchemeBackgroundColor": "#181a1b",
+                "darkSchemeTextColor": "#e8e6e3",
+                "lightSchemeBackgroundColor": "#dcdad7",
+                "lightSchemeTextColor": "#181a1b",
+                "scrollbarColor": "auto",
+                "selectionColor": "auto",
+                "styleSystemControls": false,
+                "lightColorScheme": "Default",
+                "darkColorScheme": "Default",
+                "immediateModify": false
+            }
+        },
+        {
+            "url": [
+                "internetingishard.netlify.app"
+            ],
+            "theme": {
+                "mode": 0,
+                "brightness": 135,
+                "contrast": 50,
+                "grayscale": 0,
+                "sepia": 0,
+                "useFont": false,
+                "fontFamily": "Segoe UI",
+                "textStroke": 0,
+                "engine": "dynamicTheme",
+                "stylesheet": "",
+                "darkSchemeBackgroundColor": "#181a1b",
+                "darkSchemeTextColor": "#e8e6e3",
+                "lightSchemeBackgroundColor": "#dcdad7",
+                "lightSchemeTextColor": "#181a1b",
+                "scrollbarColor": "auto",
+                "selectionColor": "auto",
+                "styleSystemControls": false,
+                "lightColorScheme": "Default",
+                "darkColorScheme": "Default",
+                "immediateModify": false
+            }
+        },
+        {
+            "url": [
+                "chromewebstore.google.com"
+            ],
+            "theme": {
+                "mode": 1,
+                "brightness": 130,
+                "contrast": 60,
+                "grayscale": 0,
+                "sepia": 0,
+                "useFont": false,
+                "fontFamily": "Segoe UI",
+                "textStroke": 0,
+                "engine": "dynamicTheme",
+                "stylesheet": "",
+                "darkSchemeBackgroundColor": "#181a1b",
+                "darkSchemeTextColor": "#e8e6e3",
+                "lightSchemeBackgroundColor": "#dcdad7",
+                "lightSchemeTextColor": "#181a1b",
+                "scrollbarColor": "auto",
+                "selectionColor": "auto",
+                "styleSystemControls": false,
+                "lightColorScheme": "Default",
+                "darkColorScheme": "Default",
+                "immediateModify": false
+            }
         }
     ],
     "enabledByDefault": true,
@@ -237,7 +426,6 @@
         "www.theodinproject.com",
         "developer.mozilla.org",
         "127.0.0.1:5500",
-        "css-tricks.com",
         "www.tiktok.com",
         "zoroxtv.to",
         "lidwan.github.io",
@@ -245,9 +433,29 @@
         "studio.youtube.com",
         "auth.ente.io",
         "drive.google.com",
-        "www.icloud.com",
         "outlook.office.com",
-        "claude.ai"
+        "x.ai",
+        "app.rytr.me",
+        "copilot.microsoft.com",
+        "apex.oracle.com",
+        "erdplus.com",
+        "www.taskade.com",
+        "diagrammingai.com",
+        "diagram-gpt.fraserxu.dev",
+        "claude.ai",
+        "zen-browser.app",
+        "www.jordanpolitics.org",
+        "www.notion.so",
+        "fabulousgk.github.io",
+        "www.joshwcomeau.com",
+        "web.dev",
+        "flukeout.github.io",
+        "addons.mozilla.org",
+        "sass-lang.com",
+        "mdn.github.io",
+        "gprm.itsvg.in",
+        "votermatchjo.com",
+        "start.duckduckgo.com"
     ],
     "changeBrowserTheme": false,
     "syncSettings": true,
@@ -270,8 +478,41 @@
     "enableForPDF": false,
     "enableForProtectedPages": false,
     "enableContextMenus": false,
-    "detectDarkTheme": false,
+    "detectDarkTheme": true,
+    "readNews": [
+        "g-search-crash",
+        "thanks-2023",
+        "news-2023",
+        "filter-mode",
+        "v5-survey",
+        "mobile",
+        "detect-dark-theme",
+        "no-war",
+        "chrome-favorites-2021",
+        "thanks-2021",
+        "5m-users",
+        "v4-9-16",
+        "v4-9",
+        "attention",
+        "dr-5-announcement",
+        "2m-users",
+        "automation",
+        "product-hunt-golden-kitty-2018",
+        "time-settings",
+        "safari",
+        "500k-users",
+        "stylish",
+        "product-hunt",
+        "custom-site-settings",
+        "thanks-for-contribution",
+        "dynamic-theme"
+    ],
     "displayedNews": [
         "thanks-2023"
-    ]
+    ],
+    "installation": {
+        "date": 1726503875876,
+        "reason": "update",
+        "version": "4.9.89"
+    }
 }
