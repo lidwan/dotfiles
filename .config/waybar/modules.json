@@ -131,7 +131,7 @@
         ]
     },
     "custom/updates":{
-        "format": "{} Update(s)",
+        "format": "{}",
         "exec": "~/.config/hypr/Scripts/checkupdates.sh",
         "interval": 1800,
         "tooltip": false,
