@@ -79,7 +79,7 @@ alias ref="sudo reflector --country Germany,France --protocol https --latest 10 
 
 
 #firefox
-alias yt-music='firefox --new-window https://music.youtube.com/ & sleep 1 && hyprctl dispatch movetoworkspace 9 && hyprctl dispatch fullscreen'
+alias yt-music='flatpak run io.github.zen_browser.zen --new-window https://music.youtube.com/ & sleep 1 && hyprctl dispatch movetoworkspace 9 && hyprctl dispatch fullscreen'
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
