@@ -189,6 +189,7 @@ glslang
 glu
 glycin
 gmp
+gnome-app-list
 gnome-autoar
 gnome-backgrounds
 gnome-bluetooth-3.0
@@ -335,6 +336,7 @@ jbig2dec
 jbigkit
 jq
 js115
+js128
 json-c
 json-glib
 jsoncpp
@@ -648,6 +650,7 @@ libsoup3
 libsoxr
 libspectre
 libspeechd
+libspelling
 libspiro
 libsrtp
 libssh
@@ -744,6 +747,7 @@ linux-firmware-whence
 llvm-libs
 lm_sensors
 lmdb
+localsearch
 loupe
 lsb-release
 lsof
@@ -1099,14 +1103,13 @@ texinfo
 thunar
 thunar-archive-plugin
 timeshift
+tinysparql
 tlp
 tlpui
 tomlplusplus
 totem
 totem-pl-parser
 tpm2-tss
-tracker3
-tracker3-miners
 tree-sitter
 tree-sitter-c
 tree-sitter-lua
