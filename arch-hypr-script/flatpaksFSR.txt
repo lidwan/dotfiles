@@ -1,3 +1,6 @@
 com.discordapp.Discord
 com.github.unrud.VideoDownloader
 com.obsproject.Studio
+org.onlyoffice.desktopeditors
+org.mozilla.Thunderbird
+io.github.zen_browser.zen
