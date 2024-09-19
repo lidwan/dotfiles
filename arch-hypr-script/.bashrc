@@ -76,6 +76,7 @@ alias mkfile='touch'
 alias ff="fastfetch"
 alias code="code ."
 alias ref="sudo reflector --country Germany,France --protocol https --latest 10 --sort rate --save /etc/pacman.d/mirrorlist"
+alias listpkgs="yay -Qq > allPackages.txt"
 
 
 #firefox
