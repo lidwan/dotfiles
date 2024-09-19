@@ -23,6 +23,8 @@ alias ga.="git add ."
 alias gcm="git commit -m"
 alias gc='git clone '
 alias gp="git push"
+alias gd="git diff"
+alias gds="git diff --staged"
 
 #vim
 alias v="nvim"
@@ -77,6 +79,7 @@ alias ff="fastfetch"
 alias code="code ."
 alias ref="sudo reflector --country Germany,France --protocol https --latest 10 --sort rate --save /etc/pacman.d/mirrorlist"
 alias listpkgs="yay -Qq > allPackages.txt"
+
 
 
 #firefox
