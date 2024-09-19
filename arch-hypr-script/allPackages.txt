@@ -278,6 +278,7 @@ gtkmm-4.0
 gtkmm3
 gtksourceview4
 gtksourceview5
+gufw
 guile
 gum
 gupnp
