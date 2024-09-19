@@ -4,3 +4,4 @@ com.obsproject.Studio
 org.onlyoffice.desktopeditors
 org.mozilla.Thunderbird
 io.github.zen_browser.zen
+org.gimp.GIMP
