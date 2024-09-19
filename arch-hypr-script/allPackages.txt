@@ -69,7 +69,9 @@ cdparanoia
 cdrtools
 chili-sddm-theme
 chromaprint
+chromium
 cifs-utils
+cmake
 code
 colord
 colord-gtk-common
@@ -78,6 +80,7 @@ colord-sane
 composefs
 convertlit
 coreutils
+cppdap
 cracklib
 cronie
 cryptsetup
@@ -101,6 +104,7 @@ djvulibre
 dosfstools
 dotconf
 double-conversion
+downgrade
 dtc
 duktape
 dunst
@@ -123,6 +127,7 @@ exempi
 exiv2
 exo
 expat
+extra-cmake-modules
 faac
 faad2
 fakeroot
@@ -151,6 +156,7 @@ fribidi
 fuse-common
 fuse2
 fuse3
+fzf
 gawk
 gc
 gcc
@@ -158,6 +164,8 @@ gcc-libs
 gcr
 gcr-4
 gd
+gdb
+gdb-common
 gdbm
 gdk-pixbuf2
 gdm
@@ -168,7 +176,6 @@ geocode-glib-common
 gettext
 ghostscript
 giflib
-gimp
 git
 git-filter-repo
 gjs
@@ -773,6 +780,7 @@ msgraph
 mtdev
 mtools
 mullvad-vpn-bin
+mullvad-vpn-bin-debug
 mutter
 mypaint-brushes1
 nano
@@ -800,7 +808,6 @@ ntfs-3g
 numactl
 ocl-icd
 oniguruma
-onlyoffice-bin
 openal
 opencore-amr
 openexr
@@ -816,6 +823,7 @@ osinfo-db
 ostree
 p11-kit
 pacman
+pacman-contrib
 pacman-mirrorlist
 pam
 pambase
@@ -880,6 +888,7 @@ python-cryptography
 python-dbus
 python-defusedxml
 python-distlib
+python-docutils
 python-dulwich
 python-fastjsonschema
 python-filelock
@@ -940,7 +949,6 @@ python-validate-pyproject
 python-virtualenv
 python-webencodings
 python-yaml
-qbittorrent
 qca-qt6
 qemu-audio-alsa
 qemu-audio-dbus
@@ -1012,6 +1020,7 @@ rav1e
 re2
 readline
 reflector
+rhash
 ripgrep
 rofi-wayland
 rsync
@@ -1024,6 +1033,7 @@ sane
 sbc
 sdbus-cpp
 sddm-git
+sddm-git-debug
 sdl12-compat
 sdl2
 sdl2_image
@@ -1053,6 +1063,7 @@ sonnet
 sord
 sound-theme-freedesktop
 soundtouch
+source-highlight
 spandsp
 spdlog
 speech-dispatcher
@@ -1087,7 +1098,6 @@ tevent
 texinfo
 thunar
 thunar-archive-plugin
-thunderbird
 timeshift
 tlp
 tlpui
