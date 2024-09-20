@@ -32,6 +32,7 @@
             "(.*) — Mozilla Firefox": "$1",
             "(.*) — Zen Browser": "$1",
             "(.*) - VLC media player": "$1",
+            "(.*) - mpv": "$1",
         },
         "separate-outputs": true,
         "max-length": 85,
