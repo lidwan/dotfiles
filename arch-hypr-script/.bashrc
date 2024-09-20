@@ -50,6 +50,11 @@ alias psy="sudo pacman -Sy"
 alias psyu="sudo pacman -Syu"
 alias pr="sudo pacman -R"
 
+#flatpak
+alias fs="flatpak install"
+alias fqu="flatpak remote-ls --updates"
+alias fsyu="flatpak update"
+
 #grup
 alias grubupdate='sudo grub-mkconfig -o /boot/grub/grub.cfg' #updates grub
 
