@@ -231,6 +231,7 @@ gnome-weather
 gnu-free-fonts
 gnupg
 gnutls
+go
 gobject-introspection
 gobject-introspection-runtime
 gom
@@ -641,6 +642,7 @@ libshout
 libshumate
 libsigc++
 libsigc++-3.0
+libsixel
 libslirp
 libsm
 libsndfile
@@ -726,6 +728,7 @@ libxml2
 libxmlb
 libxmu
 libxpm
+libxpresent
 libxrandr
 libxrender
 libxres
@@ -780,10 +783,12 @@ mod_dnssd
 mpdecimal
 mpfr
 mpg123
+mpv
 msgpack-c
 msgraph
 mtdev
 mtools
+mujs
 mullvad-vpn-bin
 mullvad-vpn-bin-debug
 mutter
@@ -1231,6 +1236,7 @@ xxhash
 xz
 yajl
 yay
+yay-debug
 yelp
 yelp-xsl
 yyjson
