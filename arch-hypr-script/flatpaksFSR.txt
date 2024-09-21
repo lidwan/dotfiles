@@ -1,4 +1,4 @@
-com.discordapp.Discord
+dev.vencord.Vesktop
 com.github.unrud.VideoDownloader
 com.obsproject.Studio
 org.onlyoffice.desktopeditors
