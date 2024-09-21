@@ -101,6 +101,8 @@ desktop-file-utils
 device-mapper
 diffutils
 djvulibre
+docbook-xml
+docbook-xsl
 dosfstools
 dotconf
 double-conversion
@@ -359,6 +361,7 @@ kcrash
 kdbusaddons
 kdenlive
 kdnssd
+kdoctools
 kdsoap-qt6
 kdsoap-ws-discovery-client
 keyutils
@@ -377,8 +380,10 @@ knewstuff
 knotifications
 knotifyconfig
 kpackage
+kpipewire
 krb5
 kservice
+kstatusnotifieritem
 ktextwidgets
 kwallet
 kwidgetsaddons
@@ -1233,6 +1238,8 @@ xorg-xset
 xorg-xwayland
 xorgproto
 xvidcore
+xwaylandvideobridge-git
+xwaylandvideobridge-git-debug
 xxhash
 xz
 yajl
