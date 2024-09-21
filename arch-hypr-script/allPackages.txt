@@ -1238,7 +1238,6 @@ xorg-xset
 xorg-xwayland
 xorgproto
 xvidcore
-xwaylandvideobridge-git
 xwaylandvideobridge-git-debug
 xxhash
 xz
