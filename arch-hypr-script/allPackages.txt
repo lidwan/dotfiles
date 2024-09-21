@@ -259,6 +259,7 @@ gssdp
 gst-devtools-libs
 gst-editing-services
 gst-plugin-gtk
+gst-plugin-gtk4
 gst-plugin-pipewire
 gst-plugins-bad
 gst-plugins-bad-libs
