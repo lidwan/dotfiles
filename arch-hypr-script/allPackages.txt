@@ -237,7 +237,6 @@ go
 gobject-introspection
 gobject-introspection-runtime
 gom
-google-chrome
 gparted
 gperftools
 gpgme
