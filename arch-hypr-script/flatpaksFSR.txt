@@ -7,3 +7,4 @@ io.github.zen_browser.zen
 org.gimp.GIMP
 org.qbittorrent.qBittorrent
 com.usebottles.bottles
+org.telegram.desktop
