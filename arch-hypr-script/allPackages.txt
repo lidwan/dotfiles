@@ -25,6 +25,7 @@ arc-gtk-theme
 archlinux-keyring
 argon2
 aribb24
+aspnet-runtime-6.0
 at-spi2-core
 atkmm
 attica
@@ -67,6 +68,7 @@ cantarell-fonts
 capstone
 cdparanoia
 cdrtools
+cfitsio
 chili-sddm-theme
 chromaprint
 chromium
@@ -105,6 +107,8 @@ docbook-xml
 docbook-xsl
 dosfstools
 dotconf
+dotnet-host
+dotnet-runtime-6.0
 double-conversion
 downgrade
 dtc
@@ -112,6 +116,7 @@ duktape
 dunst
 e2fsprogs
 ebook-tools
+eclipse-java-bin
 editorconfig-core-c
 edk2-ovmf
 efibootmgr
@@ -119,6 +124,8 @@ efivar
 electron30
 electron31
 ell
+emby-ffmpeg
+emby-server
 enchant
 ente-auth-bin
 epiphany
@@ -328,6 +335,8 @@ imlib2
 iniparser
 intel-gmmlib
 intel-media-driver
+intellij-idea-community-edition
+intellij-idea-ultimate-edition
 iproute2
 iptables-nft
 iputils
@@ -336,8 +345,13 @@ iw
 iwd
 jansson
 jasper
+java-environment-common
+java-runtime-common
 jbig2dec
 jbigkit
+jdk-openjdk
+jdk17-openjdk
+jdk21-openjdk
 jq
 js115
 js128
@@ -394,6 +408,7 @@ lapack
 lcms2
 ldb
 lensfun
+leptonica
 less
 lib32-alsa-lib
 lib32-alsa-plugins
@@ -487,6 +502,7 @@ libcap
 libcap-ng
 libcdio
 libcdio-paranoia
+libcgif
 libcloudproviders
 libcolord
 libcue
@@ -549,6 +565,7 @@ libidn
 libidn2
 libiec61883
 libieee1284
+libimagequant
 libimobiledevice
 libimobiledevice-glue
 libinih
@@ -593,6 +610,7 @@ libmysofa
 libnautilus-extension
 libnbd
 libndp
+libnet
 libnetfilter_conntrack
 libnewt
 libnfnetlink
@@ -693,8 +711,10 @@ libva-intel-driver
 libva-mesa-driver
 libvdpau
 libverto
+libvips
 libvirt
 libvirt-glib
+libvlc
 libvncserver
 libvorbis
 libvpl
@@ -870,6 +890,7 @@ pkcs11-helper
 pkgconf
 plasma-activities
 playerctl
+plex-media-server
 polkit
 polkit-explorer-git
 polkit-gnome
@@ -888,6 +909,7 @@ protobuf-c
 psmisc
 pugixml
 purpose
+pycharm-community-edition
 python
 python-attrs
 python-autocommand
@@ -963,6 +985,7 @@ python-urllib3
 python-validate-pyproject
 python-virtualenv
 python-webencodings
+python-wheel
 python-yaml
 qca-qt6
 qemu-audio-alsa
@@ -1065,6 +1088,7 @@ signon-plugin-oauth2
 signon-ui
 signond
 simple-scan
+skia-sharp
 slang
 slurp
 smartmontools
@@ -1109,6 +1133,9 @@ talloc
 tar
 tdb
 tecla
+tesseract
+tesseract-data-afr
+tesseract-data-osd
 tevent
 texinfo
 thunar
