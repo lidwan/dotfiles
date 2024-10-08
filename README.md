@@ -1,4 +1,6 @@
 # dotfiles!
+# ![screenshot](arch.png?raw=true)
+
 ## includes config files for hyprland, waybar, rofi and much more. it also includes a script to get started quicklly.
 # arch-hypr-script:
 ## A script to get my hyprland config setup up and running quickly 
