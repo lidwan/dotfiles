@@ -857,6 +857,7 @@ os-prober
 osinfo-db
 ostree
 p11-kit
+packettracer
 pacman
 pacman-contrib
 pacman-mirrorlist
@@ -1031,11 +1032,19 @@ qrencode
 qt5-base
 qt5-declarative
 qt5-graphicaleffects
+qt5-location
+qt5-multimedia
+qt5-networkauth
 qt5-quickcontrols
+qt5-script
+qt5-speech
 qt5-svg
 qt5-tools
 qt5-translations
 qt5-wayland
+qt5-webchannel
+qt5-webengine
+qt5-websockets
 qt5-x11extras
 qt6-5compat
 qt6-base
