@@ -14,7 +14,7 @@ check_updates() {
     # Display update information based on different cases
     if [ "$yay_updates" -gt 0 ] && [ "$flatpak_updates" -gt 0 ]; then
         # Both AUR and Flatpak updates
-        echo "{\"text\": \"$total_updates Update(s), $yay_updates AUR + $flatpak_updates Flatpak\",\"tooltip\":false}"
+        echo "{\"text\": \"$total_updates Updates, $yay_updates A, $flatpak_updates F\",\"tooltip\":false}"
     elif [ "$yay_updates" -gt 0 ] && [ "$flatpak_updates" -eq 0 ]; then
         # Only AUR updates
         echo "{\"text\": \"$yay_updates Update(s), AUR\",\"tooltip\":false}"
