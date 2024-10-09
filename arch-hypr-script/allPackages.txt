@@ -1281,6 +1281,8 @@ yay
 yay-debug
 yelp
 yelp-xsl
+youtube-music-bin
+youtube-music-bin-debug
 yyjson
 zbar
 zenity
