@@ -127,7 +127,6 @@ ell
 emby-ffmpeg
 emby-server
 enchant
-ente-auth-bin
 epiphany
 etcher-bin
 evince
@@ -514,6 +513,7 @@ libdbusmenu-gtk3
 libdc1394
 libdca
 libde265
+libdecor
 libdeflate
 libdisplay-info
 libdmapsharing
