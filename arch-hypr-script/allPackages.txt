@@ -335,7 +335,6 @@ iniparser
 intel-gmmlib
 intel-media-driver
 intellij-idea-community-edition
-intellij-idea-ultimate-edition
 iproute2
 iptables-nft
 iputils
@@ -777,6 +776,7 @@ llvm-libs
 lm_sensors
 lmdb
 localsearch
+localsend-bin
 loupe
 lsb-release
 lsof
