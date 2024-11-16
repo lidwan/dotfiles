@@ -24,12 +24,14 @@ aquamarine
 arc-gtk-theme
 archlinux-keyring
 argon2
+aria2
 aribb24
 aspnet-runtime-6.0
 at-spi2-core
 atkmm
 attica
 attr
+audacity
 audit
 autoconf
 automake
@@ -73,12 +75,14 @@ chili-sddm-theme
 chromaprint
 chromium
 cifs-utils
+clang
 cmake
 code
 colord
 colord-gtk-common
 colord-gtk4
 colord-sane
+compiler-rt
 composefs
 convertlit
 coreutils
@@ -123,6 +127,7 @@ efibootmgr
 efivar
 electron30
 electron31
+electron32
 ell
 emby-ffmpeg
 emby-server
@@ -385,6 +390,7 @@ kio
 kio-extras
 kirigami
 kitemviews
+kiwix-desktop
 kjobwidgets
 kmod
 knewstuff
@@ -419,6 +425,7 @@ lib32-expat
 lib32-gcc-libs
 lib32-glibc
 lib32-icu
+lib32-json-c
 lib32-keyutils
 lib32-krb5
 lib32-libdrm
@@ -505,6 +512,7 @@ libcloudproviders
 libcolord
 libcue
 libcups
+libcurl-gnutls
 libdaemon
 libdatrie
 libdbusmenu-glib
@@ -560,6 +568,7 @@ libheif
 libibus
 libical
 libice
+libid3tag
 libidn
 libidn2
 libiec61883
@@ -575,6 +584,7 @@ libisl
 libjpeg-turbo
 libjxl
 libkexiv2
+libkiwix
 libksba
 liblc3
 libldac
@@ -594,6 +604,7 @@ libmd
 libmediaart
 libmfx
 libmicrodns
+libmicrohttpd
 libmm-glib
 libmng
 libmnl
@@ -658,6 +669,7 @@ librest
 librsvg
 libsamplerate
 libsasl
+libsbsms
 libseccomp
 libsecret
 libshout
@@ -707,7 +719,6 @@ libutf8proc
 libuv
 libva
 libva-intel-driver
-libva-mesa-driver
 libvdpau
 libverto
 libvips
@@ -765,6 +776,7 @@ libxv
 libxxf86vm
 libyaml
 libyuv
+libzim
 libzip
 licenses
 lilv
@@ -772,6 +784,7 @@ linux
 linux-api-headers
 linux-firmware
 linux-firmware-whence
+llvm
 llvm-libs
 lm_sensors
 lmdb
@@ -846,11 +859,13 @@ oniguruma
 openal
 opencore-amr
 openexr
+openh264
 openjpeg2
 openssh
 openssl
 openvpn
 opus
+opusfile
 orc
 orca
 os-prober
@@ -903,6 +918,8 @@ poppler-glib
 poppler-qt6
 popt
 portaudio
+portmidi
+portsmf
 powertop
 procps-ng
 protobuf
@@ -911,6 +928,7 @@ psmisc
 pugixml
 purpose
 pycharm-community-edition
+pyside6
 python
 python-attrs
 python-autocommand
@@ -935,6 +953,7 @@ python-html5lib
 python-idna
 python-installer
 python-jaraco.classes
+python-jaraco.collections
 python-jaraco.context
 python-jaraco.functools
 python-jaraco.text
@@ -1062,6 +1081,7 @@ qt6-translations
 qt6-wayland
 qt6-webchannel
 qt6-webengine
+rapidjson
 raptor
 rav1e
 re2
@@ -1078,6 +1098,7 @@ run-parts
 rygel
 sane
 sbc
+scdoc
 sdbus-cpp
 sddm-git
 sddm-git-debug
@@ -1088,10 +1109,12 @@ sdl2_ttf
 seabios
 seatd
 sed
+sequoia-sqv
 serd
 shaderc
 shadow
 shared-mime-info
+shiboken6
 signon-kwallet-extension
 signon-plugin-oauth2
 signon-ui
@@ -1121,16 +1144,19 @@ spice
 spice-gtk
 spice-protocol
 spirv-tools
+spotify-launcher
 sqlite
 sratom
 srt
 startup-notification
 steam
 sudo
+suil
 suitesparse
 sushi
 svt-av1
 svt-hevc
+swaylock-effects-debug
 swtpm
 syndication
 syntax-highlighting
@@ -1186,6 +1212,7 @@ usbutils
 util-linux
 util-linux-libs
 v4l-utils
+vamp-plugin-sdk
 vapoursynth
 vde2
 ventoy-bin
@@ -1233,6 +1260,7 @@ wxwidgets-common
 wxwidgets-gtk3
 x264
 x265
+xapian-core
 xapp
 xcb-proto
 xcb-util
