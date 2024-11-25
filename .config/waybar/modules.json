@@ -170,6 +170,7 @@
         "format-alt": "{icon}  {time}",
         // "format-good": "", // An empty format will hide the module
         //"format-full": "FULL!",
+        "on-update": "~/.config/hypr/Scripts/battaryNotif.sh {capacity}",
         "format-icons": [" ", " ", " ", " ", " "]
     },
 
