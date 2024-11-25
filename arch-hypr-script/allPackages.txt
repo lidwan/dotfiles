@@ -835,6 +835,7 @@ nano
 nautilus
 nautilus-admin-gtk4
 nautilus-open-any-terminal
+nautilus-python
 ncurses
 ndctl
 neon
@@ -969,7 +970,6 @@ python-markdown
 python-markupsafe
 python-more-itertools
 python-msgpack
-python-nautilus
 python-ordered-set
 python-packaging
 python-pexpect
