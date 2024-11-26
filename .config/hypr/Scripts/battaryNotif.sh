@@ -49,14 +49,13 @@ echo "Current capacity: $CAPACITY%"
 echo "Current state: $STATE"
 echo "Last notification: $LAST_NOTIFY%"
 
-# Notify at 30% or 20%, ensuring no skipped percentages are missed
-if [[ "$CAPACITY" -le "$LOW_THRESHOLD" && "$CAPACITY" -gt "$MID_THRESHOLD" && "$LAST_NOTIFY" -lt "$LOW_THRESHOLD" ]]; then
+# Modified notification logic to track the most recent threshold passed
+if [[ "$CAPACITY" -le "$LOW_THRESHOLD" && "$CAPACITY" -gt "$MID_THRESHOLD" && "$LAST_NOTIFY" -ne "$LOW_THRESHOLD" ]]; then
     notify-send -u normal "Battery Low" "Consider charging soon. ($CAPACITY%)"
     echo "$LOW_THRESHOLD" > "$STATE_FILE"
-elif [[ "$CAPACITY" -le "$MID_THRESHOLD" && "$CAPACITY" -gt "$CRITICAL_THRESHOLD" && "$LAST_NOTIFY" -lt "$MID_THRESHOLD" ]]; then
+elif [[ "$CAPACITY" -le "$MID_THRESHOLD" && "$CAPACITY" -gt "$CRITICAL_THRESHOLD" && "$LAST_NOTIFY" -ne "$MID_THRESHOLD" ]]; then
     notify-send -u normal "Battery Very Low" "Charge soon! ($CAPACITY%)"
     echo "$MID_THRESHOLD" > "$STATE_FILE"
-# Notify continuously below or at 10% whenever the percentage changes
 elif [[ "$CAPACITY" -le "$CRITICAL_THRESHOLD" && "$LAST_NOTIFY" -ne "$CAPACITY" ]]; then
     notify-send -u critical "Battery Critical!" "Charge immediately! ($CAPACITY%)"
     echo "$CAPACITY" > "$STATE_FILE"
