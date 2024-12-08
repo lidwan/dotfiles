@@ -159,8 +159,8 @@
 
     // Battery
     "battery": {
+        "interval": 30,
         "states": {
-            // "good": 95,
             "warning": 30,
             "critical": 10
         },
@@ -168,10 +168,9 @@
         "format-charging": "  {capacity}%",
         "format-plugged": "  {capacity}%",
         "format-alt": "{icon}  {time}",
-        // "format-good": "", // An empty format will hide the module
-        //"format-full": "FULL!",
-        "on-update": "~/.config/hypr/Scripts/battaryNotif.sh {capacity}",
-        "format-icons": [" ", " ", " ", " ", " "]
+        "format-icons": [" ", " ", " ", " ", " "],
+        "tooltip": true,
+        //"on-update": "~/.config/hypr/Scripts/battaryNotif.sh {capacity}"
     },
 
     //def
