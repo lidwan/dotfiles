@@ -1091,6 +1091,7 @@ readline
 reflector
 rhash
 ripgrep
+ripgrep-all
 rofi-wayland
 rsync
 rtkit
