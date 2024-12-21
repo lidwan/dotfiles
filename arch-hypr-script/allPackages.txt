@@ -322,11 +322,16 @@ hunspell
 hwdata
 hyphen
 hyprcursor
+hyprgraphics
 hypridle
 hyprland
+hyprland-qtutils
+hyprland-qtutils-debug
 hyprlang
 hyprlock
 hyprpaper
+hyprpolkitagent
+hyprpolkitagent-debug
 hyprutils
 hyprwayland-scanner
 iana-etc
