@@ -242,12 +242,14 @@ gnome-user-docs
 gnome-user-share
 gnome-weather
 gnu-free-fonts
+gnulib-l10n
 gnupg
 gnutls
 go
 gobject-introspection
 gobject-introspection-runtime
 gom
+google-chrome
 gparted
 gperftools
 gpgme
@@ -325,6 +327,9 @@ hyprcursor
 hyprgraphics
 hypridle
 hyprland
+hyprland-protocols
+hyprland-qt-support
+hyprland-qt-support-debug
 hyprland-qtutils
 hyprland-qtutils-debug
 hyprlang
@@ -332,6 +337,8 @@ hyprlock
 hyprpaper
 hyprpolkitagent
 hyprpolkitagent-debug
+hyprsunset
+hyprsunset-debug
 hyprutils
 hyprwayland-scanner
 iana-etc
@@ -541,6 +548,8 @@ libebur128
 libedataserverui4
 libedit
 libei
+libelectron
+libelectron-debug
 libelf
 libepoxy
 libevdev
@@ -634,6 +643,7 @@ libnfs
 libnftnl
 libnghttp2
 libnghttp3
+libngtcp2
 libnice
 libnl
 libnm
@@ -856,7 +866,11 @@ networkmanager-vpnc
 nftables
 ninja
 nm-connection-editor
+node-gyp
+nodejs
+nodejs-nopt
 noto-fonts-emoji
+npm
 npth
 nspr
 nss
@@ -1117,6 +1131,7 @@ sdl2_ttf
 seabios
 seatd
 sed
+semver
 sequoia-sqv
 serd
 shaderc
@@ -1270,6 +1285,7 @@ x264
 x265
 xapian-core
 xapp
+xcb-imdkit
 xcb-proto
 xcb-util
 xcb-util-cursor
