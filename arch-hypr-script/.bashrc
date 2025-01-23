@@ -77,8 +77,16 @@ alias l="ls --color=auto -h --group-directories-first"
 alias ls="ls --color=auto -h --group-directories-first"
 alias la="ls --color=auto -ha --group-directories-first"
 alias ll="ls --color=auto -hal --group-directories-first"
+#nav
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias ~="cd ~"
+
 
 #other
+alias c="clear"
+alias h="history"
 alias mkfile='touch'
 alias ff="fastfetch"
 alias code="code ."
