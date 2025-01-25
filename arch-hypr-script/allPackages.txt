@@ -821,6 +821,7 @@ make
 malcontent
 man-db
 man-pages
+maven
 md4c
 mdadm
 media-player-info
@@ -1239,6 +1240,7 @@ vamp-plugin-sdk
 vapoursynth
 vde2
 ventoy-bin
+ventoy-bin-debug
 veracrypt
 vid.stab
 vim
