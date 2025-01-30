@@ -169,8 +169,7 @@
         "format-plugged": "  {capacity}%",
         "format-alt": "{icon}  {time}",
         "format-icons": [" ", " ", " ", " ", " "],
-        "tooltip": true,
-        //"on-update": "~/.config/hypr/Scripts/battaryNotif.sh {capacity}"
+        "tooltip": true
     },
 
     //def
