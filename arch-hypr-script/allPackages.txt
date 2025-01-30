@@ -128,6 +128,7 @@ efivar
 electron30
 electron31
 electron32
+electron33
 ell
 emby-ffmpeg
 emby-server
@@ -145,6 +146,7 @@ faac
 faad2
 fakeroot
 fastfetch
+fcitx5
 ffmpeg
 ffmpeg4.4
 fftw
@@ -342,6 +344,7 @@ hyprsunset-debug
 hyprutils
 hyprwayland-scanner
 iana-etc
+ibus
 icu
 iio-sensor-proxy
 ijs
@@ -1126,9 +1129,10 @@ sdbus-cpp
 sddm-git
 sddm-git-debug
 sdl12-compat
-sdl2
+sdl2-compat
 sdl2_image
 sdl2_ttf
+sdl3
 seabios
 seatd
 sed
