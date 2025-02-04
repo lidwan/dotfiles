@@ -15,6 +15,7 @@ alsa-plugins
 alsa-topology-conf
 alsa-ucm-conf
 amd-ucode
+ant
 aom
 apache
 appstream
@@ -253,9 +254,11 @@ gobject-introspection-runtime
 gom
 google-chrome
 gparted
+gperf
 gperftools
 gpgme
 gpm
+gradle
 graphene
 graphite
 grep
@@ -355,6 +358,7 @@ iniparser
 intel-gmmlib
 intel-media-driver
 intellij-idea-community-edition
+intellij-idea-ultimate-edition
 iproute2
 iptables-nft
 iputils
@@ -364,9 +368,14 @@ iwd
 jansson
 jasper
 java-environment-common
+java-openjfx-bin
 java-runtime-common
+javafx-scenebuilder
+javafx-scenebuilder-debug
 jbig2dec
 jbigkit
+jdk
+jdk-debug
 jdk-openjdk
 jdk17-openjdk
 jdk21-openjdk
@@ -555,6 +564,7 @@ libelectron
 libelectron-debug
 libelf
 libepoxy
+liberica-nik-24-full-bin-debug
 libevdev
 libevent
 libexif
@@ -975,6 +985,7 @@ python-dulwich
 python-fastjsonschema
 python-filelock
 python-gobject
+python-html2text
 python-html5lib
 python-idna
 python-installer
@@ -1120,6 +1131,8 @@ rsync
 rtkit
 rtmpdump
 rubberband
+ruby
+rubygems
 run-parts
 rygel
 sane
