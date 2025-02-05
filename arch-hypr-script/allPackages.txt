@@ -76,9 +76,15 @@ chili-sddm-theme
 chromaprint
 chromium
 cifs-utils
+cinnamon-desktop
+cjs
 clang
+clutter
+clutter-gst
+clutter-gtk
 cmake
 code
+cogl
 colord
 colord-gtk-common
 colord-gtk4
@@ -643,6 +649,7 @@ libmpdclient
 libmpeg2
 libmspack
 libmtp
+libmusicbrainz5
 libmypaint
 libmysofa
 libnautilus-extension
@@ -718,6 +725,7 @@ libspectre
 libspeechd
 libspelling
 libspiro
+libspng
 libsrtp
 libssh
 libssh2
@@ -869,6 +877,10 @@ nautilus-open-any-terminal
 nautilus-python
 ncurses
 ndctl
+nemo
+nemo-fileroller
+nemo-python
+nemo-terminal
 neon
 neovim
 net-snmp
@@ -1343,6 +1355,7 @@ xorg-xrdb
 xorg-xset
 xorg-xwayland
 xorgproto
+xreader
 xvidcore
 xwaylandvideobridge-git-debug
 xxhash
