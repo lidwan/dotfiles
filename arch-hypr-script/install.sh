@@ -95,7 +95,7 @@ install_flatpaks() {
         if [ -f "flatpaksFSR.txt" ]; then
             echo -e "${YELLOW}Installing Flatpak applications from flatpaksFSR.txt...${NC}"
             while IFS= read -r flatpak_package; do
-                flatpak install -y flathub "$flatpak_package" || { echo -e "${RED}Failed to install $flatpak_package. Continuing with next Flatpak.${NC}"; }
+                flatpak install --user  -y flathub "$flatpak_package" || { echo -e "${RED}Failed to install $flatpak_package. Continuing with next Flatpak.${NC}"; }
             done < flatpaksFSR.txt
         else
             echo -e "${RED}flatpaksFSR.txt not found. Skipping Flatpak installation.${NC}"
