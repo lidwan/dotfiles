@@ -132,7 +132,6 @@ editorconfig-core-c
 edk2-ovmf
 efibootmgr
 efivar
-electron30
 electron31
 electron32
 electron33
@@ -997,6 +996,7 @@ python-docutils
 python-dulwich
 python-fastjsonschema
 python-filelock
+python-findpython
 python-gobject
 python-html2text
 python-html5lib
@@ -1021,6 +1021,7 @@ python-more-itertools
 python-msgpack
 python-ordered-set
 python-packaging
+python-pbs-installer
 python-pexpect
 python-pkginfo
 python-platformdirs
@@ -1173,6 +1174,7 @@ signon-kwallet-extension
 signon-plugin-oauth2
 signon-ui
 signond
+simdjson
 simple-scan
 skia-sharp
 slang
@@ -1283,6 +1285,8 @@ vlc
 vmaf
 volume_key
 vpnc
+vscodium-bin
+vscodium-bin-debug
 vte-common
 vte3
 vte4
