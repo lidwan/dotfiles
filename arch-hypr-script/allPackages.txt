@@ -955,6 +955,7 @@ pkgconf
 plasma-activities
 playerctl
 plex-media-server
+pnpm
 polkit
 polkit-explorer-git
 polkit-gnome
