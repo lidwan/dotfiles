@@ -22,7 +22,8 @@ alias gs="git status"
 alias ga.="git add ."
 alias gcm="git commit -m"
 alias gc='git clone '
-alias gp="git push"
+alias gpush="git push"
+alias gpull="git pull"
 alias gd="git diff"
 alias gds="git diff --staged"
 
