@@ -26,6 +26,8 @@ alias gpush="git push"
 alias gpull="git pull"
 alias gd="git diff"
 alias gds="git diff --staged"
+alias gcom="git checkout main"
+alias gcob="git checkout -b"
 
 #vim
 alias v="nvim"
