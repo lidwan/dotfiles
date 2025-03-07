@@ -28,6 +28,7 @@ alias gd="git diff"
 alias gds="git diff --staged"
 alias gcom="git checkout main"
 alias gcob="git checkout -b"
+alias gco="git checkout"
 
 #vim
 alias v="nvim"
