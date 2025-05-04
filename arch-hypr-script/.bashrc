@@ -12,8 +12,8 @@
 #PS1='\[\e[38;5;44m\]\u\[\e[0m\] \[\e[38;5;75m\]\W\[\e[0m\] '
 #PS1='\u \w '
 # PS1="\u on \h at \W "
-. ~/.git-prompt.sh
-PROMPT_COMMAND='PS1_CMD1=$(__git_ps1 " (%s)")'; PS1='\u in \W${PS1_CMD1} '
+#. ~/.git-prompt.sh
+PS1='\u in \W${PS1_CMD1} '
 
 # -----------------------------------------------------
 
