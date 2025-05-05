@@ -1324,6 +1324,7 @@ xorg-server
 xorg-server-common
 xorg-setxkbmap
 xorg-xauth
+xorg-xhost
 xorg-xinit
 xorg-xinput
 xorg-xkbcomp
