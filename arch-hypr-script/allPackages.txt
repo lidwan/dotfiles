@@ -264,7 +264,6 @@ gnu-free-fonts
 gnulib-l10n
 gnupg
 gnutls
-go
 gobject-introspection
 gobject-introspection-runtime
 gom
@@ -461,8 +460,6 @@ leptonica
 less
 lib32-gcc-libs
 lib32-glibc
-lib32-ncurses-git
-lib32-ncurses-git-debug
 libaccounts-glib
 libaccounts-qt
 libadwaita
@@ -670,7 +667,6 @@ librsvg
 librsync
 libsamplerate
 libsasl
-libsass
 libsbsms
 libseccomp
 libsecret
@@ -971,7 +967,6 @@ python-fastjsonschema
 python-filelock
 python-findpython
 python-gobject
-python-html2text
 python-html5lib
 python-idna
 python-installer
@@ -1076,7 +1071,6 @@ qt5-declarative
 qt5-graphicaleffects
 qt5-location
 qt5-multimedia
-qt5-networkauth
 qt5-quickcontrols
 qt5-script
 qt5-speech
@@ -1123,7 +1117,6 @@ rubygems
 run-parts
 rygel
 sane
-sassc
 sbc
 scdoc
 sdbus-cpp
@@ -1172,7 +1165,6 @@ speexdsp
 spice
 spice-gtk
 spice-protocol
-spirv-headers-git
 spirv-tools
 spotify-launcher
 sqlite
