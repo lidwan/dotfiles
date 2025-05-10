@@ -217,6 +217,8 @@
 
 "backlight": {
         // "device": "acpi_video1",
+
+    "on-click": "~/.config/hypr/Scripts/nightyNight.sh",
 	"format": "{icon}   {percent}%",
         "format-icons": ["", "", "", "", "", "", "", "", ""]
 	},
