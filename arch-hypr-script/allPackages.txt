@@ -1241,8 +1241,6 @@ vim
 vim-runtime
 virglrenderer
 virtiofsd
-virtualbox
-virtualbox-host-dkms
 vlc
 vmaf
 volume_key
