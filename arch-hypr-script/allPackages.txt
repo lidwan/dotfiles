@@ -118,7 +118,6 @@ desktop-file-utils
 device-mapper
 diffutils
 djvulibre
-dkms
 docbook-xml
 docbook-xsl
 dolphin
@@ -141,7 +140,8 @@ efivar
 egl-wayland
 eglexternalplatform
 electron31
-electron32
+electron32-bin
+electron32-bin-debug
 electron33
 electron34
 ell
@@ -267,7 +267,6 @@ gnutls
 gobject-introspection
 gobject-introspection-runtime
 gom
-google-chrome
 gparted
 gperf
 gperftools
@@ -370,7 +369,6 @@ iniparser
 intel-gmmlib
 intel-media-driver
 intellij-idea-community-edition
-intellij-idea-ultimate-edition
 iproute2
 iptables
 iputils
@@ -1049,6 +1047,7 @@ qemu-hw-display-virtio-gpu-pci
 qemu-hw-display-virtio-gpu-pci-gl
 qemu-hw-display-virtio-vga
 qemu-hw-display-virtio-vga-gl
+qemu-hw-uefi-vars
 qemu-hw-usb-host
 qemu-hw-usb-redirect
 qemu-hw-usb-smartcard
@@ -1072,7 +1071,6 @@ qt5-graphicaleffects
 qt5-location
 qt5-multimedia
 qt5-quickcontrols
-qt5-script
 qt5-speech
 qt5-svg
 qt5-tools
