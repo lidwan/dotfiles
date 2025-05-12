@@ -132,7 +132,7 @@
     "custom/updates":{
         "format": "{}",
         "exec": "~/.config/hypr/Scripts/checkupdates.sh",
-        "interval": 1800,
+        "interval": 3600,
         "tooltip": false,
         "on-click": "alacritty -e ~/.config/hypr/Scripts/updates.sh",
         "return-type": "json",
