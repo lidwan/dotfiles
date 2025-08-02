@@ -204,6 +204,7 @@ gawk
 gc
 gcc
 gcc-libs
+gcc14-libs
 gcr
 gcr-4
 gd
@@ -389,6 +390,7 @@ iniparser
 intel-gmmlib
 intel-media-driver
 intellij-idea-community-edition
+intellij-idea-ultimate-edition
 iproute2
 iptables
 iputils
@@ -1002,6 +1004,7 @@ python-fastjsonschema
 python-filelock
 python-findpython
 python-gobject
+python-html2text
 python-html5lib
 python-idna
 python-installer
@@ -1256,7 +1259,6 @@ ttf-dejavu
 ttf-fira-code
 ttf-fira-sans
 ttf-firacode-nerd
-ttf-font-awesome
 ttf-liberation
 twolame
 tzdata
@@ -1287,6 +1289,7 @@ vlc-cli
 vlc-gui-qt
 vlc-plugin-a52dec
 vlc-plugin-alsa
+vlc-plugin-archive
 vlc-plugin-dav1d
 vlc-plugin-dbus
 vlc-plugin-dbus-screensaver
@@ -1298,6 +1301,7 @@ vlc-plugin-journal
 vlc-plugin-jpeg
 vlc-plugin-lua
 vlc-plugin-mpg123
+vlc-plugin-ogg
 vlc-plugin-opus
 vlc-plugin-png
 vlc-plugin-pulse
@@ -1342,6 +1346,7 @@ wlogout
 wlogout-debug
 wlroots0.17
 woff2
+woff2-font-awesome
 wofi
 wolfssl
 wpa_supplicant
