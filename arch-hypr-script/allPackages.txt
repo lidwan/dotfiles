@@ -52,6 +52,7 @@ bitwarden
 blas
 blueman
 bluez
+bluez-deprecated-tools
 bluez-libs
 bluez-obex
 bluez-utils
@@ -412,6 +413,7 @@ jdk-openjdk
 jdk11-openjdk
 jdk17-openjdk
 jdk21-openjdk
+jemalloc
 jq
 js115
 js128
@@ -838,6 +840,8 @@ make
 malcontent
 man-db
 man-pages
+mariadb-clients
+mariadb-libs
 maven
 md4c
 mdadm
