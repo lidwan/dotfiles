@@ -73,6 +73,7 @@ ca-certificates-utils
 cairo
 cairomm
 cairomm-1.16
+calf
 cantarell-fonts
 capstone
 cblas
@@ -137,6 +138,7 @@ dtc
 duktape
 dunst
 e2fsprogs
+easyeffects
 ebook-tools
 eclipse-java-bin
 editorconfig-core-c
@@ -306,6 +308,7 @@ grub-customizer-debug
 gsettings-desktop-schemas
 gsettings-system-schemas
 gsfonts
+gsl
 gsm
 gsound
 gspell
@@ -472,6 +475,7 @@ kwidgetsaddons
 kwindowsystem
 kxmlgui
 l-smash
+ladspa
 lame
 lapack
 lcms2
@@ -1153,6 +1157,7 @@ reflector
 rhash
 ripgrep
 ripgrep-all
+rnnoise
 rofi-wayland
 rsync
 rtkit
@@ -1416,6 +1421,7 @@ zenity
 zeromq
 zimg
 zip
+zita-convolver
 zix
 zlib
 zlib-ng
