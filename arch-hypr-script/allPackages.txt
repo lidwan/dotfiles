@@ -844,6 +844,7 @@ make
 malcontent
 man-db
 man-pages
+mariadb
 mariadb-clients
 mariadb-libs
 maven
@@ -899,6 +900,7 @@ nm-connection-editor
 node-gyp
 nodejs
 nodejs-nopt
+noto-fonts
 noto-fonts-emoji
 npm
 npth
