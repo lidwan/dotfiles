@@ -992,8 +992,6 @@ pps-tools
 procps-ng
 protobuf
 protobuf-c
-proton-mail-bin-debug
-proton-pass-bin-debug
 proton-vpn-gtk-app
 psmisc
 pugixml
