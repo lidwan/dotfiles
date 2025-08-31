@@ -400,7 +400,6 @@ jasper
 java-environment-common
 java-openjfx-bin
 java-runtime-common
-javafx-scenebuilder-debug
 jbig2dec
 jbigkit
 jdk
