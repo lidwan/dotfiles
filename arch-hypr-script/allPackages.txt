@@ -80,7 +80,6 @@ cblas
 cdparanoia
 cdrtools
 cfitsio
-chili-sddm-theme
 chromaprint
 chromium
 cifs-utils
@@ -127,7 +126,6 @@ diffutils
 djvulibre
 docbook-xml
 docbook-xsl
-dolphin
 dosfstools
 dotconf
 dotnet-host
@@ -147,14 +145,10 @@ efibootmgr
 efivar
 egl-wayland
 eglexternalplatform
-electron-castlab-bin
-electron-castlab-bin-debug
 electron31
 electron32-bin
 electron32-bin-debug
 electron33
-electron34
-electron35
 electron36
 electron37-bin
 electron37-bin-debug
@@ -406,7 +400,6 @@ jasper
 java-environment-common
 java-openjfx-bin
 java-runtime-common
-javafx-scenebuilder
 javafx-scenebuilder-debug
 jbig2dec
 jbigkit
@@ -463,13 +456,11 @@ knewstuff
 knotifications
 knotifyconfig
 kpackage
-kparts
 kpipewire
 krb5
 kservice
 kstatusnotifieritem
 ktextwidgets
-kuserfeedback
 kwallet
 kwidgetsaddons
 kwindowsystem
@@ -716,7 +707,6 @@ libspectre
 libspeechd
 libspelling
 libspiro
-libspng
 libsrtp
 libssh
 libssh2
@@ -837,6 +827,7 @@ lua51-lpeg
 luajit
 lv2
 lxappearance
+ly
 lz4
 lzo
 m4
@@ -872,8 +863,6 @@ msgraph
 mtdev
 mtools
 mujs
-mullvad-vpn-bin
-mullvad-vpn-bin-debug
 mutter
 mypaint-brushes1
 nano
@@ -1029,7 +1018,6 @@ python-findpython
 python-frozenlist
 python-gnupg
 python-gobject
-python-html2text
 python-html5lib
 python-idna
 python-importlib-metadata
@@ -1149,10 +1137,8 @@ qqc2-desktop-style
 qrencode
 qt5-base
 qt5-declarative
-qt5-graphicaleffects
 qt5-location
 qt5-multimedia
-qt5-quickcontrols
 qt5-speech
 qt5-svg
 qt5-tools
@@ -1203,7 +1189,6 @@ sane
 sbc
 scdoc
 sdbus-cpp
-sddm
 sdl12-compat
 sdl2-compat
 sdl2_image
@@ -1324,7 +1309,6 @@ vim
 vim-runtime
 virglrenderer
 virtiofsd
-vlc
 vlc-cli
 vlc-gui-qt
 vlc-plugin-a52dec
