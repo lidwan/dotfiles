@@ -2,13 +2,10 @@ dev.vencord.Vesktop
 com.github.unrud.VideoDownloader
 com.obsproject.Studio
 org.onlyoffice.desktopeditors
-org.mozilla.Thunderbird
 io.github.zen_browser.zen
 org.gimp.GIMP
 org.qbittorrent.qBittorrent
 com.usebottles.bottles
 fr.handbrake.ghb
-org.telegram.desktop
 com.github.tchx84.Flatseal
-io.ente.auth
 org.gnome.Papers
