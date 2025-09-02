@@ -9,3 +9,4 @@ com.usebottles.bottles
 fr.handbrake.ghb
 com.github.tchx84.Flatseal
 org.gnome.Papers
+io.freetubeapp.FreeTube
