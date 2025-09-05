@@ -9,4 +9,4 @@ com.usebottles.bottles
 fr.handbrake.ghb
 com.github.tchx84.Flatseal
 org.gnome.Papers
-org.gnome.Lollypop
+com.github.neithern.g4music
