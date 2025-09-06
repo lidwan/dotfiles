@@ -16,6 +16,7 @@
     ],    
     "modules-left": [
         "custom/logo",
+        "privacy",
         "mpris",
         "hyprland/window"
     ],

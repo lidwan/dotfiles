@@ -173,6 +173,31 @@
         "tooltip": true
     },
 
+    "privacy": {
+    "icon-spacing": 10,
+    "icon-size": 16,
+    "transition-duration": 250,
+    "modules": [
+        {
+            "type": "screenshare",
+            "tooltip": true,
+            "tooltip-icon-size": 24
+        },
+        {
+            "type": "audio-in",
+            "tooltip": true,
+            "tooltip-icon-size": 24
+        },
+        {
+            "type": "audio-out",
+            "tooltip": true,
+            "tooltip-icon-size": 24
+        }
+
+    ]
+},
+
+
     "mpris": {
         "format": "{player_icon} {dynamic}",
         "format-paused": "{status_icon} <i>{dynamic}</i>",
@@ -181,9 +206,10 @@
             "default": "🎵"
         },
         "status-icons": {
-            "paused": "⏸",
+            "paused": "⏸", 
             "playing": "◀"
         },
+        "ignored-players": ["firefox"],
         "player": "playerctld",
         "on-click": "playerctl play-pause",
         "on-scroll-up": "playerctl previous",
