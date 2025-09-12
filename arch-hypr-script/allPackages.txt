@@ -1,3 +1,4 @@
+7zip
 a52dec
 aalib
 abseil-cpp
@@ -80,6 +81,7 @@ cblas
 cdparanoia
 cdrtools
 cfitsio
+chafa
 chromaprint
 chromium
 cifs-utils
@@ -398,7 +400,6 @@ iwd
 jansson
 jasper
 java-environment-common
-java-openjfx-bin
 java-runtime-common
 jbig2dec
 jbigkit
@@ -532,6 +533,7 @@ libdca
 libde265
 libdecor
 libdeflate
+libdiscid
 libdisplay-info
 libdmapsharing
 libdovi
@@ -618,7 +620,9 @@ libmediaart
 libmfx
 libmicrodns
 libmicrohttpd
+libmikmod
 libmm-glib
+libmms
 libmng
 libmnl
 libmodplug
@@ -690,6 +694,7 @@ libseccomp
 libsecret
 libshout
 libshumate
+libsidplayfp
 libsigc++
 libsigc++-3.0
 libsixel
@@ -878,6 +883,7 @@ nemo-terminal
 neon
 neovim
 net-snmp
+net-tools
 nettle
 network-manager-applet
 networkmanager
@@ -946,6 +952,7 @@ phodav
 phonon-qt6
 phonon-qt6-mpv
 phonon-qt6-vlc
+picard
 pinentry
 pipewire
 pipewire-alsa
@@ -1005,12 +1012,15 @@ python-charset-normalizer
 python-cleo
 python-crashtest
 python-cryptography
+python-dateutil
 python-dbus
 python-defusedxml
+python-discid
 python-distlib
 python-distro
 python-docutils
 python-dulwich
+python-fasteners
 python-fastjsonschema
 python-filelock
 python-findpython
@@ -1040,6 +1050,7 @@ python-markupsafe
 python-more-itertools
 python-msgpack
 python-multidict
+python-mutagen
 python-ordered-set
 python-packaging
 python-pbs-installer
@@ -1058,6 +1069,7 @@ python-proton-vpn-network-manager
 python-psutil
 python-ptyprocess
 python-pycparser
+python-pyjwt
 python-pynacl
 python-pyopenssl
 python-pyproject-hooks
@@ -1174,7 +1186,7 @@ rhash
 ripgrep
 ripgrep-all
 rnnoise
-rofi-wayland
+rofi
 rsync
 rtkit
 rtmpdump
@@ -1182,6 +1194,7 @@ rubberband
 ruby
 rubygems
 run-parts
+rust
 rutabaga-ffi
 rygel
 sane
@@ -1429,6 +1442,7 @@ yay
 yay-debug
 yelp
 yelp-xsl
+yt-dlp
 yyjson
 zbar
 zenity
@@ -1443,3 +1457,4 @@ zram-generator
 zstd
 zvbi
 zxing-cpp
+zziplib
