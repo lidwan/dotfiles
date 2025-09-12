@@ -3,201 +3,223 @@
 # Log file path
 LOGFILE="$HOME/.config/hypr/Scripts/updates.log"
 
-# Function to print colored text
-print_colored() {
-    color=$1
-    shift
-    echo -e "\e[${color}m$@\e[0m"
+# --- Color Definitions ---
+C_RESET='\e[0m'
+C_BOLD='\e[1m'
+C_BLUE='\e[34m'
+C_GREEN='\e[32m'
+C_YELLOW='\e[33m'
+C_RED='\e[31m'
+C_CYAN='\e[36m'
+C_WHITE='\e[37m'
+
+# --- Emojis for Status ---
+TICK="✅"
+CROSS="❌"
+INFO="ℹ️"
+WARN="⚠️"
+ROCKET="🚀"
+NEWS="📰"
+EYES="👀"
+SAVE="💾"
+WORLD="🌍"
+BOX="📦"
+
+# --- Helper Functions for Output ---
+print_info() {
+    echo -e "${C_BOLD}${C_BLUE}${INFO} $@${C_RESET}"
 }
 
-# Function to print the header
+print_success() {
+    echo -e "${C_BOLD}${C_GREEN}${TICK} $@${C_RESET}"
+}
+
+print_warn() {
+    echo -e "${C_BOLD}${C_YELLOW}${WARN} $@${C_RESET}"
+}
+
+print_error() {
+    echo -e "${C_BOLD}${C_RED}${CROSS} $@${C_RESET}"
+}
+
+print_prompt() {
+    echo -n -e "${C_BOLD}${C_CYAN}? $@${C_RESET}"
+}
+
 print_header() {
-    print_colored "34" "================================"
-    print_colored "34" "       Update and Backup"
-    print_colored "34" "================================"
+    echo -e "${C_BOLD}${C_BLUE}=======================================================${C_RESET}"
+    echo -e "${C_BOLD}${C_BLUE}                Arch Linux Update Helper               ${C_RESET}"
+    echo -e "${C_BOLD}${C_BLUE}=======================================================${C_RESET}"
+    echo ""
 }
 
-# Function to fetch and display Arch Linux news
+print_step() {
+    echo ""
+    echo -e "${C_BOLD}${C_WHITE}--- $@ ---${C_RESET}"
+}
+
+# --- Core Script Functions ---
+
 fetch_arch_news() {
-    print_colored "34" "Fetching latest Arch Linux news..."
-    # Fetch, parse, and display the last 5 news titles.
+    print_step "${NEWS} Step 1: Checking Arch News"
+    print_info "Checking for important announcements from the Arch Linux team..."
     local news
     news=$(curl -s "https://archlinux.org/feeds/news/" | sed -n 's/.*<title>\(.*\)<\/title>.*/\1/p' | tail -n +2 | head -n 5)
 
     if [ -n "$news" ]; then
-        print_colored "32" "Recent News Headlines:"
-        echo -e "\e[33m"
-        echo "$news" | while IFS= read -r line; do echo "  • $line"; done
-        echo -e "\e[0m" # Reset color
-        echo -n -e "\e[36mHave you read the news? Continue? [Y/n, default is yes]: \e[0m"
+        echo -e "${C_YELLOW}Recent Headlines:${C_RESET}"
+        echo "$news" | while IFS= read -r line; do echo "  ◆ $line"; done
+        echo ""
+        print_prompt "Have you read the news and feel ready to continue? [Y/n]: "
         read -r news_confirm
         if [[ "$news_confirm" =~ ^[Nn]$ ]]; then
-            print_colored "31" "Cancelled by user. Exiting."
+            print_error "Cancelled by user. Exiting."
             exit 0
         fi
-        print_colored "32" "Proceeding..."
-        echo ""
     else
-        print_colored "33" "Could not fetch Arch Linux news. Check your internet connection. Continuing..."
+        print_warn "Could not fetch Arch Linux news. Check your internet connection."
     fi
 }
 
-# Function to preview available updates
 preview_updates() {
-    print_colored "34" "--- Checking for available updates ---"
+    print_step "${EYES} Step 2: Previewing Updates"
+    print_info "Checking for pending package updates..."
     local repo_updates
     repo_updates=$(checkupdates)
     local aur_updates
     aur_updates=$(yay -Qua)
 
     if [ -z "$repo_updates" ] && [ -z "$aur_updates" ]; then
-        print_colored "32" "System is already up to date."
-        # Ask to exit if there are no updates
-        echo -n -e "\e[36mExit script? [Y/n, default is yes]: \e[0m"
+        print_success "Your system is already up to date! No action needed."
+        print_prompt "Exit script? [Y/n]: "
         read -r exit_choice
         if [[ -z "$exit_choice" || "$exit_choice" =~ ^[Yy]$ ]]; then
             exit 0
         fi
-        return # Continue if user wants to do something else (e.g. backup)
+        return
     fi
 
     if [ -n "$repo_updates" ]; then
-        print_colored "32" "Official Repositories:"
-        echo -e "\e[33m$repo_updates\e[0m"
+        echo -e "${C_CYAN}Official Repositories:${C_RESET}"
+        echo "$repo_updates"
     fi
-
     if [ -n "$aur_updates" ]; then
-        print_colored "32" "AUR Packages:"
-        echo -e "\e[33m$aur_updates\e[0m"
+        echo -e "${C_YELLOW}AUR Packages:${C_RESET}"
+        echo "$aur_updates"
     fi
 
     echo ""
-    echo -n -e "\e[36mDo you want to proceed with the backup and update process? [Y/n, default is yes]: \e[0m"
+    print_prompt "Do you want to proceed with installing these updates? [Y/n]: "
     read -r preview_confirm
     if [[ "$preview_confirm" =~ ^[Nn]$ ]]; then
-        print_colored "31" "Update cancelled by user. Exiting."
+        print_error "Update cancelled by user. Exiting."
         exit 0
     fi
 }
 
-# Function to prompt the user for backup
 prompt_backup() {
-    echo -n -e "\e[36mDo you want to create a Timeshift backup? [y/N, default is no]: \e[0m"
+    print_step "${SAVE} Step 3: System Backup"
+    print_info "Creating a system snapshot with Timeshift is highly recommended before updating."
+    print_prompt "Create a Timeshift backup? [y/N]: "
     read -r backup_choice
-
-    # Default to no (skip backup) if the user just presses enter
     if [[ "$backup_choice" =~ ^[Yy]$ ]]; then
         create_backup
     else
-        print_colored "33" "Skipping Timeshift backup."
+        print_warn "Skipping Timeshift backup."
     fi
 }
 
-# Function to ask the user if they want to refresh mirrors
-prompt_refresh_mirrors() {
-    echo -n -e "\e[36mDo you want to refresh Arch mirrors? [y/N, default is no]: \e[0m"
-    read -r refresh_choice
-
-    # Default to no if the user just presses enter or provides no input
-    if [[ "$refresh_choice" =~ ^[Yy]$ ]]; then
-        refresh_mirrors
-        return 0  # Indicates that mirrors were refreshed
-    else
-        print_colored "33" "Skipping mirror refresh."
-        return 1  # Indicates that mirrors were not refreshed
-    fi
-}
-
-# Function to refresh mirrors
-refresh_mirrors() {
-    print_colored "34" "Refreshing Arch mirrors..."
-    { time sudo reflector --country Germany,France --protocol https --latest 10 --sort rate --save /etc/pacman.d/mirrorlist; } 2>&1 | tee -a "$LOGFILE"
-    if [ $? -ne 0 ]; then
-        print_colored "31" "Mirror refresh failed. Check the log for details."
-        exit 1
-    fi
-    print_colored "32" "Mirror refresh completed."
-}
-
-# Function to create a Timeshift backup
 create_backup() {
-    print_colored "34" "Creating Timeshift backup..."
+    print_info "Creating Timeshift backup... (this might take a moment)"
     { time sudo timeshift --create --comments "AUTO BY SCRIPT"; } 2>&1 | tee -a "$LOGFILE"
-    if [ $? -ne 0 ]; then
-        print_colored "31" "Backup failed. Check the log for details."
+    if [ ${PIPESTATUS[0]} -ne 0 ]; then
+        print_error "Backup failed. Check the log for details."
         exit 1
     fi
-    print_colored "32" "Backup completed."
-    clear # Clears if update is completed without errors.
+    print_success "Timeshift backup completed successfully."
+    clear
 }
 
-# Function to run the update with color output
+prompt_refresh_mirrors() {
+    print_step "${WORLD} Step 4: Pacman Mirrors"
+    print_info "Refreshing your mirror list can increase download speeds."
+    print_prompt "Refresh Arch mirrors? [y/N]: "
+    read -r refresh_choice
+    if [[ "$refresh_choice" =~ ^[Yy]$ ]]; then
+        print_info "Finding the fastest mirrors in Germany and France..."
+        { time sudo reflector --country Germany,France --protocol https --latest 10 --sort rate --save /etc/pacman.d/mirrorlist; } 2>&1 | tee -a "$LOGFILE"
+        if [ ${PIPESTATUS[0]} -ne 0 ]; then
+            print_error "Mirror refresh failed. Check the log for details."
+            exit 1
+        fi
+        print_success "Mirror list updated."
+        return 0
+    else
+        print_warn "Skipping mirror refresh."
+        return 1
+    fi
+}
+
 run_update() {
     command=$1
-    print_colored "34" "Running: $command"
-
-    # Ensure color output is preserved
+    echo -e "${C_BOLD}${C_WHITE}Running command: ${C_CYAN}$command${C_RESET}"
     { time $command --color=always; } 2>&1 | tee -a "$LOGFILE"
-    if [ $? -ne 0 ]; then
-        print_colored "31" "Update failed. Check the log for details."
+    if [ ${PIPESTATUS[0]} -ne 0 ]; then
+        print_error "Update failed. Check the log for details."
         exit 1
     fi
-    print_colored "32" "Update process complete."
 }
 
-# Function to update and clean up Flatpaks
 update_flatpaks() {
-    print_colored "34" "Updating Flatpaks..."
+    print_info "Updating Flatpaks..."
     { time flatpak update -y; } 2>&1 | tee -a "$LOGFILE"
-    if [ $? -ne 0 ]; then
-        print_colored "31" "Flatpak update failed. Check the log for details."
+    if [ ${PIPESTATUS[0]} -ne 0 ]; then
+        print_error "Flatpak update failed. Check the log for details."
         exit 1
     fi
-    print_colored "32" "Flatpaks updated successfully."
+    print_success "Flatpaks updated successfully."
     
-    print_colored "34" "Cleaning up unused Flatpak runtimes..."
+    print_info "Cleaning up unused Flatpak runtimes..."
     { time flatpak uninstall --unused -y; } 2>&1 | tee -a "$LOGFILE"
-    if [ $? -ne 0 ]; then
-        print_colored "31" "Flatpak cleanup failed. Check the log for details."
+    if [ ${PIPESTATUS[0]} -ne 0 ]; then
+        print_error "Flatpak cleanup failed. Check the log for details."
         exit 1
     fi
-    print_colored "32" "Flatpak cleanup completed."
+    print_success "Flatpak cleanup completed."
 }
 
-# Main script
+# --- Main Script Execution ---
 clear
-
-# Print header first
 print_header
 
-# Fetch and display Arch news before proceeding
+# --- Pre-Update Steps ---
 fetch_arch_news
-
-# Preview available updates and ask to continue
 preview_updates
 
-# Start logging
+# Start logging for the main actions
 echo "Script started at $(date)" | tee -a "$LOGFILE"
 
-# Prompt user about backup first
 prompt_backup
-
-# Prompt user if they want to refresh mirrors
 prompt_refresh_mirrors
 mirrors_refreshed=$?
 
-# Perform the update
-print_colored "34" "Starting the system update (Official Repos, AUR, Flatpaks)..."
+# --- Update Execution ---
+print_step "${ROCKET} Step 5: Performing System Upgrade"
+print_info "This is the final step. The system will now be fully updated."
+
 if [ $mirrors_refreshed -eq 0 ]; then
     run_update "yay -Syyuu --devel"
 else
     run_update "yay -Syu --devel"
 fi
+
 update_flatpaks
 
-print_colored "32" "All tasks completed successfully!"
+# --- Finalization ---
+echo ""
+print_success "All tasks completed! Your system is now fully up to date."
 echo "Script completed at $(date)" | tee -a "$LOGFILE"
-# Wait for the user to press Enter before exiting
-print_colored "34" "Press Enter to exit..."
+echo ""
+print_info "Press Enter to exit..."
 read -r
 exit
