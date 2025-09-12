@@ -17,13 +17,42 @@ print_header() {
     print_colored "34" "================================"
 }
 
+# Function to fetch and display Arch Linux news
+fetch_arch_news() {
+    print_colored "34" "Fetching latest Arch Linux news..."
+    # Fetch, parse, and display the last 5 news titles.
+    # The first sed command extracts the content between <title> tags.
+    # tail -n +2 skips the main feed title, and head -n 5 gets the 5 most recent articles.
+    local news
+    news=$(curl -s "https://archlinux.org/feeds/news/" | sed -n 's/.*<title>\(.*\)<\/title>.*/\1/p' | tail -n +2 | head -n 5)
+
+    if [ -n "$news" ]; then
+        print_colored "32" "Recent News Headlines:"
+        echo -e "\e[33m"
+        echo "$news" | while IFS= read -r line; do echo "  • $line"; done
+        echo -e "\e[0m" # Reset color
+        echo -n -e "\e[36mHave you read the news? Continue with the update? [Y/n, default is yes]: \e[0m"
+        read -r news_confirm
+        # If user input is 'n' or 'N', exit the script.
+        if [[ "$news_confirm" =~ ^[Nn]$ ]]; then
+            print_colored "31" "Update cancelled by user. Exiting."
+            exit 0
+        fi
+        print_colored "32" "Proceeding with the script..."
+        echo "" # Add a newline for better spacing
+    else
+        print_colored "33" "Could not fetch Arch Linux news. Check your internet connection. Continuing..."
+    fi
+}
+
+
 # Function to prompt the user for backup
 prompt_backup() {
-    echo -n -e "\e[36mDo you want to create a Timeshift backup? [y/N, default is yes]: \e[0m"
+    echo -n -e "\e[36mDo you want to create a Timeshift backup? [y/N, default is no]: \e[0m"
     read -r backup_choice
 
-    # Default to yes (backup) if the user just presses enter
-    if [ -z "$backup_choice" ] || [[ "$backup_choice" =~ ^[Yy]$ ]]; then
+    # Default to no (skip backup) if the user just presses enter
+    if [[ "$backup_choice" =~ ^[Yy]$ ]]; then
         create_backup
     else
         print_colored "33" "Skipping Timeshift backup."
@@ -117,6 +146,9 @@ print_header
 # Start logging
 echo "Script started at $(date)" | tee -a "$LOGFILE"
 
+# Fetch and display Arch news before proceeding
+fetch_arch_news
+
 # Prompt user about backup first
 prompt_backup
 
@@ -147,8 +179,6 @@ elif [ "$choice" == "3" ]; then
         run_update "yay -Syu --devel"
     fi
     update_flatpaks
-elif [ "$choice" == "69" ]; then
-    print_colored "32" "...NICE!, THIS IS A TEST CASE, SYSTEM WAS NOT UPDATED OR BACKED UP."
 else
     print_colored "31" "Invalid choice. Exiting."
     exit 1
