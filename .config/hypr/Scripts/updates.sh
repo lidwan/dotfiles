@@ -21,8 +21,6 @@ print_header() {
 fetch_arch_news() {
     print_colored "34" "Fetching latest Arch Linux news..."
     # Fetch, parse, and display the last 5 news titles.
-    # The first sed command extracts the content between <title> tags.
-    # tail -n +2 skips the main feed title, and head -n 5 gets the 5 most recent articles.
     local news
     news=$(curl -s "https://archlinux.org/feeds/news/" | sed -n 's/.*<title>\(.*\)<\/title>.*/\1/p' | tail -n +2 | head -n 5)
 
@@ -31,17 +29,54 @@ fetch_arch_news() {
         echo -e "\e[33m"
         echo "$news" | while IFS= read -r line; do echo "  • $line"; done
         echo -e "\e[0m" # Reset color
-        echo -n -e "\e[36mHave you read the news? Continue with the update? [Y/n, default is yes]: \e[0m"
+        echo -n -e "\e[36mHave you read the news? Continue? [Y/n, default is yes]: \e[0m"
         read -r news_confirm
-        # If user input is 'n' or 'N', exit the script.
         if [[ "$news_confirm" =~ ^[Nn]$ ]]; then
-            print_colored "31" "Update cancelled by user. Exiting."
+            print_colored "31" "Cancelled by user. Exiting."
             exit 0
         fi
-        print_colored "32" "Proceeding with the script..."
-        echo "" # Add a newline for better spacing
+        print_colored "32" "Proceeding..."
+        echo ""
     else
         print_colored "33" "Could not fetch Arch Linux news. Check your internet connection. Continuing..."
+    fi
+}
+
+# Function to preview available updates
+preview_updates() {
+    print_colored "34" "--- Checking for available updates ---"
+    local repo_updates
+    repo_updates=$(checkupdates)
+    local aur_updates
+    aur_updates=$(yay -Qua)
+
+    if [ -z "$repo_updates" ] && [ -z "$aur_updates" ]; then
+        print_colored "32" "System is already up to date."
+        # Ask to exit if there are no updates
+        echo -n -e "\e[36mExit script? [Y/n, default is yes]: \e[0m"
+        read -r exit_choice
+        if [[ -z "$exit_choice" || "$exit_choice" =~ ^[Yy]$ ]]; then
+            exit 0
+        fi
+        return # Continue if user wants to do something else (e.g. backup)
+    fi
+
+    if [ -n "$repo_updates" ]; then
+        print_colored "32" "Official Repositories:"
+        echo -e "\e[33m$repo_updates\e[0m"
+    fi
+
+    if [ -n "$aur_updates" ]; then
+        print_colored "32" "AUR Packages:"
+        echo -e "\e[33m$aur_updates\e[0m"
+    fi
+
+    echo ""
+    echo -n -e "\e[36mDo you want to proceed with the backup and update process? [Y/n, default is yes]: \e[0m"
+    read -r preview_confirm
+    if [[ "$preview_confirm" =~ ^[Nn]$ ]]; then
+        print_colored "31" "Update cancelled by user. Exiting."
+        exit 0
     fi
 }
 
@@ -143,11 +178,14 @@ clear
 # Print header first
 print_header
 
-# Start logging
-echo "Script started at $(date)" | tee -a "$LOGFILE"
-
 # Fetch and display Arch news before proceeding
 fetch_arch_news
+
+# Preview available updates and ask to continue
+preview_updates
+
+# Start logging
+echo "Script started at $(date)" | tee -a "$LOGFILE"
 
 # Prompt user about backup first
 prompt_backup
