@@ -80,7 +80,6 @@ preview_updates() {
     fi
 }
 
-
 # Function to prompt the user for backup
 prompt_backup() {
     echo -n -e "\e[36mDo you want to create a Timeshift backup? [y/N, default is no]: \e[0m"
@@ -106,21 +105,6 @@ prompt_refresh_mirrors() {
     else
         print_colored "33" "Skipping mirror refresh."
         return 1  # Indicates that mirrors were not refreshed
-    fi
-}
-
-# Function to prompt the user for their choice of update
-prompt_user() {
-    print_colored "32" "Choose an option:"
-    echo -e "\e[33m1)\e[0m Update everything (including --devel)"
-    echo -e "\e[33m2)\e[0m Update AUR and official repos only"
-    echo -e "\e[33m3)\e[0m Update everything (including Flatpaks)"
-    echo -n -e "\e[36mEnter your choice [1, 2, or 3, default is 3]: \e[0m"
-    read -r choice
-
-    # Default to option 3 if the user just presses enter
-    if [ -z "$choice" ]; then
-        choice=3
     fi
 }
 
@@ -161,7 +145,7 @@ run_update() {
     print_colored "32" "Update process complete."
 }
 
-# Function to update Flatpaks
+# Function to update and clean up Flatpaks
 update_flatpaks() {
     print_colored "34" "Updating Flatpaks..."
     { time flatpak update -y; } 2>&1 | tee -a "$LOGFILE"
@@ -170,6 +154,14 @@ update_flatpaks() {
         exit 1
     fi
     print_colored "32" "Flatpaks updated successfully."
+    
+    print_colored "34" "Cleaning up unused Flatpak runtimes..."
+    { time flatpak uninstall --unused -y; } 2>&1 | tee -a "$LOGFILE"
+    if [ $? -ne 0 ]; then
+        print_colored "31" "Flatpak cleanup failed. Check the log for details."
+        exit 1
+    fi
+    print_colored "32" "Flatpak cleanup completed."
 }
 
 # Main script
@@ -194,33 +186,14 @@ prompt_backup
 prompt_refresh_mirrors
 mirrors_refreshed=$?
 
-# Prompt user for the type of update
-prompt_user
-
-# Validate the user's choice and run the appropriate commands
-if [ "$choice" == "1" ]; then
-    if [ $mirrors_refreshed -eq 0 ]; then
-        run_update "yay -Syyuu --devel"
-    else
-        run_update "yay -Syu --devel"
-    fi
-elif [ "$choice" == "2" ]; then
-    if [ $mirrors_refreshed -eq 0 ]; then
-        run_update "yay -Syyuu"
-    else
-        run_update "yay -Syu"
-    fi
-elif [ "$choice" == "3" ]; then
-    if [ $mirrors_refreshed -eq 0 ]; then
-        run_update "yay -Syyuu --devel"
-    else
-        run_update "yay -Syu --devel"
-    fi
-    update_flatpaks
+# Perform the update
+print_colored "34" "Starting the system update (Official Repos, AUR, Flatpaks)..."
+if [ $mirrors_refreshed -eq 0 ]; then
+    run_update "yay -Syyuu --devel"
 else
-    print_colored "31" "Invalid choice. Exiting."
-    exit 1
+    run_update "yay -Syu --devel"
 fi
+update_flatpaks
 
 print_colored "32" "All tasks completed successfully!"
 echo "Script completed at $(date)" | tee -a "$LOGFILE"
