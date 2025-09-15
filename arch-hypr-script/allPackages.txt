@@ -30,6 +30,7 @@ argon2
 aria2
 aribb24
 aspnet-runtime-6.0
+aspnet-runtime-8.0
 at-spi2-core
 atkmm
 attica
@@ -132,6 +133,7 @@ dosfstools
 dotconf
 dotnet-host
 dotnet-runtime-6.0
+dotnet-runtime-8.0
 double-conversion
 downgrade
 dtc
@@ -409,6 +411,9 @@ jdk-openjdk
 jdk11-openjdk
 jdk17-openjdk
 jdk21-openjdk
+jellyfin-ffmpeg
+jellyfin-server
+jellyfin-web
 jemalloc
 jq
 js115
@@ -964,7 +969,6 @@ pkcs11-helper
 pkgconf
 plasma-activities
 playerctl
-plex-media-server
 pnpm
 polkit
 polkit-explorer-git
