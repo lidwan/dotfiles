@@ -155,7 +155,6 @@ electron32-bin-debug
 electron33
 electron36
 electron37-bin
-electron37-bin-debug
 ell
 emby-ffmpeg
 emby-server
@@ -872,6 +871,8 @@ msgraph
 mtdev
 mtools
 mujs
+mullvad-vpn-bin
+mullvad-vpn-bin-debug
 mutter
 mypaint-brushes1
 nano
@@ -1301,6 +1302,8 @@ ttf-fira-code
 ttf-fira-sans
 ttf-firacode-nerd
 ttf-liberation
+tutanota-desktop-bin
+tutanota-desktop-bin-debug
 twolame
 tzdata
 uchardet
