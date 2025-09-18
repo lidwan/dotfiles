@@ -16,14 +16,13 @@
         "on-scroll-down": "hyprctl dispatch workspace e+1",
         "active-only": false,
         "all-outputs": true,
-        "format": "{}",
+        "format": "{icon}",
         "format-icons": {
-			"urgent": "",
-			"active": "",
-			"default": ""
+            "11": "📧",
+            "12": "🥁"
         },
         "persistent-workspaces": {
-             "*": 1
+             "*": [1, 11, 12]
         }
     },
     // Hyprland Window
@@ -212,6 +211,7 @@
         "ignored-players": ["firefox"],
         "player": "playerctld",
         "on-click": "playerctl play-pause",
+        "on-click-right": "hyprctl dispatch workspace 12",
         "on-scroll-up": "playerctl previous",
         "on-scroll-down": "playerctl next",
         "max-length": 30,
