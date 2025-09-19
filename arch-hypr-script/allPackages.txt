@@ -563,6 +563,7 @@ libfdk-aac
 libffi
 libfontenc
 libfreeaptx
+libfyaml
 libgcrypt
 libgdata
 libgdm
@@ -992,7 +993,6 @@ pps-tools
 procps-ng
 protobuf
 protobuf-c
-proton-vpn-gtk-app
 psmisc
 pugixml
 purpose
@@ -1251,7 +1251,6 @@ spice
 spice-gtk
 spice-protocol
 spirv-tools
-spotify-launcher
 sqlite
 sratom
 srt
@@ -1303,7 +1302,6 @@ ttf-fira-sans
 ttf-firacode-nerd
 ttf-liberation
 tutanota-desktop-bin
-tutanota-desktop-bin-debug
 twolame
 tzdata
 uchardet
