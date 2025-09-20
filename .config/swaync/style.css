@@ -150,7 +150,7 @@ scrollbar slider {
 .notification-content .text-box .summary,
 .notification-content .text-box .time,
 .notification-content .text-box .body {
-  font-size: 10px;
+  font-size: 18px;
   background: transparent;
   color: var(--text-primary);
   text-shadow: none;
@@ -329,7 +329,7 @@ scrollbar slider {
 .widget-title>label {
   margin: 8px;
   font-weight: 700;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 .widget-title>button {
