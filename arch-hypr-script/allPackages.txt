@@ -61,6 +61,7 @@ bluez-utils
 bolt
 boost-libs
 botan2
+brave-bin
 breeze-icons
 brightnessctl
 brltty
@@ -291,6 +292,7 @@ gpgmepp
 gpm
 gpsd
 gradle
+granite7
 graphene
 graphicsmagick
 graphite
@@ -331,6 +333,7 @@ gtk-vnc
 gtk2
 gtk3
 gtk4
+gtk4-layer-shell
 gtkmm-4.0
 gtkmm3
 gtksourceview4
@@ -1261,6 +1264,7 @@ suitesparse
 sushi
 svt-av1
 svt-hevc
+swaync
 swtpm
 syndication
 syntax-highlighting

@@ -78,6 +78,9 @@ window#waybar {
     border-radius: 15px;
 }
 
+/* #workspaces button[name="11"]::before { content: "✉️ "; }
+
+#workspaces button[name="12"]::before { content: "🎵 "; } */
 
 /* -----------------------------------------------------
  * Tooltips
@@ -162,6 +165,7 @@ window#waybar.empty #window {
 #custom-updates,
 #privacy,
 #mpris,
+#custom-notification,
 #idle_inhibitor {
     
     margin-right: 10px;
@@ -204,7 +208,9 @@ window#waybar.empty #window {
     margin-right: 10px;
     font-size: 20px;
 }
-
+#custom-notification {
+  font-family: "NotoSansMono Nerd Font";
+}
 /* -----------------------------------------------------
  * Custom Exit
  * ----------------------------------------------------- */
@@ -270,6 +276,7 @@ window#waybar.empty #window {
 #custom-updates,
 #privacy,
 #mpris,
+#custom-notification,
 #idle_inhibitor {
     background-color: @backgrounddark;
     font-size: 13px;
@@ -400,6 +407,7 @@ label:focus {
 #backlight,
 #custom-updates,
 #privacy,
+#custom-notification,
 #idle_inhibitor {
     
     margin-right: 4px;
