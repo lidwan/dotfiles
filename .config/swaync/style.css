@@ -150,15 +150,18 @@ scrollbar slider {
 .notification-content .text-box .summary,
 .notification-content .text-box .time,
 .notification-content .text-box .body {
-  font-size: 18px;
+  font-size: 16px;
   background: transparent;
   color: var(--text-primary);
   text-shadow: none;
 }
 
+
 .notification-content .text-box .summary,
 .notification-content .text-box .time {
   font-weight: bold;
+  white-space: normal;
+  overflow-wrap: break-word;
 }
 
 .notification-content .text-box .time {
