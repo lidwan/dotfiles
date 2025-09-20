@@ -16,9 +16,8 @@
     ],    
     "modules-left": [
         "custom/logo",
-        "idle_inhibitor",
         "privacy",
-        "mpris",
+        "hyprland/window",
         "custom/updates",
     ],
     "modules-center": [
@@ -27,13 +26,13 @@
     "modules-right": [
         "group/hardware",
         "custom/notification",
+        "idle_inhibitor",
         "backlight",
         "pulseaudio",
         "network",  
         "keyboard-state", 
         "battery", 
         "clock",
-        //"custom/clock", //tmp while waybar's implemention of tzdate gets fixed! -- it's fixed!
         "tray",
         "custom/exit"
     ]
