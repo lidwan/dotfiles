@@ -156,6 +156,7 @@ electron32-bin-debug
 electron33
 electron36
 electron37-bin
+electron38
 ell
 emby-ffmpeg
 emby-server
@@ -824,6 +825,7 @@ linux-firmware-other
 linux-firmware-radeon
 linux-firmware-realtek
 linux-firmware-whence
+lld
 llhttp
 llvm
 llvm-libs
@@ -1306,6 +1308,7 @@ ttf-fira-sans
 ttf-firacode-nerd
 ttf-liberation
 tutanota-desktop-bin
+tutanota-desktop-bin-debug
 twolame
 tzdata
 uchardet
@@ -1369,6 +1372,7 @@ vte4
 vulkan-headers
 vulkan-icd-loader
 vulkan-intel
+vulkan-mesa-device-select
 vulkan-nouveau
 vulkan-radeon
 vulkan-validation-layers
