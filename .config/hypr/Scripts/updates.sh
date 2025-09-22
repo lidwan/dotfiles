@@ -83,13 +83,15 @@ fetch_arch_news() {
 
 preview_updates() {
     print_step "${EYES} Step 2: Previewing Updates"
-    print_info "Checking for pending package updates..."
+    print_info "Checking for pending package updates (Repo, AUR, Flatpak)..."
     local repo_updates
     repo_updates=$(checkupdates)
     local aur_updates
     aur_updates=$(yay -Qua)
+    local flatpak_updates
+    flatpak_updates=$(flatpak remote-ls --updates)
 
-    if [ -z "$repo_updates" ] && [ -z "$aur_updates" ]; then
+    if [ -z "$repo_updates" ] && [ -z "$aur_updates" ] && [ -z "$flatpak_updates" ]; then
         print_success "Your system is already up to date! No action needed."
         print_prompt "Exit script? [Y/n]: "
         read -r exit_choice
@@ -106,6 +108,11 @@ preview_updates() {
     if [ -n "$aur_updates" ]; then
         echo -e "${C_YELLOW}AUR Packages:${C_RESET}"
         echo "$aur_updates"
+    fi
+    
+    if [ -n "$flatpak_updates" ]; then
+        echo -e "${C_BOLD}${C_WHITE}${BOX} Flatpak Packages:${C_RESET}"
+        echo "$flatpak_updates"
     fi
 
     echo ""
