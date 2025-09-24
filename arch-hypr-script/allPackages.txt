@@ -262,7 +262,6 @@ gnome-keyring
 gnome-logs
 gnome-maps
 gnome-menus
-gnome-mimeapps
 gnome-music
 gnome-online-accounts
 gnome-remote-desktop
@@ -421,6 +420,7 @@ jemalloc
 jq
 js115
 js128
+js140
 json-c
 json-glib
 jsoncpp
@@ -1022,6 +1022,7 @@ python-charset-normalizer
 python-cleo
 python-crashtest
 python-cryptography
+python-dasbus
 python-dateutil
 python-dbus
 python-defusedxml
