@@ -35,7 +35,6 @@ at-spi2-core
 atkmm
 attica
 attr
-audacity
 audit
 autoconf
 automake
@@ -85,7 +84,6 @@ cdrtools
 cfitsio
 chafa
 chromaprint
-chromium
 cifs-utils
 cinnamon-desktop
 cjs
@@ -97,7 +95,6 @@ cmake
 code
 cogl
 colord
-colord-gtk
 colord-gtk-common
 colord-gtk4
 colord-sane
@@ -111,7 +108,6 @@ cronie
 cryptsetup
 cups-pk-helper
 curl
-darktable
 dav1d
 db5.3
 dbus
@@ -143,7 +139,6 @@ dunst
 e2fsprogs
 easyeffects
 ebook-tools
-eclipse-java-bin
 editorconfig-core-c
 edk2-ovmf
 efibootmgr
@@ -152,7 +147,6 @@ egl-wayland
 eglexternalplatform
 electron31
 electron32-bin
-electron32-bin-debug
 electron33
 electron36
 electron37-bin
@@ -162,7 +156,6 @@ emby-ffmpeg
 emby-server
 enchant
 epiphany
-etcher-bin
 evince
 evolution-data-server
 exempi
@@ -188,7 +181,6 @@ firefox
 flac
 flatpak
 flex
-flickcurl
 fluidsynth
 fmt
 folks
@@ -236,7 +228,6 @@ glm
 glslang
 glu
 glycin
-gmic
 gmp
 gnome-app-list
 gnome-autoar
@@ -302,8 +293,6 @@ grilo-plugins
 grim
 groff
 grub
-grub-customizer
-grub-customizer-debug
 gsettings-desktop-schemas
 gsettings-system-schemas
 gsfonts
@@ -363,7 +352,6 @@ hdparm
 hicolor-icon-theme
 hidapi
 highway
-htop
 hunspell
 hwdata
 hwloc
@@ -393,7 +381,6 @@ imlib2
 iniparser
 intel-gmmlib
 intel-media-driver
-intellij-idea-community-edition
 intellij-idea-ultimate-edition
 iproute2
 iptables
@@ -418,7 +405,6 @@ jellyfin-server
 jellyfin-web
 jemalloc
 jq
-js115
 js128
 js140
 json-c
@@ -454,9 +440,6 @@ kio
 kio-extras
 kirigami
 kitemviews
-kitty
-kitty-shell-integration
-kitty-terminfo
 kiwix-desktop
 kjobwidgets
 kmod
@@ -620,7 +603,6 @@ liblrdf
 libltc
 libluv
 liblzf
-libmad
 libmalcontent
 libmanette
 libmatroska
@@ -629,9 +611,7 @@ libmediaart
 libmfx
 libmicrodns
 libmicrohttpd
-libmikmod
 libmm-glib
-libmms
 libmng
 libmnl
 libmodplug
@@ -695,15 +675,12 @@ libraw
 libraw1394
 librest
 librsvg
-librsync
 libsamplerate
 libsasl
-libsbsms
 libseccomp
 libsecret
 libshout
 libshumate
-libsidplayfp
 libsigc++
 libsigc++-3.0
 libsixel
@@ -883,19 +860,11 @@ mutter
 mypaint-brushes1
 nano
 nautilus
-nautilus-admin-gtk4
-nautilus-open-any-terminal
-nautilus-python
 ncurses
 ndctl
-nemo
-nemo-fileroller
-nemo-python
-nemo-terminal
 neon
 neovim
 net-snmp
-net-tools
 nettle
 network-manager-applet
 networkmanager
@@ -932,12 +901,10 @@ openssl
 opentimelineio
 openvpn
 opus
-opusfile
 orc
 orca
 os-prober
 osinfo-db
-osm-gps-map
 ostree
 p11-kit
 pacman
@@ -962,9 +929,7 @@ perl-mailtools
 perl-timedate
 phodav
 phonon-qt6
-phonon-qt6-mpv
 phonon-qt6-vlc
-picard
 pinentry
 pipewire
 pipewire-alsa
@@ -978,7 +943,6 @@ plasma-activities
 playerctl
 pnpm
 polkit
-polkit-explorer-git
 polkit-gnome
 polkit-kde-agent
 polkit-qt6
@@ -988,8 +952,6 @@ poppler-glib
 poppler-qt6
 popt
 portaudio
-portmidi
-portsmf
 postgresql
 postgresql-libs
 postman-bin
@@ -1023,15 +985,12 @@ python-cleo
 python-crashtest
 python-cryptography
 python-dasbus
-python-dateutil
 python-dbus
 python-defusedxml
-python-discid
 python-distlib
 python-distro
 python-docutils
 python-dulwich
-python-fasteners
 python-fastjsonschema
 python-filelock
 python-findpython
@@ -1073,14 +1032,10 @@ python-poetry-core
 python-poetry-plugin-export
 python-propcache
 python-proton-core
-python-proton-keyring-linux
 python-proton-vpn-api-core
-python-proton-vpn-local-agent
-python-proton-vpn-network-manager
 python-psutil
 python-ptyprocess
 python-pycparser
-python-pyjwt
 python-pynacl
 python-pyopenssl
 python-pyproject-hooks
@@ -1205,7 +1160,6 @@ rubberband
 ruby
 rubygems
 run-parts
-rust
 rutabaga-ffi
 rygel
 sane
@@ -1227,6 +1181,7 @@ shaderc
 shadow
 shared-mime-info
 shiboken6
+signal-desktop
 signon-kwallet-extension
 signon-plugin-oauth2
 signon-ui
@@ -1262,7 +1217,6 @@ sratom
 srt
 startup-notification
 sudo
-suil
 suitesparse
 sushi
 svt-av1
@@ -1289,7 +1243,6 @@ thunar-archive-plugin
 timeshift
 tinysparql
 tlp
-tlpui
 tomlplusplus
 totem
 totem-pl-parser
@@ -1324,7 +1277,6 @@ usbutils
 util-linux
 util-linux-libs
 v4l-utils
-vamp-plugin-sdk
 vapoursynth
 vde2
 veracrypt
@@ -1335,7 +1287,6 @@ vim-runtime
 virglrenderer
 virtiofsd
 vlc-cli
-vlc-gui-qt
 vlc-plugin-a52dec
 vlc-plugin-alsa
 vlc-plugin-archive
@@ -1381,7 +1332,6 @@ wavpack
 waybar
 wayland
 wayland-protocols
-webkit2gtk
 webkit2gtk-4.1
 webkitgtk-6.0
 webrtc-audio-processing-1
@@ -1428,7 +1378,6 @@ xf86-input-libinput
 xf86-video-amdgpu
 xf86-video-ati
 xf86-video-nouveau
-xf86-video-vmware
 xfconf
 xkeyboard-config
 xorg-fonts-encodings
@@ -1459,7 +1408,6 @@ yelp-xsl
 yt-dlp
 yyjson
 zbar
-zenity
 zeromq
 zimg
 zip
@@ -1471,4 +1419,3 @@ zram-generator
 zstd
 zvbi
 zxing-cpp
-zziplib
