@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# Log file path
-LOGFILE="$HOME/.config/hypr/Scripts/updates.log"
+# Redirect ALL output to both terminal and log
+exec > >(tee -a "$HOME/.config/hypr/Scripts/updates.log") 2>&1
 
 # --- Color Definitions ---
 C_RESET='\e[0m'
@@ -18,12 +18,6 @@ TICK="✅"
 CROSS="❌"
 INFO="ℹ️"
 WARN="⚠️"
-ROCKET="🚀"
-NEWS="📰"
-EYES="👀"
-SAVE="💾"
-WORLD="🌍"
-BOX="📦"
 
 # --- Helper Functions for Output ---
 print_info() {
@@ -61,7 +55,7 @@ print_step() {
 # --- Core Script Functions ---
 
 fetch_arch_news() {
-    print_step "${NEWS} Step 1: Checking Arch News"
+    print_step "Checking Arch News"
     print_info "Checking for important announcements from the Arch Linux team..."
     local news
     news=$(curl -s "https://archlinux.org/feeds/news/" | sed -n 's/.*<title>\(.*\)<\/title>.*/\1/p' | tail -n +2 | head -n 5)
@@ -82,14 +76,8 @@ fetch_arch_news() {
 }
 
 preview_updates() {
-    print_step "${EYES} Step 2: Previewing Updates"
-    print_info "Checking for pending package updates (Repo, AUR, Flatpak)..."
-    local repo_updates
-    repo_updates=$(checkupdates)
-    local aur_updates
-    aur_updates=$(yay -Qua)
-    local flatpak_updates
-    flatpak_updates=$(flatpak remote-ls --updates)
+    print_step "Previewing Updates"
+    print_info "Checking for pending package updates (Offical Arch, AUR, Flatpak)..."
 
     if [ -z "$repo_updates" ] && [ -z "$aur_updates" ] && [ -z "$flatpak_updates" ]; then
         print_success "Your system is already up to date! No action needed."
@@ -102,16 +90,18 @@ preview_updates() {
     fi
 
     if [ -n "$repo_updates" ]; then
-        echo -e "${C_CYAN}Official Repositories:${C_RESET}"
+        echo -e "${C_YELLOW}Official Repositories:${C_RESET}"
         echo "$repo_updates"
     fi
     if [ -n "$aur_updates" ]; then
+        echo ""
         echo -e "${C_YELLOW}AUR Packages:${C_RESET}"
         echo "$aur_updates"
     fi
     
     if [ -n "$flatpak_updates" ]; then
-        echo -e "${C_BOLD}${C_WHITE}${BOX} Flatpak Packages:${C_RESET}"
+        echo ""
+        echo -e "${C_YELLOW}Flatpak Packages:${C_RESET}"
         echo "$flatpak_updates"
     fi
 
@@ -125,8 +115,7 @@ preview_updates() {
 }
 
 prompt_backup() {
-    print_step "${SAVE} Step 3: System Backup"
-    print_info "Creating a system snapshot with Timeshift is highly recommended before updating."
+    print_step "System Backup"
     print_prompt "Create a Timeshift backup? [y/N]: "
     read -r backup_choice
     if [[ "$backup_choice" =~ ^[Yy]$ ]]; then
@@ -138,7 +127,7 @@ prompt_backup() {
 
 create_backup() {
     print_info "Creating Timeshift backup... (this might take a moment)"
-    { time sudo timeshift --create --comments "AUTO BY SCRIPT"; } 2>&1 | tee -a "$LOGFILE"
+    time sudo timeshift --create --comments "AUTO BY UPDATE SCRIPT"
     if [ ${PIPESTATUS[0]} -ne 0 ]; then
         print_error "Backup failed. Check the log for details."
         exit 1
@@ -148,18 +137,18 @@ create_backup() {
 }
 
 prompt_refresh_mirrors() {
-    print_step "${WORLD} Step 4: Pacman Mirrors"
-    print_info "Refreshing your mirror list can increase download speeds."
+    print_step "Pacman Mirrors"
     print_prompt "Refresh Arch mirrors? [y/N]: "
     read -r refresh_choice
     if [[ "$refresh_choice" =~ ^[Yy]$ ]]; then
         print_info "Finding the fastest mirrors in Germany and France..."
-        { time sudo reflector --country Germany,France --protocol https --latest 10 --sort rate --save /etc/pacman.d/mirrorlist; } 2>&1 | tee -a "$LOGFILE"
+        time sudo reflector --country Germany,France --protocol https --latest 10 --sort rate --save /etc/pacman.d/mirrorlist
         if [ ${PIPESTATUS[0]} -ne 0 ]; then
             print_error "Mirror refresh failed. Check the log for details."
             exit 1
         fi
         print_success "Mirror list updated."
+        update_command="-Syyuu"
         return 0
     else
         print_warn "Skipping mirror refresh."
@@ -170,16 +159,35 @@ prompt_refresh_mirrors() {
 run_update() {
     command=$1
     echo -e "${C_BOLD}${C_WHITE}Running command: ${C_CYAN}$command${C_RESET}"
-    { time $command --color=always; } 2>&1 | tee -a "$LOGFILE"
+    time $command --color=always
     if [ ${PIPESTATUS[0]} -ne 0 ]; then
         print_error "Update failed. Check the log for details."
         exit 1
     fi
 }
 
+update_with_pacman() {
+    run_update "sudo pacman $update_command"
+}
+
+# for each AUR pkg show diffs in pkgbuild and ask for user approval before updating.
+# I would've used "yay -Syu --answerdiff All" without the loop
+# but when the user answers no and skips an update after viewing the diff yay just exits
+# instead of skipping update and updating the rest of the pkgs. 
+update_with_yay() {  
+    print_info "For each AUR pkg press enter to view diff then either agree to update or not."  
+    for pkg in $aur_updates; do
+        print_prompt "Showing diff for pkg: $pkg "
+        read -r
+        echo -e "${C_BOLD}${C_WHITE}Running command: ${C_CYAN} yay -S --answerclean None --answerdiff All $pkg{C_RESET}"
+        yay -S --answerclean None --answerdiff All $pkg || print_warn "Update failed or skipped for $pkg, continuing..."
+        clear
+    done
+}
+
 update_flatpaks() {
     print_info "Updating Flatpaks..."
-    { time flatpak update -y; } 2>&1 | tee -a "$LOGFILE"
+    time flatpak update -y
     if [ ${PIPESTATUS[0]} -ne 0 ]; then
         print_error "Flatpak update failed. Check the log for details."
         exit 1
@@ -187,7 +195,7 @@ update_flatpaks() {
     print_success "Flatpaks updated successfully."
     
     print_info "Cleaning up unused Flatpak runtimes..."
-    { time flatpak uninstall --unused -y; } 2>&1 | tee -a "$LOGFILE"
+    time flatpak uninstall --unused -y
     if [ ${PIPESTATUS[0]} -ne 0 ]; then
         print_error "Flatpak cleanup failed. Check the log for details."
         exit 1
@@ -195,37 +203,63 @@ update_flatpaks() {
     print_success "Flatpak cleanup completed."
 }
 
+
 # --- Main Script Execution ---
 clear
+
+# Start logging
+echo "Script started at $(date)"
+
 print_header
 
 # --- Pre-Update Steps ---
-fetch_arch_news
-preview_updates
+update_command="-Syu"
 
-# Start logging for the main actions
-echo "Script started at $(date)" | tee -a "$LOGFILE"
+prompt_refresh_mirrors
 
 prompt_backup
-prompt_refresh_mirrors
-mirrors_refreshed=$?
+
+fetch_arch_news
+
+# --- Get updates ---
+aur_updates=$(yay -Qua | awk '{print $1}')
+
+repo_updates=$(checkupdates)
+
+flatpak_updates=$(flatpak remote-ls --updates)
+
+preview_updates
+
+clear
 
 # --- Update Execution ---
-print_step "${ROCKET} Step 5: Performing System Upgrade"
-print_info "This is the final step. The system will now be fully updated."
+print_step "Performing System Upgrade"
 
-if [ $mirrors_refreshed -eq 0 ]; then
-    run_update "yay -Syyuu --devel"
+if [ -z "$repo_updates" ] && [ -z "$aur_updates" ]; then
+    print_info "No Repo or AUR updates, Skipping..."
+elif [ -n "$repo_updates" ] && [ -z "$aur_updates" ]; then
+    print_info "No AUR updates found, updating with pacman"
+    update_with_pacman
+elif [ -z "$repo_updates" ] && [ -n "$aur_updates" ]; then
+    print_info "Only AUR updates found, updating with yay"
+    update_with_yay
 else
-    run_update "yay -Syu --devel"
+    print_info "Both Repo and AUR updates found, updating..."
+    print_info "Repo: "
+    update_with_pacman
+    print_info "AUR: "
+    update_with_yay
 fi
+clear
 
 update_flatpaks
+
+clear
 
 # --- Finalization ---
 echo ""
 print_success "All tasks completed! Your system is now fully up to date."
-echo "Script completed at $(date)" | tee -a "$LOGFILE"
+echo "Script completed at $(date)"
 echo ""
 print_info "Press Enter to exit..."
 read -r
