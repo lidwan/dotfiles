@@ -150,6 +150,7 @@ electron32-bin
 electron33
 electron36
 electron37-bin
+electron37-bin-debug
 electron38
 ell
 emby-ffmpeg
@@ -272,6 +273,7 @@ gnu-free-fonts
 gnulib-l10n
 gnupg
 gnutls
+go
 gobject-introspection
 gobject-introspection-runtime
 gom
@@ -1262,7 +1264,6 @@ ttf-fira-sans
 ttf-firacode-nerd
 ttf-liberation
 tutanota-desktop-bin
-tutanota-desktop-bin-debug
 twolame
 tzdata
 uchardet
