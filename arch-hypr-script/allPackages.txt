@@ -1264,6 +1264,7 @@ ttf-fira-sans
 ttf-firacode-nerd
 ttf-liberation
 tutanota-desktop-bin
+tutanota-desktop-bin-debug
 twolame
 tzdata
 uchardet
