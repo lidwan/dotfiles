@@ -29,6 +29,7 @@ archlinux-keyring
 argon2
 aria2
 aribb24
+aspnet-runtime
 aspnet-runtime-6.0
 aspnet-runtime-8.0
 at-spi2-core
@@ -100,6 +101,7 @@ colord-gtk4
 colord-sane
 compiler-rt
 composefs
+containerd
 convertlit
 coreutils
 cppdap
@@ -109,6 +111,7 @@ cryptsetup
 cups-pk-helper
 curl
 dav1d
+davfs2
 db5.3
 dbus
 dbus-broker
@@ -126,9 +129,13 @@ diffutils
 djvulibre
 docbook-xml
 docbook-xsl
+docker
+docker-buildx
+docker-compose
 dosfstools
 dotconf
 dotnet-host
+dotnet-runtime
 dotnet-runtime-6.0
 dotnet-runtime-8.0
 double-conversion
@@ -213,6 +220,7 @@ geoclue
 geocode-glib-2
 geocode-glib-common
 gettext
+gexiv2
 gfxstream
 ghostscript
 giflib
@@ -406,6 +414,7 @@ jellyfin-ffmpeg
 jellyfin-server
 jellyfin-web
 jemalloc
+joplin-appimage
 jq
 js128
 js140
@@ -707,6 +716,7 @@ libsynctex
 libsysprof-capture
 libtar
 libtasn1
+libtatsu
 libteam
 libthai
 libtheora
@@ -928,7 +938,10 @@ perl
 perl-error
 perl-image-exiftool
 perl-mailtools
+perl-mime-charset
 perl-timedate
+perl-unicode-linebreak
+perl-yaml-tiny
 phodav
 phonon-qt6
 phonon-qt6-vlc
@@ -944,6 +957,7 @@ pkgconf
 plasma-activities
 playerctl
 pnpm
+po4a
 polkit
 polkit-gnome
 polkit-kde-agent
@@ -1162,6 +1176,7 @@ rubberband
 ruby
 rubygems
 run-parts
+runc
 rutabaga-ffi
 rygel
 sane
@@ -1231,6 +1246,7 @@ systemd
 systemd-libs
 systemd-sysvcompat
 taglib
+tailscale
 talloc
 tar
 tdb
