@@ -143,6 +143,8 @@ downgrade
 dtc
 duktape
 dunst
+duplicati-bin
+duplicati-bin-debug
 e2fsprogs
 easyeffects
 ebook-tools
@@ -485,7 +487,7 @@ libadwaita
 libaemu
 libaio
 libao
-libappindicator-gtk3
+libappindicator
 libarchive
 libass
 libassuan
@@ -887,6 +889,7 @@ networkmanager-vpnc
 nftables
 ninja
 nm-connection-editor
+nmap
 node-gyp
 nodejs
 nodejs-nopt
